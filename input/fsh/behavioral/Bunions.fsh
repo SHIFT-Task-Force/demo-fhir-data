@@ -11,6 +11,6 @@ Description: "Bilateral bunions diagnosis for Carl Frederickson"
 * identifier[0].system = "http://example.com/demo/condition-identifier"
 * identifier[0].value = "BUNIONS-12347"
 
-* code.coding[0] = http://hl7.org/fhir/sid/icd-10-cm#M20.10 "Hallux valgus (acquired), unspecified foot"
+* code.coding[0] = http://hl7.org/fhir/sid/icd-10-cm#M21.611 // "Bunion of the right foot"
 * code.coding[1] = http://snomed.info/sct#415692008 "Swelling of first metatarsophalangeal joint of hallux (disorder)"
 * code.text = "Bunions, bilateral"

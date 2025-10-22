@@ -4,7 +4,6 @@ Description: "Example set of codes representing behavioral health requiring spec
 * ^experimental = false
 * codes from valueset ExampleBehavioralHealthConditionCodes
 * codes from valueset ExampleBehavioralHealthMedicationCodes
-* codes from valueset ExampleBehavioralHealthMedicationRequestCodes
 * codes from valueset ExampleBehavioralHealthObservationCodes
 
 ValueSet: ExampleSexualityAndReproductiveHealthCodes
@@ -13,7 +12,6 @@ Description: "Example set of codes representing sexuality and reproductive healt
 * ^experimental = false
 * codes from valueset ExampleSexualityAndReproductiveHealthConditionCodes
 * codes from valueset ExampleSexualityAndReproductiveHealthMedicationCodes
-* codes from valueset ExampleSexualityAndReproductiveHealthMedicationRequestCodes
 * codes from valueset ExampleSexualityAndReproductiveHealthObservationCodes
 
 ValueSet: ExampleSubstanceUseCodes
@@ -22,7 +20,6 @@ Description: "Example set of codes representing substance use requiring special 
 * ^experimental = false
 * codes from valueset ExampleSubstanceUseConditionCodes
 * codes from valueset ExampleSubstanceUseMedicationCodes
-* codes from valueset ExampleSubstanceUseMedicationRequestCodes
 * codes from valueset ExampleSubstanceUseObservationCodes
 
 ValueSet: ExampleSensitiveCodes

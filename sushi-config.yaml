@@ -47,3 +47,72 @@ menu:
     Behavioral-Health: behavioral.html
   Artifacts: artifacts.html
   About: download.html
+
+groups:
+  CarlFredericksonCareTeam:
+    description: "Resources related to Carl Frederickson's Care Team"
+    resources:
+      - PractitionerRole/DrHibbert-pcp
+      - Practitioner/DrHibbert
+      - Organization/SpringfieldMedicalCenter
+      - PractitionerRole/DrFunke-psychiatrist
+      - Practitioner/DrFunke
+      - PractitionerRole/LucyvanPelt-therapist
+      - Practitioner/LucyvanPelt
+      - PractitionerRole/DrWhite-psychiatrist
+      - Practitioner/DrWhite
+      - Organization/SpringfieldMedicalCenterAddictionProgram
+      - Organization/OrthopedicHealthServices
+      - PractitionerRole/DrSasquatch-podiatrist
+      - Practitioner/DrSasquatch
+      - Organization/RegionalAdvancedDiagnosticServices
+      - PractitionerRole/DrBanner-radiologist
+      - Practitioner/DrBanner
+      - PractitionerRole/DrAurora-anesthesiologist
+      - Practitioner/DrAurora
+      - PractitionerRole/ACOCareManager-practitionerrole
+      - Practitioner/ACO-Care-Manager
+      - Organization/SpringfieldACO
+      - Bundle/AllofCarlTeam
+  CarlFrederickson:
+    description: "Resources related to Carl Frederickson"
+    resources:
+      - Patient/CarlFrederickson
+      - CareTeam/CarlFredericksonCareTeam
+      - Observation/CarlFredericksonPHQ9
+      - Observation/CarlFredericksonPHQ9A  
+      - Condition/CarlFredericksonBunions
+      - Condition/CarlFredericksonHTN
+      - Condition/CarlFredericksonMDD
+      - Condition/CarlFredericksonOCPD
+      - Condition/CarlFredericksonOUD
+      - DiagnosticReport/CarlFredericksonXrayFeet
+      - MedicationRequest/CarlFredericksonBuprenorphineNaltrexone
+      - MedicationRequest/CarlFredericksonCaptopril
+      - MedicationRequest/CarlFredericksonFluoxetine
+      - MedicationRequest/CarlFredericksonIbuprofen
+      - Observation/CarlFredericksonBloodPressure
+      - Observation/CarlFredericksonOUDThoughtRecord
+      - RelatedPerson/EllieFrederickson
+      - Bundle/AllOfCarlFrederickson
+  SecurityLabelingServices:
+    description: "Resources related to Security Labeling Services"
+    resources:
+      - ValueSet/ExampleSensitiveConditionCodes
+      - ValueSet/ExampleSubstanceUseConditionCodes
+      - ValueSet/ExampleBehavioralHealthConditionCodes
+      - ValueSet/ExampleSexualityAndReproductiveHealthConditionCodes
+      - ValueSet/ExampleBehavioralHealthCodes 
+      - ValueSet/ExampleSexualityAndReproductiveHealthCodes
+      - ValueSet/ExampleSubstanceUseCodes
+      - ValueSet/ExampleSensitiveCodes 
+      - ValueSet/ExampleSensitiveMedicationCodes
+      - ValueSet/ExampleSubstanceUseMedicationCodes
+      - ValueSet/ExampleBehavioralHealthMedicationCodes
+      - ValueSet/ExampleSexualityAndReproductiveHealthMedicationCodes
+      - ValueSet/ExampleSensitiveObservationCodes
+      - ValueSet/ExampleSubstanceUseObservationCodes
+      - ValueSet/ExampleBehavioralHealthObservationCodes
+      - ValueSet/ExampleSexualityAndReproductiveHealthObservationCodes
+      
+

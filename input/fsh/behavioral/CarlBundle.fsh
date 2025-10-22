@@ -56,6 +56,10 @@ Description: "A bundle containing all resources related to Carl Frederickson"
 * entry[=].fullUrl = "http://example.org/fhir/MedicationRequest/CarlFredericksonFluoxetine"
 * entry[=].request.url = "MedicationRequest/CarlFredericksonFluoxetine"
 * entry[=].request.method = #PUT
+* entry[+].resource = CarlFredericksonIbuprofen
+* entry[=].fullUrl = "http://example.org/fhir/MedicationRequest/CarlFredericksonIbuprofen"
+* entry[=].request.url = "MedicationRequest/CarlFredericksonIbuprofen"
+* entry[=].request.method = #PUT
 * entry[+].resource = CarlFredericksonBloodPressure
 * entry[=].fullUrl = "http://example.org/fhir/Observation/CarlFredericksonBloodPressure"
 * entry[=].request.url = "Observation/CarlFredericksonBloodPressure"
@@ -68,4 +72,3 @@ Description: "A bundle containing all resources related to Carl Frederickson"
 * entry[=].fullUrl = "http://example.org/fhir/RelatedPerson/EllieFrederickson"
 * entry[=].request.url = "RelatedPerson/EllieFrederickson"
 * entry[=].request.method = #PUT
-
