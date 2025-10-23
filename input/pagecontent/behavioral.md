@@ -50,26 +50,27 @@ Carl has a Mapple phone.  He uses the Mapple "Wellness" app to track symptoms re
 He wishes to share his information with his providers/entities as follows:
 
 
-| Entity | Medical | BH | BH-Personality | BH-SUD (non-Part II) | BH-SUD (Part II) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **SMC PCP (Dr. Hibbert):** | May access data | May access data | May NOT access data | May access data but tag as sensitive\* | May access data but tag as sensitive\* |
-| **SMC Primary Psychiatrist (Dr. Funke):** | May access data | May access data | May access data but tag as sensitive\* | May access data but tag as sensitive\* | May access data but tag as sensitive\* |
-| **SMC Therapist (Lucy van Pelt):** | May access data | May access data | May access data but tag as sensitive\* | May access data but tag as sensitive\* | May NOT access data |
-| **SMC 42 CFR II Psychiatrist (Dr. White):** | May access data | May access data | May access data but tag as sensitive\* | May access data but tag as sensitive\* | May access data but tag as sensitive\* |
-| **Best Little Pharmacy (BLP):** | May access data | May access data | May NOT access data | May access data but tag as sensitive\* | May access data but tag as sensitive\* |
-| **OHS Podiatrist (Dr. Sasquatch):** | May access data | See note\*\* | May NOT access data | See note\*\* | See note\*\* |
-| **OHS Anesthesiologist (Dr. Aurora):** | May access data | See note\*\* | May NOT access data | See note\*\* | See note\*\* |
-| **RADS Radiologist (Dr. Banner):** | See note\*\* | See note\*\* | See note\*\* | See note\*\* | See note\*\* |
-| **ACO Care Manager (Ann Perkins):** | May access data | May access data | May NOT access data | May access data but tag as sensitive\* | May NOT access data |
-| **ACO De-Identified Metrics:** | May access data | May access data | May NOT access data | May access data | May NOT access data |
-| **Mapple (incoming from health entities):** | May NOT access data | May NOT access data | May NOT access data | May NOT access data | May NOT access data |
-| **Payers (Medicare and Green, Inc.):** | May access data | May access data | May NOT access data | May access data but tag as sensitive\* | May access data but tag as sensitive\* |
-| **Portal Proxy (Ellie):** | May access data | May NOT access data | May NOT access data | May NOT access data | May NOT access data |
+| Entity                                      | Medical  | BH       | BH-Personality | BH-SUD (non-Part II) | BH-SUD (Part II) |
+| :------------------------------------------ | :------- | :------- | :------------- | :------------------- | :--------------- |
+| **SMC PCP (Dr. Hibbert):**                  | permit   | permit   | deny           | permit (1)           | permit (1)       |
+| **SMC Primary Psychiatrist (Dr. Funke):**   | permit   | permit   | permit (1)     | permit (1)           | permit (1)       |
+| **SMC Therapist (Lucy van Pelt):**          | permit   | permit   | permit (1)     | permit (1)           | deny             |
+| **SMC 42 CFR II Psychiatrist (Dr. White):** | permit   | permit   | permit (1)     | permit (1)           | permit (1)       |
+| **Best Little Pharmacy (BLP):**             | permit   | permit   | deny           | permit (1)           | permit (1)       |
+| **OHS Podiatrist (Dr. Sasquatch):**         | permit   | deny (2) | deny           | deny (2)             | deny (2)         |
+| **OHS Anesthesiologist (Dr. Aurora):**      | permit   | deny (2) | deny           | deny (2)             | deny (2)         |
+| **RADS Radiologist (Dr. Banner):**          | deny (2) | deny (2) | deny (2)       | deny (2)             | deny (2)         |
+| **ACO Care Manager (Ann Perkins):**         | permit   | permit   | deny           | permit (1)           | deny             |
+| **ACO De-Identified Metrics:**              | permit   | permit   | deny           | permit               | deny             |
+| **Mapple (incoming from health entities):** | deny     | deny     | deny           | deny                 | deny             |
+| **Payers (Medicare and Green, Inc.):**      | permit   | permit   | deny           | permit (1)           | permit (1)       |
+| **Portal Proxy (Ellie):**                   | permit   | deny     | deny           | deny                 | deny             |
 {: .grid}
 
-*Where data may be accessed but tagged as sensitive, Carl would like actor to request additional consent before redisclosing to others (revised 42 CFR requires this with the "standard consent" but does not require consent for redisclosure if the original consent was a "TPO consent" though even with a TPO consent requires tracking if used in a legal proceeding).  In this use case, we are assuming a "standard consent," but this functionality would facilitate both.
+**Notes**
 
-**Note: when referral was placed to Podiatry, Carl asked NOT to share BH, personality or SUD data (42 or non-42 CFR) under HIPAA Right to Request Restrictions on Disclosure.  SMC HIM reviewed this request with his SMC providers and approved the restriction request (Carl also does not sign a 42 CFR consent so his 42 CFR data specifically is not sent).  Referral to podiatry PUSHES SCR containing his medical data to OHS EHR; OHS EHR also sends PULL query for this data at the point of care.  
+1. Where data may be accessed but tagged as sensitive, Carl would like actor to request additional consent before redisclosing to others (revised 42 CFR requires this with the "standard consent" but does not require consent for redisclosure if the original consent was a "TPO consent" though even with a TPO consent requires tracking if used in a legal proceeding).  In this use case, we are assuming a "standard consent," but this functionality would facilitate both.
+2. When referral was placed to Podiatry, Carl asked NOT to share BH, personality or SUD data (42 or non-42 CFR) under HIPAA Right to Request Restrictions on Disclosure.  SMC HIM reviewed this request with his SMC providers and approved the restriction request (Carl also does not sign a 42 CFR consent so his 42 CFR data specifically is not sent).  Referral to podiatry PUSHES SCR containing his medical data to OHS EHR; OHS EHR also sends PULL query for this data at the point of care.  
 
 When Dr. Sasquatch first sees Carl, the OHS EHR indicates that some BH-related data (which may include personality disorder data) and SUD-related is present but tagged as sensitive and therefore hidden.  Dr. Sasquatch does not believe this impacts care, so proceeds to place the imaging order, which is to RADS.  Carl does not make any specific consent preferences about his radiology study, so Dr. Banner's access to his information follows that of Dr. Sasquatch (access to medical information only).
 
