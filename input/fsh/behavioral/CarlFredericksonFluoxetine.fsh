@@ -1,10 +1,11 @@
 // Fluoxetine Medication Request
 Instance: CarlFredericksonFluoxetine
-InstanceOf: SensitiveMedicationRequestProfile
+InstanceOf: MedicationRequest
 Usage: #example
 Title: "MedicationRequest - Fluoxetine"
 Description: "Fluoxetine prescription for Carl Frederickson"
-
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * identifier[0].system = "http://example.com/demo/medicationrequest-identifier"
 * identifier[0].value = "RX-FLUOXETINE-45602"
 

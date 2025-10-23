@@ -1,9 +1,11 @@
 // Obsessive-Compulsive Personality Disorder
 Instance: CarlFredericksonOCPD
-InstanceOf: SensitiveConditionProfile
+InstanceOf: Condition
 Usage: #example
 Title: "Condition - Obsessive-Compulsive Personality Disorder"
 Description: "Obsessive-compulsive personality disorder for Carl Frederickson"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * subject = Reference(CarlFrederickson)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * category[0] = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item

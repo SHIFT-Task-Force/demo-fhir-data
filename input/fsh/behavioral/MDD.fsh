@@ -1,9 +1,11 @@
 // Major Depressive Disorder
 Instance: CarlFredericksonMDD
-InstanceOf: SensitiveConditionProfile
+InstanceOf: Condition
 Usage: #example
 Title: "Condition - Major Depressive Disorder"
 Description: "Major depressive disorder, recurrent, moderate for Carl Frederickson"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * subject = Reference(CarlFrederickson)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * category[0] = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item

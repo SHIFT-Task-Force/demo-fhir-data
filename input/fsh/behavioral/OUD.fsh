@@ -1,9 +1,13 @@
 // Opiate Use Disorder
 Instance: CarlFredericksonOUD
-InstanceOf: SensitiveConditionProfile
+InstanceOf: Condition
 Usage: #example
 Title: "Condition - Opiate Use Disorder"
 Description: "Opiate Use Disorder for Carl Frederickson"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = LocalSensitiveKindCodes#opioid 
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
 * subject = Reference(CarlFrederickson)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * category[0] = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item

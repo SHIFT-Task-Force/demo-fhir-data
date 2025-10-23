@@ -1,10 +1,11 @@
 // PHQ-9 Depression Screening
 Instance: CarlFredericksonPHQ9
-InstanceOf: SensitiveObservationProfile
+InstanceOf: Observation
 Usage: #example
 Title: "Observation - PHQ-9 Depression Screening"
 Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
-
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * status = #final
 
 * identifier[0].system = "http://example.com/demo/observation-identifier"
@@ -23,11 +24,12 @@ Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
 * valueInteger = 15
 
 Instance: CarlFredericksonPHQ9A
-InstanceOf: SensitiveObservationProfile
+InstanceOf: Observation
 Usage: #example
 Title: "Observation - PHQ-9 Depression Screening"
 Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
-
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * status = #final
 
 * identifier[0].system = "http://example.com/demo/observation-identifier"

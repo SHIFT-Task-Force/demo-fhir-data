@@ -1,11 +1,13 @@
 // Buprenorphine Naltrexone Medication
 Instance: CarlFredericksonBuprenorphineNaltrexone
-InstanceOf: SensitiveMedicationRequestProfile
+InstanceOf: MedicationRequest
 Usage: #example
 Title: "Medication - Buprenorphine/Naltrexone"
 Description: "Buprenorphine/Naltrexone for treatment of OUD
 Buprenorphine/naltrexone 16mg/4mg (2x 8mg/2mg SL tablets) SL daily"
-
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
 * identifier[0].system = "http://example.com/demo/medication-identifier"
 * identifier[0].value = "BUPR-NAL-78901"
 * subject = Reference(CarlFrederickson)

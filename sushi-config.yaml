@@ -5,7 +5,7 @@
 id: SHIFT-Task-Force.privacy.examples
 canonical: http://SHIFT-Task-Force.github.io/demo-fhir-data
 name: ShiftPrivacyExamples
-status: draft
+status: active
 version: 0.0.1
 fhirVersion: 4.0.1
 copyrightYear: 2025+
@@ -45,6 +45,7 @@ menu:
   Use-Cases:
     Adolescent: adolescent.html
     Behavioral-Health: behavioral.html
+  SLS: sls.html
   Artifacts: artifacts.html
   About: download.html
 
@@ -98,21 +99,12 @@ groups:
   SecurityLabelingServices:
     description: "Resources related to Security Labeling Services"
     resources:
-      - ValueSet/ExampleSensitiveConditionCodes
-      - ValueSet/ExampleSubstanceUseConditionCodes
-      - ValueSet/ExampleBehavioralHealthConditionCodes
-      - ValueSet/ExampleSexualityAndReproductiveHealthConditionCodes
-      - ValueSet/ExampleBehavioralHealthCodes 
-      - ValueSet/ExampleSexualityAndReproductiveHealthCodes
-      - ValueSet/ExampleSubstanceUseCodes
       - ValueSet/ExampleSensitiveCodes 
-      - ValueSet/ExampleSensitiveMedicationCodes
-      - ValueSet/ExampleSubstanceUseMedicationCodes
-      - ValueSet/ExampleBehavioralHealthMedicationCodes
-      - ValueSet/ExampleSexualityAndReproductiveHealthMedicationCodes
-      - ValueSet/ExampleSensitiveObservationCodes
-      - ValueSet/ExampleSubstanceUseObservationCodes
-      - ValueSet/ExampleBehavioralHealthObservationCodes
-      - ValueSet/ExampleSexualityAndReproductiveHealthObservationCodes
+      - ValueSet/ExampleSexualityAndReproductiveHealthCodes
+      - ValueSet/ExampleBehavioralHealthCodes 
+      - ValueSet/ExampleSubstanceUseCodes
+      - ValueSet/ExampleOpioidCodes
+      - ValueSet/ExampleHallucinogenCodes
+      - CodeSystem/LocalSensitiveKindCodes
       
 

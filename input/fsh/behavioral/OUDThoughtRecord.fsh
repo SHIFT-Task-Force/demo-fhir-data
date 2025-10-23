@@ -1,10 +1,11 @@
 // OUD Thought Record
 Instance: CarlFredericksonOUDThoughtRecord
-InstanceOf: SensitiveObservationProfile
+InstanceOf: Observation
 Usage: #example
 Title: "Observation - OUD Thought Record"
 Description: "Substance use cognitive behavioral therapy thought record for Carl Frederickson"
-
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * status = #final
 
 * identifier[0].system = "http://example.com/demo/observation-identifier"
