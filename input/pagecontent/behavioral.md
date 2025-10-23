@@ -10,7 +10,7 @@
    - HIE for care management
    - HIE (de-identified) for metric analysis
    - 3rd party mobile app (non-HIPAA C/E)
-   -Ancillary services (Pharmacy)
+   - Ancillary services (Pharmacy)
    - Payer
 
 **OUT of scope:**
@@ -26,7 +26,7 @@ Carl gets most of his care at Shift Medical Center (SMC).
 
 His SMC PCP, Dr. Hibbert, treats his hypertension.  SMC's Psychiatrist, Dr. Funke, provides him with medication for his moderate depressive disorder.  Carl is in therapy with a therapist at SMC, Lucy van Pelt, who agrees with the diagnosis of moderate depressive disorder, and has also diagnosed Carl with obsessive compulsive personality disorder.  Carl does not agree with the OCPD diagnosis.  Dr. Hibbert, Dr. Funke, and Lucy van Pelt, all document in their records that Carl has a history of OUD and that he is receiving treatment for this elsewhere.
 
-Carl receives medicaton-assisted treatment for his OUD in the form of buprenorphine from Dr. White at SMC's 42-CFR Part II clinic. 
+Carl receives medication-assisted treatment for his OUD in the form of buprenorphine from Dr. White at SMC's 42-CFR Part II clinic. 
 
 Carl has all his medications from SMC sent to his local pharmacy, Best Little Pharmacy (BLP).
 
@@ -62,7 +62,7 @@ He wishes to share his information with his providers/entities as follows:
 | **RADS Radiologist (Dr. Banner):**          | deny (2) | deny (2) | deny (2)       | deny (2)             | deny (2)         |
 | **ACO Care Manager (Ann Perkins):**         | permit   | permit   | deny           | permit (1)           | deny             |
 | **ACO De-Identified Metrics:**              | permit   | permit   | deny           | permit               | deny             |
-| **Mapple (incoming from health entities):** | deny     | deny     | deny           | deny                 | deny             |
+| **Mapple (PGHD app):**                      | deny     | deny     | deny           | deny                 | deny             |
 | **Payers (Medicare and Green, Inc.):**      | permit   | permit   | deny           | permit (1)           | permit (1)       |
 | **Portal Proxy (Ellie):**                   | permit   | deny     | deny           | deny                 | deny             |
 {: .grid}
