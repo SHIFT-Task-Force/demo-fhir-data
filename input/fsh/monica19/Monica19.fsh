@@ -4,7 +4,8 @@ Title: "Patient Monica Rambeau, age 19"
 Description: "Patient demographics for Monica Rambeau"
 * name[+].use = #official
 * name[=].family = "Rambeau"
-* name[=].given[0] = "Monica"
+* name[=].given[+] = "Monica"
+* name[=].given[+] = "19"
 * name[+].use = #nickname
 * name[=].given[0] = "Mo"
 * birthDate = "2006-02-24"
