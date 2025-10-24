@@ -34,8 +34,31 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 
 #dependencies:
 #  hl7.fhir.us.core: 4.0.0
-#  hl7.fhir.us.core: 5.0.1
+#  hl7.fhir.us.core: current
 #  ihe.iti.pcf: 1.1.0
+#  hl7.xprod.uv.gender-hamony: current
+
+# ╭────────────────────────────────────────────pages───────────────────────────────────────────────╮
+# │  The pages property corresponds to IG.definition.page.                                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+pages:
+  index.md:
+    title: "SHIFT IG Home"
+  behavioral.md:
+    title: "Behavioral Health Use Case"
+  adolescent.md:
+    title: "Adolescent Use Case"
+  monica.md:
+    title: "Monica Rambeau"
+  monica19.md:
+    title: "Monica at 19"
+  monica16.md:
+    title: "Monica at 16"
+  sls.md:
+    title: "Security Labeling Services (SLS)"
+  download.md:
+    title: "About and Download"
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -45,6 +68,7 @@ menu:
   Use-Cases:
     Adolescent: adolescent.html
     Behavioral-Health: behavioral.html
+    Monica: monica.html
   SLS: sls.html
   Artifacts: artifacts.html
   About: download.html

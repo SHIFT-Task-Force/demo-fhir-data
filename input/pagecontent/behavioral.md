@@ -78,5 +78,7 @@ Dr. Sasquatch tries to place an prescription for ibuprofen 800mg every 8 hours, 
 
 When surgery is decided upon, Carl sees Dr. Aurora.  She does believe she needs to see redacted data in order to safely anesthetize him.  She obtains consent from Carl to see BH and 42 CFR SUD data (but not specifically personality d/o data); once she submits this, the hidden BH and SUD data (but not personality d/o data) is unhidden from her.  Once this data is available to Dr. Aurora, it is reconciled into the chart but tagged as sensitive to indicate it should not be re-shared without additional consent.
 
+### Data
+
 - [All of Carl's data](artifacts.html#carlfrederickson)
 - [All of Carl's team](artifacts.html#carlfredericksoncareteam)

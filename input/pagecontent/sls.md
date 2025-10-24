@@ -14,7 +14,7 @@ There is no logic in the codebase for:
 
 ```mermaid
 graph TD
-  A[DocumentReference or Bundle] --> B[Text Analysis Engine]
+  A[DocumentReference or Bundle] --> B[Code Analysis Engine]
   B --> C{Sensitive Topic Detected?}
   C -->|Yes| D[Apply meta.security Labels]
   C -->|No| E[No Labeling Needed]
