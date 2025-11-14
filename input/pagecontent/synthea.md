@@ -13,7 +13,7 @@ From that, we can grab the clinical codes that Synthea uses in those sensitive m
 
 The [synthea module Opioid Addiction](https://github.com/synthetichealth/synthea/wiki/Module-Gallery#Opioid-Addiction) is well aligned with our Behavioral Health use-case, as that also includes Opioid codes.
 
-Here is their [graphical UI for modules and creating of new modules](https://synthetichealth.github.io/module-builder/#opioid_addiction). It becomes very clear that doing a code match against codes in the data object is not sufficient.  The module creates many encounters that are not themselves problematic, but because of a pattern (of abuse) the patient becomes understood as having Opioid Addiction... So, should the non-problematic, but behavioral displaying, encounters to be somehow detected by the SLS? If so, it is not going to do it because of some clear code. I can look at the example data to see if the condition reference these encounters, which would be one way to detect this; but that brings up the point that these indirect linkages are likely to tag everything. 
+Here is their [graphical UI for modules and creating of new modules](https://synthetichealth.github.io/module-builder#opioid_addiction). It becomes very clear that doing a code match against codes in the data object is not sufficient.  The module creates many encounters that are not themselves problematic, but because of a pattern (of abuse) the patient becomes understood as having Opioid Addiction... So, should the non-problematic, but behavioral displaying, encounters to be somehow detected by the SLS? If so, it is not going to do it because of some clear code. I can look at the example data to see if the condition reference these encounters, which would be one way to detect this; but that brings up the point that these indirect linkages are likely to tag everything. 
 
 Here are the codes I find in that module that seem indicative in sushi valueSet form (I could add these to our demo github, but that does not update the SLS code.I will note that NONE of the codes used in the synthea opioid addiction use-case are in our current valueSet or SLS, none of them.
 
@@ -42,22 +42,24 @@ Note that this dataset can be easily entered into the HAPI server. The zip is fu
 I enlisted AI to tell me which modules covered sensitive data, extract out the codes they used, put those codes into module specific valueSet resources, and create valueSets for the sensitive topics. 
 Here is the list of Synthea modules, categorized by Sensitive Topic, with the hyperlink to their JSON definition, presented as a standard markdown table:
 
-| Sensitive Topic | Hyperlink to JSON Definition (on GitHub) |
+| Sensitive Topic | Hyperlink to module-builder or JSON Definition (on GitHub) |
 | :--- | :--- |
-| [Substance Abuse](ValueSet-SyntheaSubstanceAbuseVS.html) | [Opioid Addiction](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/opioid_addiction.json) |
+| [Substance Abuse](ValueSet-SyntheaSubstanceAbuseVS.html) | [Opioid Addiction](https://synthetichealth.github.io/module-builder#opioid_addiction) |
 | | [Prescribing Opioids for Chronic Pain and Treatment of OUD](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/opioid_treatment.json) |
-| [Mental Health / Behavioral Health](ValueSet-SyntheaMentalBehavioralHealthVS.html) | [Self Harm](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/self_harm.json) |
-| | [Attention Deficit Disorder](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/attention_deficit_disorder.json) |
-| | [PTSD](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/post_traumatic_stress_disorder.json) |
-| [Reproductive Health](ValueSet-SyntheaReproductiveHealthVS.html) | [Pregnancy](https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/pregnancy.json) |
-| | [Contraceptives](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/contraceptives.json) |
-| | [Sexual Activity](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/sexual_activity.json) |
-| [Sickle Cell / Genetic](ValueSet-SyntheaGeneticVS.html) | [Sickle Cell Disease](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/sickle_cell_disease.json) |
-| | [Cystic Fibrosis](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/cystic_fibrosis.json) |
+| [Mental Health / Behavioral Health](ValueSet-SyntheaMentalBehavioralHealthVS.html) | [Self Harm](https://synthetichealth.github.io/module-builder#self_harm) |
+| | [Attention Deficit Disorder](https://synthetichealth.github.io/module-builder#attention_deficit_disorder) |
+| | [Veteran PTSD](https://synthetichealth.github.io/module-builder/#veteran_ptsd) |
+| [Reproductive Health](ValueSet-SyntheaReproductiveHealthVS.html) | [Pregnancy](https://synthetichealth.github.io/module-builder#pregnancy) |
+| | [Contraceptives](https://synthetichealth.github.io/module-builder#contraceptives) |
+| | [Sexual Activity](https://synthetichealth.github.io/module-builder#sexual_activity) |
+| [Sickle Cell / Genetic](ValueSet-SyntheaGeneticVS.html) | [Sickle Cell Disease](https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/sickle_cell_disease.json) |
+| | [Cystic Fibrosis](https://synthetichealth.github.io/module-builder#cystic_fibrosis) |
 | [Cognitive Disability](ValueSet-SyntheaCognitiveVS.html) | [Alzheimer's Disease](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/alzheimers_disease.json) |
-| | [Dementia](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/dementia.json) |
-| | [Cerebral Palsy](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/cerebral_palsy.json) |
-| | [Spina Bifida](https://www.google.com/search?q=https://github.com/synthetichealth/synthea/blob/master/src/main/resources/modules/spina_bifida.json) |
+| | [Dementia](https://synthetichealth.github.io/module-builder#dementia) |
+| | [Cerebral Palsy](https://synthetichealth.github.io/module-builder#cerebral_palsy) |
+| | [Spina Bifida](https://synthetichealth.github.io/module-builder#spina_bifida) |
 {: .grid}
 
 Note that we should not accept all the codes found in a module as being sensitive to that sensitive topic. For example in the Opioid Abuse module, there are some precursor scenarios where the patient goes to the emergency room. These emergency room visits use codes to cover the stated reason to visit the emergency room. The module has them in, as it is drug seeking behavior but itself would likely not be protected by Drug Abuse protections.
+
+Note that the module-builder shows more modules than are found in Synthea. Without their json definition, the codes can't be extracted. 
