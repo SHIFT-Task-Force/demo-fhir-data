@@ -46,3 +46,7 @@ Note the local codes are similar to those defined in this IG, but without the sy
 - local#hallucinogen "hallucinogen substance use"
 - local#bh_substances "behavioural health related substances"
 - local#opiod "opiod substance use"
+
+### Synthea
+
+See [An alternative ValueSets built off of the Synthea modules](synthea.html)
