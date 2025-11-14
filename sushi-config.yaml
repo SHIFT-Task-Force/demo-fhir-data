@@ -32,6 +32,11 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   apply-publisher: 'true'
   apply-version: 'true'
 
+dependencies:
+  us.nlm.vsac: 
+    version: 0.9.0
+    uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
+
 #dependencies:
 #  hl7.fhir.us.core: 4.0.0
 #  hl7.fhir.us.core: current

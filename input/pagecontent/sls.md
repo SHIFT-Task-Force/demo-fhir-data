@@ -43,9 +43,23 @@ Note that there are [example ValueSets of sensitive codes](artifacts.html#securi
 Note that "Normal" data are those that are none of these sensitive categories, otherwise known as "Medical" data.
 
 Note the local codes are similar to those defined in this IG, but without the system specified
+
 - local#hallucinogen "hallucinogen substance use"
 - local#bh_substances "behavioural health related substances"
 - local#opiod "opiod substance use"
+
+### SAMSHA
+
+The following ValueSets are derived from the SAMSHA
+
+SAMSHA big valueset - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1142.58/expansion/Latest
+
+- [Set of codes that indicate ETH (alcohol and drug)](ValueSet-SamshaSensitiveETH.html)
+  - [Set of codes that indicate ETHUD (alcohol)](ValueSet-SamshaSensitiveETHUD.html)
+  - [Set of codes that indicate OPIOIDUD (drugs)](ValueSet-SamshaSensitiveOPIOIDUD.html)
+- [Set of codes that indicate PSY](ValueSet-SamshaSensitivePSY.html)
+- [Set of codes that indicate SDV](ValueSet-SamshaSensitiveSDV.html)
+- [Set of codes that indicate HIV](ValueSet-SamshaSensitiveHIV.html)
 
 ### Synthea
 
