@@ -48,18 +48,18 @@ Note the local codes are similar to those defined in this IG, but without the sy
 - local#bh_substances "behavioural health related substances"
 - local#opiod "opiod substance use"
 
-### SAMSHA
+### SAMHSA
 
-The following ValueSets are derived from the SAMSHA
+The following ValueSets are derived from the SAMHSA
 
-SAMSHA big valueset - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1142.58/expansion/Latest
+SAMHSA big valueset - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1142.58/expansion/Latest
 
-- [Set of codes that indicate ETH (alcohol and drug)](ValueSet-SamshaSensitiveETH.html)
-  - [Set of codes that indicate ETHUD (alcohol)](ValueSet-SamshaSensitiveETHUD.html)
-  - [Set of codes that indicate OPIOIDUD (drugs)](ValueSet-SamshaSensitiveOPIOIDUD.html)
-- [Set of codes that indicate PSY](ValueSet-SamshaSensitivePSY.html)
-- [Set of codes that indicate SDV](ValueSet-SamshaSensitiveSDV.html)
-- [Set of codes that indicate HIV](ValueSet-SamshaSensitiveHIV.html)
+- [Set of codes that indicate ETH (alcohol and drug)](ValueSet-SamhsaSensitiveETH.html)
+  - [Set of codes that indicate ETHUD (alcohol)](ValueSet-SamhsaSensitiveETHUD.html)
+  - [Set of codes that indicate OPIOIDUD (drugs)](ValueSet-SamhsaSensitiveOPIOIDUD.html)
+- [Set of codes that indicate PSY](ValueSet-SamhsaSensitivePSY.html)
+- [Set of codes that indicate SDV](ValueSet-SamhsaSensitiveSDV.html)
+- [Set of codes that indicate HIV](ValueSet-SamhsaSensitiveHIV.html)
 
 ### Synthea
 

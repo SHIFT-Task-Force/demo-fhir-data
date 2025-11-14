@@ -29,7 +29,7 @@ Identified as: local#opioid
 * http://hl7.org/fhir/sid/icd-10-cm#F11.11  "Opioid abuse, in remission"
 * http://snomed.info/sct#5602001  "Opioid abuse"
 * http://hl7.org/fhir/sid/icd-10-cm#F11.1 "Opioid abuse" //10/23/2025 - in leap-sls code for OUD
-* http://snomed.info/sct#145121000119106 "Intravenous nondependent opioid abuse (disorder)" //10/23/2025 - in leap-sls code for OUD
+* http://snomed.info/sct#145121000119106 "Intravenous nondependent opioid abuse" //10/23/2025 - in leap-sls code for OUD
 // The following codes added from Synthea opioid abuse module
 * http://snomed.info/sct#1149222004 "Overdose (disorder)"
 * http://www.nlm.nih.gov/research/umls/rxnorm#1049221 "Acetaminophen 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet"
