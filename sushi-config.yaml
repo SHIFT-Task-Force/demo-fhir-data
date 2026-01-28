@@ -34,7 +34,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 
 dependencies:
   us.nlm.vsac: 
-    version: 0.19.0  ## Must use 0.19.0 as higher versions removed the SAMHSA valueSets
+    version: 0.19.0 #0.19.0  ## Must use 0.19.0 as higher versions removed the SAMHSA valueSets
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
 
 #dependencies:
@@ -63,6 +63,8 @@ pages:
     title: "Security Labeling Services (SLS)"
   synthea.md:
     title: "Synthea Modules Used"
+  ab352.md:
+    title: "California AB352 Use Case"
   download.md:
     title: "About and Download"
 

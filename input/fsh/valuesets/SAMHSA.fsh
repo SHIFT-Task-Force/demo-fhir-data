@@ -71,7 +71,9 @@ Usage: #definition
 
 
 
-ValueSet: SamhsaSensitivePSY
+Instance: SamhsaSensitivePSY
+InstanceOf: ValueSet
+Usage: #definition
 Title: "clinical codes that indicate PSY"
 Description: """
 codes that when found in data would indicate the data is likely PSY related
@@ -89,18 +91,23 @@ PSY - psychiatry disorder information sensitivity
 """
 //*  http://loinc.org#74013-4
 
+* name = "SamhsaSensitivePSY"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitivePSY"
+* status = #active
+* experimental = false
+* compose.inactive = true
 // SAMHSA C2S Mental Health Disorders
-* ^experimental = true
-* ^status = #draft
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.32 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.33 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.34 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.35 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.36 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.32" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.33" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.34" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.35" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.36" // SNOMED-CT
 
 
 
-ValueSet: SamhsaSensitiveETH
+Instance: SamhsaSensitiveETH
+InstanceOf: ValueSet
+Usage: #definition
 Title: "clinical codes that indicate ETH"
 Description: """
 codes that when found in data would indicate the data is likely ETH related
@@ -160,64 +167,70 @@ ETH - substance abuse information sensitivity (alcohol or drug-abuse information
 * **SAMHSA Test C2S Alcohol Use Disorders**
   * ValueSet 2.16.840.1.113762.1.4.1142.65 // SNOMED-CT
 """
-* ^experimental = true
-* ^status = #draft
+
+* name = "SamhsaSensitiveETH"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveETH"
+* status = #active
+* experimental = false
+* compose.inactive = true
 // SAMHSA  C2S Alcohol Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.1 // SNOMEDCD
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.2 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.3 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.4 // ICD10CD
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.5 // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.1" // SNOMEDCD
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.2" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.3" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.4" // ICD10CD
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.5" // LOINC
 // SAMHSA C2S Amphetamine Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.11 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.6 // HCPCS
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.7 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.8 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.9 // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.11" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.6" // HCPCS
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.7" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.8" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.9" // LOINC
 // SAMHSA C2S Cannabis Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.12 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.13 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.14 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.15 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.12" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.13" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.14" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.15" // SNOMED-CT
 // SAMHSA C2S Cocaine Use Disorder
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.16 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.17 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.18 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.16" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.17" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.18" // SNOMED-CT
 // SAMHSA C2S Hallucinogens
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.19 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.20 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.21 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.22 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.19" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.20" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.21" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.22" // SNOMED-CT
 // SAMHSA C2S Inhalants
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.28 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.29 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.30 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.28" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.29" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.30" // SNOMED-CT
 // SAMHSA C2S Opioids
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.38 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.39 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.40 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.41 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.42 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.59 // CPT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.38" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.39" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.40" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.41" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.42" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.59" // CPT
 // SAMHSA C2S Other Psychoactive Substance Use Disorder
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.43 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.44 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.45 // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.43" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.44" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.45" // ICD10CM
 // SAMHSA C2S Sedative Hypnotic, or anxiolytic related disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.46 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.47 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.48 // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.46" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.47" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.48" // ICD9CM
 // SAMHSA C2S Substance use Information Sensitivity
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.55 // HCPCS
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.56 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.57 // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.55" // HCPCS
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.56" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.57" // RXNORM
 // SAMHSA Test C2S Alcohol Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.65 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.65" // SNOMED-CT
 
 
 
-ValueSet: SamhsaSensitiveETHUD
+Instance: SamhsaSensitiveETHUD
+InstanceOf: ValueSet
+Usage: #definition
 Title: "clinical codes that indicate ETHUD"
 Description: """
 codes that when found in data would indicate the data is likely ETHUD related
@@ -233,21 +246,27 @@ ETHUD - alcohol abuse information sensitivity (alcohol abuse information)
 * **SAMHSA Test C2S Alcohol Use Disorders**
   * ValueSet 2.16.840.1.113762.1.4.1142.65 // SNOMED-CT
 """
-* ^experimental = true
-* ^status = #draft
+
+* name = "SamhsaSensitiveETHUD"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveETHUD"
+* status = #active
+* experimental = false
+* compose.inactive = true
 // SAMHSA  C2S Alcohol Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.1 // SNOMEDCD
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.2 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.3 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.4 // ICD10CD
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.5 // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.1" // SNOMEDCD
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.2" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.3" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.4" // ICD10CD
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.5" // LOINC
 // SAMHSA Test C2S Alcohol Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.65 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.65" // SNOMED-CT
 
 
 
 
-ValueSet: SamhsaSensitiveOPIOIDUD
+Instance: SamhsaSensitiveOPIOIDUD
+InstanceOf: ValueSet
+Usage: #definition
 Title: "clinical codes that indicate OPIOIDUD"
 Description: """
 codes that when found in data would indicate the data is likely OPIOIDUD related
@@ -299,57 +318,63 @@ OPIOIDUD - Opioid substance abuse information sensitivity (drug-abuse informatio
   * ValueSet 2.16.840.1.113762.1.4.1142.56 // LOINC
   * ValueSet 2.16.840.1.113762.1.4.1142.57 // RXNORM
 """
-* ^experimental = true
-* ^status = #draft
+
+* name = "SamhsaSensitiveOPIOIDUD"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveOPIOIDUD"
+* status = #active
+* experimental = false
+* compose.inactive = true
 // SAMHSA C2S Amphetamine Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.11 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.6 // HCPCS
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.7 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.8 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.9 // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.11" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.6" // HCPCS
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.7" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.8" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.9" // LOINC
 // SAMHSA C2S Cannabis Use Disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.12 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.13 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.14 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.15 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.12" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.13" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.14" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.15" // SNOMED-CT
 // SAMHSA C2S Cocaine Use Disorder
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.16 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.17 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.18 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.16" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.17" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.18" // SNOMED-CT
 // SAMHSA C2S Hallucinogens
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.19 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.20 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.21 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.22 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.19" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.20" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.21" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.22" // SNOMED-CT
 // SAMHSA C2S Inhalants
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.28 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.29 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.30 // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.28" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.29" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.30" // SNOMED-CT
 // SAMHSA C2S Opioids
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.38 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.39 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.40 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.41 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.42 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.59 // CPT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.38" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.39" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.40" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.41" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.42" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.59" // CPT
 // SAMHSA C2S Other Psychoactive Substance Use Disorder
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.43 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.44 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.45 // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.43" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.44" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.45" // ICD10CM
 // SAMHSA C2S Sedative Hypnotic, or anxiolytic related disorders
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.46 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.47 // ICD10CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.48 // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.46" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.47" // ICD10CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.48" // ICD9CM
 // SAMHSA C2S Substance use Information Sensitivity
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.55 // HCPCS
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.56 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.57 // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.55" // HCPCS
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.56" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.57" // RXNORM
 
 
 
 
-ValueSet: SamhsaSensitiveSDV
+Instance: SamhsaSensitiveSDV
+InstanceOf: ValueSet
+Usage: #definition
 Title: "clinical codes that indicate SDV"
 Description: """
 SDV - Sexual assault, abuse or domestic violence
@@ -360,15 +385,21 @@ SDV - Sexual assault, abuse or domestic violence
   * ValueSet 2.16.840.1.113762.1.4.1142.49 // ICD9CM
   * ValueSet 2.16.840.1.113762.1.4.1142.50 // RXNORM
 """
-* ^experimental = true
-* ^status = #draft
+
+* name = "SamhsaSensitiveSDV"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveSDV"
+* status = #active
+* experimental = false
+* compose.inactive = true
 // SAMHSA C2S Sexuality and reproductive health information sensitivity
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.49 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.50 // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.49" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.50" // RXNORM
 
 
 
-ValueSet: SamhsaSensitiveHIV
+Instance: SamhsaSensitiveHIV
+InstanceOf: ValueSet
+Usage: #definition
 Title: "clinical codes that indicate HIV"
 Description: """
 HIV/AIDS information
@@ -383,15 +414,19 @@ HIV/AIDS information
 * **SAMHSA Test C2S HIV/AIDS Information Sensitivity**
   * ValueSet 2.16.840.1.113762.1.4.1142.67 // SNOMEDCD
 """
-* ^experimental = true
-* ^status = #draft
+
+* name = "SamhsaSensitiveHIV"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveHIV"
+* status = #active
+* experimental = false
+* compose.inactive = true
 // SAMHSA C2S HIV/AIDS Information
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.23 // HCPCS
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.24 // ICD9CM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.25 // LOINC
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.26 // RXNORM
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.27 // SNOMED-CT
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.60 // CPT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.23" // HCPCS
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.24" // ICD9CM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.25" // LOINC
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.26" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.27" // SNOMED-CT
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.60" // CPT
 // SAMHSA Test C2S HIV/AIDS Information Sensitivity
-* codes from valueset http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.67 // SNOMEDCD
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.67" // SNOMEDCD
 

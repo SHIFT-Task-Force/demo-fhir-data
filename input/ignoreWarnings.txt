@@ -20,4 +20,22 @@ WARNING: Observation/Monica19sexualOrientation: Observation: Best Practice Recom
 
 # SLS needs to trigger on historic data, not just future data
 INACTIVE_CONCEPT_FOUND
-INACTIVE_DISPLAY_FOUND
+
+# some example urls that are not expected to be real
+WARNING: Consent/Consent-AB352-Example-AllowAll: Consent.policy[0].authority: No definition could be found for URL value 'https://example-hospital.org'
+WARNING: Consent/Consent-AB352-Example-AllowAll: Consent.policy[0].uri: No definition could be found for URL value 
+
+# sometimes the terminology server timesout, usually on these
+ERROR: ValueSet/ExampleBehavioralHealthCodes: ValueSet.compose.include[5].concept[0]: The code 'F33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10-cm (java.net.SocketTimeoutException: timeout)
+INFORMATION: ValueSet/ExampleBehavioralHealthCodes: ValueSet.compose.include[5].concept[0]: java.net.SocketTimeoutException: timeout
+ERROR: ValueSet/ExampleHallucinogenCodes: ValueSet.compose.include[0].concept[0]: The code 'F16.20' is not valid in the system http://hl7.org/fhir/sid/icd-10-cm (java.net.SocketTimeoutException: timeout)
+INFORMATION: ValueSet/ExampleHallucinogenCodes: ValueSet.compose.include[0].concept[0]: java.net.SocketTimeoutException: timeout
+ERROR: ValueSet/vs-abortion-topics-healthnet: ValueSet.compose.include[0].concept[0]: The code 'O00.00' is not valid in the system http://hl7.org/fhir/sid/icd-10-cm (java.net.SocketTimeoutException: timeout)
+INFORMATION: ValueSet/vs-abortion-topics-healthnet: ValueSet.compose.include[0].concept[0]: java.net.SocketTimeoutException: timeout
+ERROR: ValueSet/vs-contraception-ai: ValueSet.compose.include[2].concept[0]: The code 'Z30.011' is not valid in the system http://hl7.org/fhir/sid/icd-10-cm (java.net.SocketTimeoutException: timeout)
+INFORMATION: ValueSet/vs-contraception-ai: ValueSet.compose.include[2].concept[0]: java.net.SocketTimeoutException: timeout
+
+# unfortunately these valueSets are too big
+INFORMATION: ValueSet.where(id = 'SamhsaSensitiveETH'): The value set expansion is too large, and only a subset has been displayed
+INFORMATION: ValueSet.where(id = 'SamhsaSensitiveOPIOIDUD'): The value set expansion is too large, and only a subset has been displayed
+INFORMATION: ValueSet.where(id = 'SamhsaSensitivePSY'): The value set expansion is too large, and only a subset has been displayed
