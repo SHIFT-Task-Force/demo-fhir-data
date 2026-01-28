@@ -23,7 +23,7 @@ INACTIVE_CONCEPT_FOUND
 
 # some example urls that are not expected to be real
 WARNING: Consent/Consent-AB352-Example-AllowAll: Consent.policy[0].authority: No definition could be found for URL value 'https://example-hospital.org'
-WARNING: Consent/Consent-AB352-Example-AllowAll: Consent.policy[0].uri: No definition could be found for URL value 
+WARNING: Consent/Consent-AB352-Example-AllowAll: Consent.policy[0].uri: No definition could be found for URL value 'urn:org:hospital:policyset:AB352'
 
 # sometimes the terminology server timesout, usually on these
 ERROR: ValueSet/ExampleBehavioralHealthCodes: ValueSet.compose.include[5].concept[0]: The code 'F33.1' is not valid in the system http://hl7.org/fhir/sid/icd-10-cm (java.net.SocketTimeoutException: timeout)
