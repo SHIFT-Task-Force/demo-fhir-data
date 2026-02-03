@@ -64,3 +64,13 @@ SAMHSA big valueset - https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.11
 ### Synthea
 
 See [An alternative ValueSets built off of the Synthea modules](synthea.html)
+
+### ValueSets for AB 352
+
+- [AB352 Segmentation Sensitivity Codes](CodeSystem-cs-health-sensitivity.html)
+- ABORTION
+  - [Abortion-Related Health Topics](ValueSet-vs-abortion-topics-healthnet.html)
+- GENDER_AFFIRMING_CARE
+  - [Gender-Affirming Care Codes](ValueSet-vs-gender-affirming-care-healthnet.html)
+- CONTRACEPTION
+  - [Contraception Topics (not HealthNet)](ValueSet-vs-contraception-ai.html)

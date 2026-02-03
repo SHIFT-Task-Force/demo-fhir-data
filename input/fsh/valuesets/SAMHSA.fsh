@@ -430,3 +430,24 @@ HIV/AIDS information
 // SAMHSA Test C2S HIV/AIDS Information Sensitivity
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.67" // SNOMEDCD
 
+
+
+Instance: SamhsaSensitiveETH-JustRx
+InstanceOf: ValueSet
+Usage: #definition
+Title: "clinical codes that indicate ETH"
+Description: """
+codes that when found in data would indicate the data is likely ETH related
+
+ETH - substance abuse information sensitivity (alcohol or drug-abuse information)
+
+These valueSets are `not maintained`
+"""
+* name = "SamhsaSensitiveETH-JustRx"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveETH-JustRx"
+* status = #active
+* experimental = false
+* compose.inactive = true
+// SAMHSA C2S Amphetamine Use Disorders
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10" // RXNORM
+* compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.57" // RXNORM
