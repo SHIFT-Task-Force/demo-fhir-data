@@ -441,7 +441,7 @@ codes that when found in data would indicate the data is likely ETH related
 
 ETH - substance abuse information sensitivity (alcohol or drug-abuse information)
 
-These valueSets are `not maintained`
+These valueSets are `not maintained`, the codes in these valueSets are inactive/retired. However they don't show in some distributions of vsac such as the HL7 package.
 """
 * name = "SamhsaSensitiveETHJustRx"
 * url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveETHJustRx"
