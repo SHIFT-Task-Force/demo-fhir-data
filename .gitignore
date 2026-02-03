@@ -18,3 +18,10 @@ input/fsh/auto-bundle.fsh
 node_modules
 .env
 .env.dev
+/package-lock.json
+/.env.example
+/.prettierrc
+/fhir-tools.sh
+/hapi-server.sh
+/package.json
+src

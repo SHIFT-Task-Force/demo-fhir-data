@@ -5,6 +5,5 @@ Privacy Consent driven access control through data sensitivity tagging.
 - [Adolescent](adolescent.html)
   - [Monica](monica.html)
 - [Behavioral](behavioral.html)
-- [California AB352](ab352.html)
 
-[Security Labeling Service Discussion](sls.html)
+For discussion of the [SLS and ValueSets](https://build.fhir.org/ig/SHIFT-Task-Force/SLS-ValueSets/branches/main/index.html)
