@@ -12,10 +12,18 @@ The IG can be built locally; if you have the [IG publisher environment](https://
 
 The json examples can be pulled from the CI build or a local build; and uploaded to a HAPI server using the `hapi-fhir-cli` `upload-dir` command.
 
-**Issues**
+## Issues
 
-- The Profiles that are in this build were not provided by me, and I really question what they are trying to do. It is unclear, so I stopped working on them
-- The Subscriptions that are in this build are not provided by me, and I really question what they are trying to do. i presume Mohammad provided guidance?
-- The ValueSets are not the original SAMSA valueSets. The ValueSets are just about sensitive data, not specific the kind of sensitivity. The SAMSA valueSets were more comprehensive and were specific to the kind of sensitivity. so it is unclear why they were removed.
 - The valueSets do have some info warnings that I left in as they are beyond my skills
 
+## more to come
+
+- update behavioral health with changes in the spreadsheet
+  - Update the list of activities as such
+  - add consent terms that have been determined out of the usecase and events
+- adolescent use-case is partially entered, but does not have any of the clinical data
+- beyond
+- valuesets source
+  - maryland shield law
+  - joint commission
+  - gravity sdoh VS

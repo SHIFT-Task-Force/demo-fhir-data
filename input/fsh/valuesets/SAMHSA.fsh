@@ -432,7 +432,7 @@ HIV/AIDS information
 
 
 
-Instance: SamhsaSensitiveETH-JustRx
+Instance: SamhsaSensitiveETHJustRx
 InstanceOf: ValueSet
 Usage: #definition
 Title: "clinical codes that indicate ETH"
@@ -443,8 +443,8 @@ ETH - substance abuse information sensitivity (alcohol or drug-abuse information
 
 These valueSets are `not maintained`
 """
-* name = "SamhsaSensitiveETH-JustRx"
-* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveETH-JustRx"
+* name = "SamhsaSensitiveETHJustRx"
+* url = "http://SHIFT-Task-Force.github.io/demo-fhir-data/ValueSet/SamhsaSensitiveETHJustRx"
 * status = #active
 * experimental = false
 * compose.inactive = true
