@@ -8,7 +8,7 @@ name: ShiftPrivacyExamples
 title: "SHIFT Privacy Examples"
 description: "A FHIR Implementation Guide containing example FHIR resources demonstrating privacy labeling using Security Labels and example ValueSets for sensitive data."
 status: active
-version: 0.0.1
+version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2025+
 releaseLabel: ci-build
