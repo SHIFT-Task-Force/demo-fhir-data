@@ -13,7 +13,7 @@ Including the these resources with these security tags:
 - Condition/CarlFredericksonOUD → R, OPIOIDUD, SUD, 42CFRPart2
 - MedicationRequest/CarlFredericksonBuprenorphineNaltrexone → R, SUD, 42CFRPart2, BH, OPIOIDUD
 - MedicationRequest/CarlFredericksonFluoxetine → R, BH
-- Observation/CarlFredericksonOUDThoughtRecord → R, BH, SUD, 42CFRPart2
+- Observation/CarlFredericksonOUDThoughtRecord → R, BH, SUD, 42CFRPart2, PSYTHPN
 """
 * type = #batch
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
