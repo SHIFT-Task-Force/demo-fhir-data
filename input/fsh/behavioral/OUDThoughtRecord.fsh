@@ -4,8 +4,10 @@ InstanceOf: Observation
 Usage: #example
 Title: "Observation - OUD Thought Record"
 Description: "Substance use cognitive behavioral therapy thought record for Carl Frederickson"
-* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
 * status = #final
 
 * identifier[0].system = "http://example.com/demo/observation-identifier"

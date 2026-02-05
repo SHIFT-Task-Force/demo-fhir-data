@@ -4,7 +4,7 @@ InstanceOf: Condition
 Usage: #example
 Title: "Condition - Opiate Use Disorder"
 Description: "Opiate Use Disorder for Carl Frederickson"
-* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD // using standard code rather than local
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2

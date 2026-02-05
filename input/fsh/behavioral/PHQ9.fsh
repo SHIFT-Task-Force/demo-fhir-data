@@ -4,7 +4,7 @@ InstanceOf: Observation
 Usage: #example
 Title: "Observation - PHQ-9 Depression Screening"
 Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
-* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * status = #final
 
@@ -28,7 +28,7 @@ InstanceOf: Observation
 Usage: #example
 Title: "Observation - PHQ-9 Depression Screening"
 Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
-* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R "Restricted"
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * status = #final
 
