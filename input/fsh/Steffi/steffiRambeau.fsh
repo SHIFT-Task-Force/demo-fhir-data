@@ -9,7 +9,7 @@ Usage: #example
 * meta.security[+] = $v3-ActCode#STD
 * meta.security[+] = $v3-ActCode#HIV
 * meta.security[+] = $v3-ActCode#GDIS
-* meta.security[+] = ExtraSensitiveCodes#SICKVIS
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * type = #batch
 * entry[0].fullUrl = "http://example.org/fhir/Patient/SteffiRambeau16"
 * entry[=].resource = SteffiRambeau16
@@ -227,7 +227,7 @@ Usage: #example
 * subject = Reference(SteffiRambeau16)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = ExtraSensitiveCodes#SICKVIS
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * recordedDate = "2025-12-18"
 
 Instance: SteffiRambeau16DandCAbortion
@@ -243,7 +243,7 @@ Usage: #example
 * subject = Reference(SteffiRambeau16)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = ExtraSensitiveCodes#SICKVIS
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * recordedDate = "2024-09-18"
 
 Instance: SteffiRambeau16DandCProcedure
@@ -253,7 +253,7 @@ Description: "This procedure record indicates that Steffi Rambeau underwent a D&
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = ExtraSensitiveCodes#SICKVIS
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #completed
 * code.coding[0] = $cpt#59840 "Induced abortion, by dilation and curettage"
 * code.coding[+] = $healthcare-common-procedure-system#S2260 "Induced abortion 17-24 weeks"
@@ -413,7 +413,7 @@ Usage: #example
 * subject = Reference(SteffiRambeau16)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = ExtraSensitiveCodes#SICKVIS
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * dosageInstruction.text = "200mg PO x1"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
@@ -434,7 +434,7 @@ Usage: #example
 * subject = Reference(SteffiRambeau16)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = ExtraSensitiveCodes#SICKVIS
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * dosageInstruction.text = "200mcg take 4 tabs buccally 24-48h after mifepristone x1"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1

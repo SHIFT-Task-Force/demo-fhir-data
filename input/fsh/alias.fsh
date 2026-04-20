@@ -12,3 +12,4 @@ Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $extraSensitiveCodes = http://SHIFT-Task-Force.github.io/SLS-ValueSets/CodeSystem/extraSensitivityCodes
