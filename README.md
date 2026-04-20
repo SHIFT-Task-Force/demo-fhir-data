@@ -15,6 +15,7 @@ The json examples can be pulled from the CI build or a local build; and uploaded
 ## Issues
 
 - narrative is not aligned with the spreadsheet.
+- unclear sensitivity tag SICKVIS.
 
 ## more to come
 
