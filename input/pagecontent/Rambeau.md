@@ -47,7 +47,7 @@
 
 ### Story
 
-[Monica at 19](monica19.html)
+[Monica Rambeau at 19](MonicaRambeau.html)
 
-[Monica at 16](monica16.html)
+[Steffi Rambeau at 16](SteffiRambeau.html)
 

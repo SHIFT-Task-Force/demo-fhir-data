@@ -1,0 +1,1092 @@
+{
+  "resourceType": "Bundle",
+  "id": "AllOfVeronicaMars",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code": "R"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "SDV"
+      }
+    ]
+  },
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/Patient/VeronicaMars",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "VeronicaMars",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Veronica Mars Female, DoB: 1994-08-07</p></div>"
+        },
+        "name": [
+          {
+            "use": "official",
+            "family": "Mars",
+            "given": [
+              "Veronica"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1994-08-07",
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "C",
+                    "display": "Emergency Contact"
+                  }
+                ],
+                "text": "Husband"
+              }
+            ],
+            "name": {
+              "family": "Cage",
+              "given": [
+                "Lucas"
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/VeronicaMars"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsAtopicDermatitis",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsAtopicDermatitis",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "L20.9",
+              "display": "Atopic dermatitis, unspecified"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24079001",
+              "display": "Atopic dermatitis (disorder)"
+            }
+          ],
+          "text": "Atopic dermatitis"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "recordedDate": "2014-04-21"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsAtopicDermatitis"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsFoodInsecurity",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsFoodInsecurity",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z59.41",
+              "display": "Food insecurity"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "733423003",
+              "display": "Food insecurity (finding)"
+            }
+          ],
+          "text": "Food insecurity"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-04"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsFoodInsecurity"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsHousingInstability",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsHousingInstability",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z59.811",
+              "display": "Housing instability, housed"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1156191002",
+              "display": "Housing instability (finding)"
+            }
+          ],
+          "text": "Housing instability"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-04"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsHousingInstability"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsFinancialInsecurity",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsFinancialInsecurity",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z59.86",
+              "display": "Financial insecurity"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1184702004",
+              "display": "Financial insecurity (finding)"
+            }
+          ],
+          "text": "Financial insecurity"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-04"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsFinancialInsecurity"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsIPV",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsIPV",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "health-concern"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "T74.11",
+              "display": "Adult physical abuse, confirmed"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "706893006",
+              "display": "Victim of intimate partner abuse (finding)"
+            }
+          ],
+          "text": "Intimate partner violence"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SDV"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-04"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsIPV"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsElevatedBP",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsElevatedBP",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "R03.0",
+              "display": "Elevated blood-pressure reading, without diagnosis of hypertension"
+            }
+          ],
+          "text": "Elevated blood pressure without diagnosis of hypertension"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "recordedDate": "2026-04-18"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsElevatedBP"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsCreatinine",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsCreatinine",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "R94.4",
+              "display": "Abnormal results of kidney function studies"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "166714005",
+              "display": "Serum creatinine outside reference range (finding)"
+            }
+          ],
+          "text": "Borderline elevated creatinine"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "recordedDate": "2026-04-18"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsCreatinine"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsProteinuria",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsProteinuria",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "R80.9",
+              "display": "Proteinuria, unspecified"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "29738008",
+              "display": "Proteinuria (finding)"
+            }
+          ],
+          "text": "Proteinuria"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "recordedDate": "2026-04-18"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsProteinuria"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsHematuria",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsHematuria",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "R31.21",
+              "display": "Asymptomatic microscopic hematuria"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271349002",
+              "display": "Urine microscopy: red blood cells present (finding)"
+            }
+          ],
+          "text": "Microscopic hematuria"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "recordedDate": "2026-04-18"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsHematuria"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsCSAHx",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsCSAHx",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z62.810",
+              "display": "Personal history of physical and sexual abuse in childhood"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1365666006",
+              "display": "History of victim of child sexual abuse (situation)"
+            }
+          ],
+          "text": "History of child sexual abuse"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SDV"
+            }
+          ]
+        },
+        "recordedDate": "2014-04-21"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsCSAHx"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/VeronicaMarsEncSMC2wk",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "VeronicaMarsEncSMC2wk",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for check up (procedure)"
+              }
+            ],
+            "text": "Well adult exam"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "period": {
+          "start": "2026-04-04",
+          "end": "2026-04-04"
+        },
+        "serviceProvider": {
+          "display": "Springfield Medical Center (SMC)"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/VeronicaMarsEncSMC2wk"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsWellAdultExam",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsWellAdultExam",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z00.00",
+              "display": "Encounter for general adult medical examination without abnormal findings"
+            }
+          ],
+          "text": "Well adult exam"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "recordedDate": "2026-04-04"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsWellAdultExam"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/VeronicaMarsEncOHSED",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "VeronicaMarsEncOHSED",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "EMER",
+          "display": "emergency"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "period": {
+          "start": "2026-04-13",
+          "end": "2026-04-13"
+        },
+        "serviceProvider": {
+          "display": "Other Health System (OHS) ED"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/VeronicaMarsEncOHSED"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsIPVOHSEnc",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsIPVOHSEnc",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "T74.11XA",
+              "display": "Adult physical abuse, confirmed, initial encounter"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "706893006",
+              "display": "Victim of intimate partner abuse (finding)"
+            }
+          ],
+          "text": "Intimate partner violence (OHS ED)"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SDV"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-13"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsIPVOHSEnc"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Encounter/VeronicaMarsEncSMCToday",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "VeronicaMarsEncSMCToday",
+        "status": "in-progress",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "period": {
+          "start": "2026-04-18"
+        },
+        "serviceProvider": {
+          "display": "Springfield Medical Center (SMC)"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/VeronicaMarsEncSMCToday"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/VeronicaMarsIPVSMCToday",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "VeronicaMarsIPVSMCToday",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "T74.11XS",
+              "display": "Adult physical abuse, confirmed, sequela"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "706893006",
+              "display": "Victim of intimate partner abuse (finding)"
+            }
+          ],
+          "text": "Intimate partner violence (SMC today)"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SDV"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-18"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/VeronicaMarsIPVSMCToday"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/VeronicaMarsEmploymentStatus",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "VeronicaMarsEmploymentStatus",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            }
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "social-history",
+                "display": "Social History"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z56.0",
+              "display": "Unemployment, unspecified"
+            },
+            {
+              "system": "http://loinc.org",
+              "code": "67875-5",
+              "display": "Employment status"
+            }
+          ],
+          "text": "Employment status"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "effectiveDateTime": "2026-04-04",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "7348004",
+              "display": "Unemployed (finding)"
+            }
+          ],
+          "text": "Unemployed"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/VeronicaMarsEmploymentStatus"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/VeronicaMarsBMP",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "VeronicaMarsBMP",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "51990-0",
+              "display": "Basic metabolic 2000 panel - Serum or Plasma"
+            }
+          ],
+          "text": "Basic metabolic panel"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "effectiveDateTime": "2026-04-18",
+        "encounter": {
+          "reference": "Encounter/VeronicaMarsEncSMCToday"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/VeronicaMarsBMP"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/VeronicaMarsUA",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "VeronicaMarsUA",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "24356-8",
+              "display": "Urinalysis complete panel - Urine"
+            }
+          ],
+          "text": "Urinalysis"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "effectiveDateTime": "2026-04-18",
+        "encounter": {
+          "reference": "Encounter/VeronicaMarsEncSMCToday"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/VeronicaMarsUA"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/VeronicaMarsHydrocortisone",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "VeronicaMarsHydrocortisone",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "203105",
+              "display": "hydrocortisone 10 MG/ML Topical Cream"
+            }
+          ],
+          "text": "Hydrocortisone 1% ointment"
+        },
+        "subject": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "authoredOn": "2014-04-21",
+        "dosageInstruction": [
+          {
+            "text": "Apply topically as needed",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "6064005",
+                  "display": "Topical route"
+                }
+              ]
+            },
+            "asNeededBoolean": true
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/VeronicaMarsHydrocortisone"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/RelatedPerson/LucasCage",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "LucasCage",
+        "patient": {
+          "reference": "Patient/VeronicaMars"
+        },
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "HUSB",
+                "display": "husband"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "family": "Cage",
+            "given": [
+              "Lucas"
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RelatedPerson/LucasCage"
+      }
+    }
+  ]
+}

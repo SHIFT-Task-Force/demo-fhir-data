@@ -50,12 +50,12 @@ pages:
     title: "Behavioral Health Use Case"
   adolescent.md:
     title: "Adolescent Use Case"
-  monica.md:
-    title: "Monica Rambeau"
-  monica19.md:
-    title: "Monica at 19"
-  monica16.md:
-    title: "Monica at 16"
+  Rambeau.md:
+    title: "Background on Rambeau Sisters"
+  MonicaRambeau.md:
+    title: "Monica Rambeau at 19"
+  SteffiRambeau.md:
+    title: "Steffi Rambeau at 16"
   download.md:
     title: "About and Download"
 
@@ -68,7 +68,7 @@ menu:
   Use-Cases:
     Adolescent: adolescent.html
     Behavioral-Health: behavioral.html
-    Monica: monica.html
+    Rambeau Sisters: Rambeau.html
   Artifacts: artifacts.html
   About: download.html
 

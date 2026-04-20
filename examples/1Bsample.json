@@ -1,0 +1,1503 @@
+{
+  "resourceType": "Bundle",
+  "id": "AllOfMonicaRambeau",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code": "R"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "SEX"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "STD"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "HIV"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "GDIS"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "SICKVIS"
+      }
+    ]
+  },
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/Patient/MonicaRambeau",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "MonicaRambeau",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Monica \"Mo\" Rambeau Female, DoB: 2006-08-08</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33791000087105",
+                  "display": "Identifies as nonbinary gender"
+                }
+              ],
+              "text": "Nonbinary/Genderfluid"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/individual-pronouns",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA29518-0",
+                  "display": "she/her/her/hers/herself"
+                },
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA29520-6",
+                  "display": "they/them/their/theirs/themselves"
+                }
+              ]
+            }
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Rambeau",
+            "given": [
+              "Monica"
+            ]
+          },
+          {
+            "use": "usual",
+            "given": [
+              "Mo"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2006-08-08",
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "C",
+                    "display": "Emergency Contact"
+                  }
+                ],
+                "text": "Mother (MA Records)"
+              }
+            ],
+            "name": {
+              "family": "Rambeau",
+              "given": [
+                "Maria"
+              ]
+            }
+          },
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "code": "C",
+                    "display": "Emergency Contact"
+                  }
+                ],
+                "text": "Father (FL Records)"
+              }
+            ],
+            "name": {
+              "family": "Rambeau",
+              "given": [
+                "Frank"
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/MonicaRambeau"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/MonicaRambeauSexualOrientation",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "MonicaRambeauSexualOrientation",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "76690-7",
+              "display": "Sexual orientation"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42035005",
+              "display": "Bisexual (finding)"
+            }
+          ],
+          "text": "Bisexual"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/MonicaRambeauSexualOrientation"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/MonicaRambeauChronicConstipation",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MonicaRambeauChronicConstipation",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "K59.04",
+              "display": "Chronic constipation"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "236069009",
+              "display": "Chronic constipation (disorder)"
+            }
+          ],
+          "text": "Chronic constipation"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/MonicaRambeauChronicConstipation"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/MonicaRambeauAsthma",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MonicaRambeauAsthma",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J45.40",
+              "display": "Moderate persistent asthma"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "427295004",
+              "display": "Moderate persistent asthma (disorder)"
+            }
+          ],
+          "text": "Moderate persistent asthma"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/MonicaRambeauAsthma"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/MonicaRambeauIrregularPeriods",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MonicaRambeauIrregularPeriods",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "N92.6",
+              "display": "Irregular menstruation, unspecified"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "80182007",
+              "display": "Irregular periods (finding)"
+            }
+          ],
+          "text": "Irregular periods"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/MonicaRambeauIrregularPeriods"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/MonicaRambeauChlamydia",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MonicaRambeauChlamydia",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "A56.2",
+              "display": "Chlamydial infection of genitourinary tract, unspecified"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "428015005",
+              "display": "Chlamydia trachomatis infection of genital structure (disorder)"
+            }
+          ],
+          "text": "Chlamydia infection of GU tract"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "STD"
+            }
+          ]
+        },
+        "recordedDate": "2026-04-07"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/MonicaRambeauChlamydia"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/MonicaRambeauMedicalAbortion",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MonicaRambeauMedicalAbortion",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z33.2",
+              "display": "Encounter for elective termination of pregnancy"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "18391007",
+              "display": "Elective abortion (disorder)"
+            }
+          ],
+          "text": "Medical Abortion age 19: Encounter for elective termination of pregnancy"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "recordedDate": "2025-12-08"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/MonicaRambeauMedicalAbortion"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Condition/MonicaRambeauDandCAbortion",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "MonicaRambeauDandCAbortion",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "resolved"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z33.2",
+              "display": "Encounter for elective termination of pregnancy"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "18391007",
+              "display": "Elective abortion (disorder)"
+            }
+          ],
+          "text": "D&C age 18: Encounter for elective termination of pregnancy"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "recordedDate": "2024-09-08"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/MonicaRambeauDandCAbortion"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Procedure/MonicaRambeauDandCProcedure",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "MonicaRambeauDandCProcedure",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "59840",
+              "display": "Induced abortion, by dilation and curettage"
+            },
+            {
+              "system": "https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system",
+              "code": "S2260",
+              "display": "Induced abortion, 17-24 weeks"
+            }
+          ],
+          "text": "Dilatation and Curettage, uterus, for therapeutic Abortion"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "performedDateTime": "2024-09-08"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/MonicaRambeauDandCProcedure"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/MonicaRambeauGCNAAT",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "MonicaRambeauGCNAAT",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "STD"
+            }
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92684-0",
+              "display": "Neisseria gonorrhoeae and Chlamydia trachomatis DNA panel - Urine by NAA with probe detection"
+            }
+          ],
+          "text": "Gonorrhea/chlamydia urine NAAT panel"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "effectiveDateTime": "2026-04-07"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/MonicaRambeauGCNAAT"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/MonicaRambeauHIVELISA",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "MonicaRambeauHIVELISA",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "HIV"
+            }
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "80203-3",
+              "display": "HIV 1 and 2 tests - Meaningful Use set"
+            }
+          ],
+          "text": "HIV ELISA with reflex Western blot"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "effectiveDateTime": "2026-04-07"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/MonicaRambeauHIVELISA"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauMiralax",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauMiralax",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "876195",
+              "display": "polyethylene glycol 3350 17000 MG Powder for Oral Solution"
+            }
+          ],
+          "text": "Miralax 17g PO daily"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "dosageInstruction": [
+          {
+            "text": "17g PO daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 17,
+                  "unit": "g",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "g"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauMiralax"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauAlbuterol",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauAlbuterol",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2123072",
+              "display": "albuterol 0.09 MG/ACTUAT Metered Dose Inhaler"
+            }
+          ],
+          "text": "Albuterol 90 mcg/puff 2 puffs INH q4h PRN wheezing"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "dosageInstruction": [
+          {
+            "text": "2 puffs INH q4h PRN wheezing",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 4,
+                "periodUnit": "h"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 90,
+                  "unit": "ug",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "ug"
+                }
+              }
+            ],
+            "asNeededBoolean": true,
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "447694001",
+                  "display": "Respiratory tract route"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauAlbuterol"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauPulmicort",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauPulmicort",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "966524",
+              "display": "budesonide 0.18 MG/ACTUAT Dry Powder Inhaler"
+            }
+          ],
+          "text": "Pulmicort Flexhaler 180mcg 2 puffs INH BID"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "dosageInstruction": [
+          {
+            "text": "2 puffs INH BID",
+            "timing": {
+              "repeat": {
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 180,
+                  "unit": "ug",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "ug"
+                }
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "447694001",
+                  "display": "Respiratory tract route"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauPulmicort"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauLoestrin",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauLoestrin",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1358781",
+              "display": "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet"
+            }
+          ],
+          "text": "Loestrin 1/20 (norethindrone acetate 1mg / ethinyl estradiol 0.02mg) 1 tab PO daily"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 tab PO daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tbl}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauLoestrin"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauAzithromycin",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauAzithromycin",
+        "status": "completed",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "330623",
+              "display": "azithromycin 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Azithromycin 500mg 2 tabs x 1"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "STD"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text": "500mg 2 tabs x 1 dose",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d",
+                "count": 1
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1000,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauAzithromycin"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauDescovy",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauDescovy",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1747692",
+              "display": "emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet"
+            }
+          ],
+          "text": "Descovy (tenofovir alafenamide 25mg and emtricitabine 200mg) one tablet PO daily"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "HIV"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text": "one tablet PO daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "{tbl}"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauDescovy"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauMifepristone",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauMifepristone",
+        "status": "completed",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "330381",
+              "display": "mifepristone 200 MG Oral Tablet"
+            }
+          ],
+          "text": "Mifepristone 200mg PO x1"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text": "200mg PO x1",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d",
+                "count": 1
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 200,
+                  "unit": "mg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauMifepristone"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/MedicationRequest/MonicaRambeauMisoprostol",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MonicaRambeauMisoprostol",
+        "status": "completed",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "317128",
+              "display": "misoprostol 0.2 MG Oral Tablet"
+            }
+          ],
+          "text": "Misoprostol 200mcg take 4 tabs BUC 24-48h after mifepristone x1"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "text": "200mcg take 4 tabs buccally 24-48h after mifepristone x1",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d",
+                "count": 1
+              }
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 800,
+                  "unit": "ug",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "ug"
+                }
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "54471007",
+                  "display": "Buccal route"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/MonicaRambeauMisoprostol"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/MonicaRambeauFirstTrimesterUS",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "MonicaRambeauFirstTrimesterUS",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "RAD",
+                "display": "Radiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "76801",
+              "display": "Ultrasound, pregnant uterus, real time with image documentation, fetal and maternal evaluation, first trimester"
+            }
+          ],
+          "text": "First trimester ultrasound"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "effectiveDateTime": "2024-07-08"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/MonicaRambeauFirstTrimesterUS"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/MonicaRambeauQuadScreen",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "MonicaRambeauQuadScreen",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "GDIS"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SICKVIS"
+            }
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "code": "LAB",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "48800-7",
+              "display": "Maternal screen with fetal risk panel - Serum"
+            }
+          ],
+          "text": "Quad screen"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "effectiveDateTime": "2024-08-08"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/MonicaRambeauQuadScreen"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/MonicaRambeauOBHx",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "MonicaRambeauOBHx",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "364324000",
+              "display": "Measure of pregnancy (observable entity)"
+            }
+          ],
+          "text": "OB History G1P0010"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "valueString": "G1P0010",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "440425000",
+                  "display": "Number of births at term (observable entity)"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "440013005",
+                  "display": "Number of preterm births (observable entity)"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "252113007",
+                  "display": "Number of abortions (observable entity)"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "248991006",
+                  "display": "Number of live deliveries (observable entity)"
+                }
+              ]
+            },
+            "valueInteger": 0
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/MonicaRambeauOBHx"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/MonicaRambeauLMP",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "MonicaRambeauLMP",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "R"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "SEX"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "21840007",
+              "display": "Date of last menstrual period (observable entity)"
+            }
+          ],
+          "text": "Last Menstrual Period"
+        },
+        "subject": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "valueDateTime": "2026-03-24"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/MonicaRambeauLMP"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/RelatedPerson/MariaRambeau",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "MariaRambeau",
+        "patient": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "MTH",
+                "display": "mother"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "family": "Rambeau",
+            "given": [
+              "Maria"
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RelatedPerson/MariaRambeau"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/RelatedPerson/FrankRambeau",
+      "resource": {
+        "resourceType": "RelatedPerson",
+        "id": "FrankRambeau",
+        "patient": {
+          "reference": "Patient/MonicaRambeau"
+        },
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                "code": "FTH",
+                "display": "father"
+              }
+            ]
+          }
+        ],
+        "name": [
+          {
+            "family": "Rambeau",
+            "given": [
+              "Frank"
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "RelatedPerson/FrankRambeau"
+      }
+    }
+  ]
+}
