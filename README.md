@@ -6,7 +6,7 @@ https://build.fhir.org/ig/SHIFT-Task-Force/demo-fhir-data
 The ValueSets and Profiles for classifying data into sensitive 
 
 From the IG build all of the examples can be downloaded in json, xml, or ttl format. See the [About menu](https://build.fhir.org/ig/SHIFT-Task-Force/demo-fhir-data/download.html)
-- All of Carl Frederickson data are in one Bundle -- https://build.fhir.org/ig/SHIFT-Task-Force/demo-fhir-data/Bundle-AllOfCarlFrederickson.html 
+- Each Patient has a Bundle that contains all of the resources for that patient, and each resource is also available as an individual file.
 
 The IG can be built locally; if you have the [IG publisher environment](https://confluence.hl7.org/spaces/HAFWG/pages/204283403/Setup+FHIR+IG+Publisher+environment); by using the `_build` batch or script.
 
@@ -14,16 +14,9 @@ The json examples can be pulled from the CI build or a local build; and uploaded
 
 ## Issues
 
-- The valueSets do have some info warnings that I left in as they are beyond my skills
+- narrative is not aligned with the spreadsheet.
 
 ## more to come
 
-- update behavioral health with changes in the spreadsheet
-  - Update the list of activities as such
-  - add consent terms that have been determined out of the usecase and events
-- adolescent use-case is partially entered, but does not have any of the clinical data
-- beyond
-- valuesets source
-  - maryland shield law
-  - joint commission
-  - gravity sdoh VS
+- update narrative to align with current spreadsheet
+- extract out sensitive codes into SLS-ValueSets IG
