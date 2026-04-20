@@ -52,10 +52,12 @@ pages:
     title: "Adolescent Use Case"
   Rambeau.md:
     title: "Background on Rambeau Sisters"
-  MonicaRambeau.md:
-    title: "Monica Rambeau at 19"
   SteffiRambeau.md:
     title: "Steffi Rambeau at 16"
+  MonicaRambeau.md:
+    title: "Monica Rambeau at 19"
+  VeronicaMars.md:
+    title: "Veronica Mars"
   download.md:
     title: "About and Download"
 
@@ -69,6 +71,7 @@ menu:
     Adolescent: adolescent.html
     Behavioral-Health: behavioral.html
     Rambeau Sisters: Rambeau.html
+    Veronica Mars: VeronicaMars.html
   Artifacts: artifacts.html
   About: download.html
 
@@ -119,6 +122,93 @@ groups:
       - Observation/CarlFredericksonOUDThoughtRecord
       - RelatedPerson/EllieFrederickson
       - Bundle/AllOfCarlFrederickson
+  MonicaRambeau:
+    description: "Resources related to Monica Rambeau"
+    resources:
+      - Patient/MonicaRambeau
+      - Observation/MonicaRambeauSexualOrientation
+      - Condition/MonicaRambeauChronicConstipation
+      - Condition/MonicaRambeauAsthma
+      - Condition/MonicaRambeauIrregularPeriods
+      - Condition/MonicaRambeauChlamydia
+      - Condition/MonicaRambeauMedicalAbortion
+      - Condition/MonicaRambeauDandCAbortion
+      - Procedure/MonicaRambeauDandCProcedure
+      - DiagnosticReport/MonicaRambeauGCNAAT
+      - DiagnosticReport/MonicaRambeauHIVELISA
+      - MedicationRequest/MonicaRambeauMiralax
+      - MedicationRequest/MonicaRambeauAlbuterol
+      - MedicationRequest/MonicaRambeauPulmicort
+      - MedicationRequest/MonicaRambeauLoestrin
+      - MedicationRequest/MonicaRambeauAzithromycin
+      - MedicationRequest/MonicaRambeauDescovy
+      - MedicationRequest/MonicaRambeauMifepristone
+      - MedicationRequest/MonicaRambeauMisoprostol
+      - DiagnosticReport/MonicaRambeauFirstTrimesterUS
+      - DiagnosticReport/MonicaRambeauQuadScreen
+      - Observation/MonicaRambeauOBHx
+      - Observation/MonicaRambeauLMP
+      - RelatedPerson/MariaRambeau
+      - RelatedPerson/FrankRambeau
+      - Practitioner/MonicaRambeauDoctor
+      - Bundle/AllOfMonicaRambeau
+  SteffiRambeau:
+    description: "Resources related to Steffi Rambeau (age 16)"
+    resources:
+      - Patient/SteffiRambeau16
+      - Observation/SteffiRambeau16SexualOrientation
+      - Condition/SteffiRambeau16ChronicConstipation
+      - Condition/SteffiRambeau16Asthma
+      - Condition/SteffiRambeau16IrregularPeriods
+      - Condition/SteffiRambeau16Chlamydia
+      - Condition/SteffiRambeau16MedicalAbortion
+      - Condition/SteffiRambeau16DandCAbortion
+      - Procedure/SteffiRambeau16DandCProcedure
+      - DiagnosticReport/SteffiRambeau16GCNAAT
+      - DiagnosticReport/SteffiRambeau16HIVELISA
+      - MedicationRequest/SteffiRambeau16Miralax
+      - MedicationRequest/SteffiRambeau16Albuterol
+      - MedicationRequest/SteffiRambeau16Pulmicort
+      - MedicationRequest/SteffiRambeau16Loestrin
+      - MedicationRequest/SteffiRambeau16Azithromycin
+      - MedicationRequest/SteffiRambeau16Descovy
+      - MedicationRequest/SteffiRambeau16Mifepristone
+      - MedicationRequest/SteffiRambeau16Misoprostol
+      - DiagnosticReport/SteffiRambeau16FirstTrimesterUS
+      - DiagnosticReport/SteffiRambeau16QuadScreen
+      - Observation/SteffiRambeau16OBHx
+      - Observation/SteffiRambeau16LMP
+      - RelatedPerson/MariaRambeau16
+      - RelatedPerson/FrankRambeau16
+      - Practitioner/SteffiRambeauDoctor
+      - Bundle/AllOfSteffiRambeau16
+  VeronicaMars:
+    description: "Resources related to Veronica Mars"
+    resources:
+      - Patient/VeronicaMars
+      - Condition/VeronicaMarsAtopicDermatitis
+      - Condition/VeronicaMarsFoodInsecurity
+      - Condition/VeronicaMarsHousingInstability
+      - Condition/VeronicaMarsFinancialInsecurity
+      - Condition/VeronicaMarsIPV
+      - Condition/VeronicaMarsElevatedBP
+      - Condition/VeronicaMarsCreatinine
+      - Condition/VeronicaMarsProteinuria
+      - Condition/VeronicaMarsHematuria
+      - Condition/VeronicaMarsCSAHx
+      - Encounter/VeronicaMarsEncSMC2wk
+      - Condition/VeronicaMarsWellAdultExam
+      - Encounter/VeronicaMarsEncOHSED
+      - Condition/VeronicaMarsIPVOHSEnc
+      - Encounter/VeronicaMarsEncSMCToday
+      - Condition/VeronicaMarsIPVSMCToday
+      - Observation/VeronicaMarsEmploymentStatus
+      - DiagnosticReport/VeronicaMarsBMP
+      - DiagnosticReport/VeronicaMarsUA
+      - MedicationRequest/VeronicaMarsHydrocortisone
+      - RelatedPerson/LucasCage
+      - Practitioner/VeronicaMarsDoctor
+      - Bundle/AllOfVeronicaMars
 
-      
+
 

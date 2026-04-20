@@ -118,6 +118,11 @@ Usage: #example
 * entry[=].resource = FrankRambeau
 * entry[=].request.method = #PUT
 * entry[=].request.url = "RelatedPerson/FrankRambeau"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauDoctor"
+* entry[=].resource = MonicaRambeauDoctor
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/MonicaRambeauDoctor"
+
 
 Instance: MonicaRambeau
 InstanceOf: Patient
@@ -497,7 +502,7 @@ Usage: #example
 * component[=].valueInteger = 1
 * component[+].code = $sct#248991006 "Number of live deliveries (observable entity)"
 * component[=].valueInteger = 0
-* performer = Reference(MonicaDoctor)
+* performer = Reference(MonicaRambeauDoctor)
 * effectiveDateTime = "2026-03-24"
 
 Instance: MonicaRambeauLMP
@@ -512,7 +517,7 @@ Usage: #example
 * code.text = "Last Menstrual Period"
 * subject = Reference(MonicaRambeau)
 * valueDateTime = "2026-03-24"
-* performer = Reference(MonicaDoctor)
+* performer = Reference(MonicaRambeauDoctor)
 * effectiveDateTime = "2026-03-24"
 
 Instance: MariaRambeau
@@ -535,7 +540,7 @@ Usage: #example
 * name.family = "Rambeau"
 * name.given = "Frank"
 
-Instance: MonicaDoctor
+Instance: MonicaRambeauDoctor
 InstanceOf: Practitioner
 Title: "Monica Rambeau's Doctor"
 Description: "This practitioner is Monica Rambeau's primary care doctor."
