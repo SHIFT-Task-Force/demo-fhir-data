@@ -93,5 +93,5 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 
 ### Data
 
-- [Patient](Patient-Monica16.html)
-- [Observation sexual orientation](Observation-Monica16sexualOrientation.html)
+- [Steffi Rambeau at 16](Patient-SteffiRambeau16.html)
+- [Steffi Rambeau data bundle](Bundle-AllOfSteffiRambeau16.html)
