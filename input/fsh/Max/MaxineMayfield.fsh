@@ -533,7 +533,6 @@ Description: "This observation records a positive point-of-care urine hCG pregna
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
 * code = $loinc#2106-3 "Choriogonadotropin [Presence] in Urine"
