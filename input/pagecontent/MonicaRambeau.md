@@ -82,6 +82,7 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 5. Deny as the activity was paid for out of pocket.
 6. May access with OCR attestation
 7. upstream recipient would not have access
+8. Note that $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
 
 ### Data
 
