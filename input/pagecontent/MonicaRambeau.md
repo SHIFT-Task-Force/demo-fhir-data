@@ -87,3 +87,47 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 
 - [Patient](Patient-MonicaRambeau.html)
 - [Monica's Bundle](Bundle-AllOfMonicaRambeau.html)
+
+#### Data grouped by Encounter
+
+- **No Encounter (Background / Ongoing)**
+  - [Patient — Monica Rambeau](Patient-MonicaRambeau.html)
+  - [Related Person — Maria Rambeau (mother)](RelatedPerson-MariaRambeau.html)
+  - [Related Person — Frank Rambeau (father)](RelatedPerson-FrankRambeau.html)
+  - [Condition — Chronic Constipation](Condition-MonicaRambeauChronicConstipation.html)
+  - [Condition — Moderate Persistent Asthma](Condition-MonicaRambeauAsthma.html)
+  - [Condition — Irregular Periods](Condition-MonicaRambeauIrregularPeriods.html)
+  - [AllergyIntolerance — Amoxicillin (hives)](AllergyIntolerance-MonicaRambeauAmoxicillinAllergy.html)
+  - [Observation — Sexual Orientation](Observation-MonicaRambeauSexualOrientation.html)
+  - [MedicationRequest — Miralax (polyethylene glycol)](MedicationRequest-MonicaRambeauMiralax.html)
+  - [MedicationRequest — Albuterol inhaler PRN](MedicationRequest-MonicaRambeauAlbuterol.html)
+  - [MedicationRequest — Pulmicort Flexhaler BID](MedicationRequest-MonicaRambeauPulmicort.html)
+  - [MedicationRequest — Loestrin 1.5/30 (OCP)](MedicationRequest-MonicaRambeauLoestrin.html)
+  - [MedicationRequest — Descovy (PrEP)](MedicationRequest-MonicaRambeauDescovy.html)
+
+- **2024-07-08 — Prenatal Evaluation ([MonicaRambeauEncMAPrenatalEval](Encounter-MonicaRambeauEncMAPrenatalEval.html))**
+  - [Observation — POC hCG (urine, positive)](Observation-MonicaRambeauPOChCG.html)
+  - [Observation — hCG Serum Quantitative, 85,000 IU/L](Observation-MonicaRambeauhCGSerumQuantDandC.html)
+  - [Observation — Obstetric History (G1P0010)](Observation-MonicaRambeauOBHx.html)
+  - [DiagnosticReport — First Trimester Ultrasound](DiagnosticReport-MonicaRambeauFirstTrimesterUS.html)
+
+- **2024-08-08 — (No dedicated Encounter — Quad Screen)**
+  - [DiagnosticReport — Quad Screen](DiagnosticReport-MonicaRambeauQuadScreen.html)
+
+- **2024-09-08 — D&C Procedure ([MonicaRambeauEncMADandCProcedure](Encounter-MonicaRambeauEncMADandCProcedure.html))**
+  - [Condition — D&C Abortion](Condition-MonicaRambeauDandCAbortion.html)
+  - [Procedure — D&C Abortion Procedure](Procedure-MonicaRambeauDandCProcedure.html)
+
+- **2025-12-08 — Medical Abortion ([MonicaRambeauEncMAMedicalAbortion](Encounter-MonicaRambeauEncMAMedicalAbortion.html))**
+  - [Condition — Medical Abortion](Condition-MonicaRambeauMedicalAbortion.html)
+  - [Observation — hCG Serum Quantitative, 22,000 IU/L](Observation-MonicaRambeauhCGSerumQuantMedAbort.html)
+  - [MedicationRequest — Mifepristone](MedicationRequest-MonicaRambeauMifepristone.html)
+  - [MedicationRequest — Misoprostol](MedicationRequest-MonicaRambeauMisoprostol.html)
+
+- **2026-04-07 — STI Evaluation ([MonicaRambeauEncMASTI](Encounter-MonicaRambeauEncMASTI.html))**
+  - [Condition — Chlamydia](Condition-MonicaRambeauChlamydia.html)
+  - [DiagnosticReport — GC/CT NAAT (GC negative, CT positive)](DiagnosticReport-MonicaRambeauGCNAAT.html)
+  - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MonicaRambeauHIVELISA.html)
+  - [Observation — Last Menstrual Period (2026-03-24)](Observation-MonicaRambeauLMP.html)
+  - [MedicationRequest — Azithromycin (CT treatment)](MedicationRequest-MonicaRambeauAzithromycin.html)
+

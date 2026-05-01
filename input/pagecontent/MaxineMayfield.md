@@ -97,3 +97,46 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 
 - [Maxine "Max" Mayfield at 16](Patient-MaxineMayfield16.html)
 - [Maxine Mayfield data bundle](Bundle-AllOfMaxineMayfield16.html)
+
+#### Data grouped by Encounter
+
+- **No Encounter (Background / Ongoing)**
+  - [Patient — Maxine "Max" Mayfield](Patient-MaxineMayfield16.html)
+  - [Related Person — Sue Hargrove (mother)](RelatedPerson-SueHargrove16.html)
+  - [Related Person — Sam Mayfield (father)](RelatedPerson-SamMayfield16.html)
+  - [Condition — Chronic Constipation](Condition-MaxineMayfield16ChronicConstipation.html)
+  - [Condition — Moderate Persistent Asthma](Condition-MaxineMayfield16Asthma.html)
+  - [Condition — Irregular Periods](Condition-MaxineMayfield16IrregularPeriods.html)
+  - [AllergyIntolerance — Amoxicillin (hives)](AllergyIntolerance-MaxineMayfield16AmoxicillinAllergy.html)
+  - [Observation — Sexual Orientation](Observation-MaxineMayfield16SexualOrientation.html)
+  - [MedicationRequest — Miralax (polyethylene glycol)](MedicationRequest-MaxineMayfield16Miralax.html)
+  - [MedicationRequest — Albuterol inhaler PRN](MedicationRequest-MaxineMayfield16Albuterol.html)
+  - [MedicationRequest — Pulmicort Flexhaler BID](MedicationRequest-MaxineMayfield16Pulmicort.html)
+  - [MedicationRequest — Loestrin 1.5/30 (OCP)](MedicationRequest-MaxineMayfield16Loestrin.html)
+  - [MedicationRequest — Descovy (PrEP)](MedicationRequest-MaxineMayfield16Descovy.html)
+
+- **2024-07-18 — Prenatal Evaluation ([MaxineMayfield16EncMAPrenatalEval](Encounter-MaxineMayfield16EncMAPrenatalEval.html))**
+  - [Observation — POC hCG (urine, positive)](Observation-MaxineMayfield16POChCG.html)
+  - [Observation — hCG Serum Quantitative, 85,000 IU/L](Observation-MaxineMayfield16hCGSerumQuantDandC.html)
+  - [Observation — Obstetric History (G1P0010)](Observation-MaxineMayfield16OBHx.html)
+  - [DiagnosticReport — First Trimester Ultrasound](DiagnosticReport-MaxineMayfield16FirstTrimesterUS.html)
+
+- **2024-08-18 — (No dedicated Encounter — Quad Screen)**
+  - [DiagnosticReport — Quad Screen](DiagnosticReport-MaxineMayfield16QuadScreen.html)
+
+- **2024-09-18 — D&C Procedure ([MaxineMayfield16EncMADandCProcedure](Encounter-MaxineMayfield16EncMADandCProcedure.html))**
+  - [Condition — D&C Abortion](Condition-MaxineMayfield16DandCAbortion.html)
+  - [Procedure — D&C Abortion Procedure](Procedure-MaxineMayfield16DandCProcedure.html)
+
+- **2025-12-18 — Medical Abortion ([MaxineMayfield16EncMAMedicalAbortion](Encounter-MaxineMayfield16EncMAMedicalAbortion.html))**
+  - [Condition — Medical Abortion](Condition-MaxineMayfield16MedicalAbortion.html)
+  - [Observation — hCG Serum Quantitative, 22,000 IU/L](Observation-MaxineMayfield16hCGSerumQuantMedAbort.html)
+  - [MedicationRequest — Mifepristone](MedicationRequest-MaxineMayfield16Mifepristone.html)
+  - [MedicationRequest — Misoprostol](MedicationRequest-MaxineMayfield16Misoprostol.html)
+
+- **2026-04-17 — STI Evaluation ([MaxineMayfield16EncMASTI](Encounter-MaxineMayfield16EncMASTI.html))**
+  - [Condition — Chlamydia](Condition-MaxineMayfield16Chlamydia.html)
+  - [DiagnosticReport — GC/CT NAAT (GC negative, CT positive)](DiagnosticReport-MaxineMayfield16GCNAAT.html)
+  - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MaxineMayfield16HIVELISA.html)
+  - [Observation — Last Menstrual Period](Observation-MaxineMayfield16LMP.html)
+  - [MedicationRequest — Azithromycin (CT treatment)](MedicationRequest-MaxineMayfield16Azithromycin.html)

@@ -16,10 +16,6 @@ Usage: #example
 * entry[=].resource = MonicaRambeau
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Patient/MonicaRambeau"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauSexualOrientation"
-* entry[=].resource = MonicaRambeauSexualOrientation
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MonicaRambeauSexualOrientation"
 * entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauChronicConstipation"
 * entry[=].resource = MonicaRambeauChronicConstipation
 * entry[=].request.method = #PUT
@@ -32,90 +28,6 @@ Usage: #example
 * entry[=].resource = MonicaRambeauIrregularPeriods
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Condition/MonicaRambeauIrregularPeriods"
-* entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauChlamydia"
-* entry[=].resource = MonicaRambeauChlamydia
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition/MonicaRambeauChlamydia"
-* entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauMedicalAbortion"
-* entry[=].resource = MonicaRambeauMedicalAbortion
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition/MonicaRambeauMedicalAbortion"
-* entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauDandCAbortion"
-* entry[=].resource = MonicaRambeauDandCAbortion
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition/MonicaRambeauDandCAbortion"
-* entry[+].fullUrl = "http://example.org/fhir/Procedure/MonicaRambeauDandCProcedure"
-* entry[=].resource = MonicaRambeauDandCProcedure
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Procedure/MonicaRambeauDandCProcedure"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauGCNAAT"
-* entry[=].resource = MonicaRambeauGCNAAT
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MonicaRambeauGCNAAT"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauHIVELISA"
-* entry[=].resource = MonicaRambeauHIVELISA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MonicaRambeauHIVELISA"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauMiralax"
-* entry[=].resource = MonicaRambeauMiralax
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauMiralax"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauAlbuterol"
-* entry[=].resource = MonicaRambeauAlbuterol
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauAlbuterol"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauPulmicort"
-* entry[=].resource = MonicaRambeauPulmicort
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauPulmicort"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauLoestrin"
-* entry[=].resource = MonicaRambeauLoestrin
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauLoestrin"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauAzithromycin"
-* entry[=].resource = MonicaRambeauAzithromycin
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauAzithromycin"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauDescovy"
-* entry[=].resource = MonicaRambeauDescovy
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauDescovy"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauMifepristone"
-* entry[=].resource = MonicaRambeauMifepristone
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauMifepristone"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauMisoprostol"
-* entry[=].resource = MonicaRambeauMisoprostol
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MonicaRambeauMisoprostol"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauFirstTrimesterUS"
-* entry[=].resource = MonicaRambeauFirstTrimesterUS
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MonicaRambeauFirstTrimesterUS"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauQuadScreen"
-* entry[=].resource = MonicaRambeauQuadScreen
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MonicaRambeauQuadScreen"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauOBHx"
-* entry[=].resource = MonicaRambeauOBHx
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MonicaRambeauOBHx"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauLMP"
-* entry[=].resource = MonicaRambeauLMP
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MonicaRambeauLMP"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauPOChCG"
-* entry[=].resource = MonicaRambeauPOChCG
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MonicaRambeauPOChCG"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauhCGSerumQuantDandC"
-* entry[=].resource = MonicaRambeauhCGSerumQuantDandC
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MonicaRambeauhCGSerumQuantDandC"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauhCGSerumQuantMedAbort"
-* entry[=].resource = MonicaRambeauhCGSerumQuantMedAbort
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MonicaRambeauhCGSerumQuantMedAbort"
 * entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/MonicaRambeauAmoxicillinAllergy"
 * entry[=].resource = MonicaRambeauAmoxicillinAllergy
 * entry[=].request.method = #PUT
@@ -132,6 +44,110 @@ Usage: #example
 * entry[=].resource = MonicaRambeauDoctor
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/MonicaRambeauDoctor"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MonicaRambeauEncMAPrenatalEval"
+* entry[=].resource = MonicaRambeauEncMAPrenatalEval
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MonicaRambeauEncMAPrenatalEval"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauPOChCG"
+* entry[=].resource = MonicaRambeauPOChCG
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauPOChCG"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauhCGSerumQuantDandC"
+* entry[=].resource = MonicaRambeauhCGSerumQuantDandC
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauhCGSerumQuantDandC"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauFirstTrimesterUS"
+* entry[=].resource = MonicaRambeauFirstTrimesterUS
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MonicaRambeauFirstTrimesterUS"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauQuadScreen"
+* entry[=].resource = MonicaRambeauQuadScreen
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MonicaRambeauQuadScreen"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MonicaRambeauEncMADandCProcedure"
+* entry[=].resource = MonicaRambeauEncMADandCProcedure
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MonicaRambeauEncMADandCProcedure"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauDandCAbortion"
+* entry[=].resource = MonicaRambeauDandCAbortion
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/MonicaRambeauDandCAbortion"
+* entry[+].fullUrl = "http://example.org/fhir/Procedure/MonicaRambeauDandCProcedure"
+* entry[=].resource = MonicaRambeauDandCProcedure
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Procedure/MonicaRambeauDandCProcedure"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MonicaRambeauEncMAMedicalAbortion"
+* entry[=].resource = MonicaRambeauEncMAMedicalAbortion
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MonicaRambeauEncMAMedicalAbortion"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauhCGSerumQuantMedAbort"
+* entry[=].resource = MonicaRambeauhCGSerumQuantMedAbort
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauhCGSerumQuantMedAbort"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauMedicalAbortion"
+* entry[=].resource = MonicaRambeauMedicalAbortion
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/MonicaRambeauMedicalAbortion"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauMifepristone"
+* entry[=].resource = MonicaRambeauMifepristone
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauMifepristone"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauMisoprostol"
+* entry[=].resource = MonicaRambeauMisoprostol
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauMisoprostol"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MonicaRambeauEncMASTI"
+* entry[=].resource = MonicaRambeauEncMASTI
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MonicaRambeauEncMASTI"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/MonicaRambeauChlamydia"
+* entry[=].resource = MonicaRambeauChlamydia
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/MonicaRambeauChlamydia"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauGCNAAT"
+* entry[=].resource = MonicaRambeauGCNAAT
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MonicaRambeauGCNAAT"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MonicaRambeauHIVELISA"
+* entry[=].resource = MonicaRambeauHIVELISA
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MonicaRambeauHIVELISA"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauAzithromycin"
+* entry[=].resource = MonicaRambeauAzithromycin
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauAzithromycin"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauDescovy"
+* entry[=].resource = MonicaRambeauDescovy
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauDescovy"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauLoestrin"
+* entry[=].resource = MonicaRambeauLoestrin
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauLoestrin"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauMiralax"
+* entry[=].resource = MonicaRambeauMiralax
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauMiralax"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauAlbuterol"
+* entry[=].resource = MonicaRambeauAlbuterol
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauAlbuterol"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MonicaRambeauPulmicort"
+* entry[=].resource = MonicaRambeauPulmicort
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MonicaRambeauPulmicort"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauLMP"
+* entry[=].resource = MonicaRambeauLMP
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauLMP"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauOBHx"
+* entry[=].resource = MonicaRambeauOBHx
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauOBHx"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauSexualOrientation"
+* entry[=].resource = MonicaRambeauSexualOrientation
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauSexualOrientation"
 
 
 Instance: MonicaRambeau
@@ -176,6 +192,7 @@ Usage: #example
 * status = #final
 * code = $loinc#76690-7 "Sexual orientation"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * valueCodeableConcept = $sct#42035005 "Bisexual (finding)"
 * valueCodeableConcept.text = "Bisexual"
 * performer = Reference(MonicaRambeau)
@@ -279,6 +296,7 @@ Usage: #example
 * code.coding[+] = $healthcare-common-procedure-system#S2260 "Induced abortion 17-24 weeks"
 * code.text = "Dilatation and Curettage, uterus, for therapeutic Abortion"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMADandCProcedure)
 * performedDateTime = "2024-09-08"
 
 Instance: MonicaRambeauGCNAAT
@@ -293,6 +311,7 @@ Usage: #example
 * code = $loinc#92684-0 "Chlamydia trachomatis and Neisseria gonorrhoeae and Trichomonas vaginalis DNA panel - Urine by NAA with probe detection"
 * code.text = "Gonorrhea/chlamydia urine NAAT panel"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * effectiveDateTime = "2026-04-07"
 * conclusion = "GC result negative; CT result positive."
 
@@ -308,6 +327,7 @@ Usage: #example
 * code = $loinc#80203-3 "HIV 1 & 2 Ab SerPlBld IA.rapid"
 * code.text = "HIV ELISA with reflex Western blot"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * effectiveDateTime = "2026-04-07"
 
 Instance: MonicaRambeauMiralax
@@ -320,6 +340,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#876195 "MiraLAX 17 GM Powder for Oral Solution"
 * medicationCodeableConcept.text = "Miralax 17g PO daily"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * dosageInstruction.text = "17g PO daily"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
@@ -337,6 +358,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#2123072 "albuterol 90 MCG/INHAL Metered Dose Inhaler, 200 Actuations, generic for ProAir"
 * medicationCodeableConcept.text = "Albuterol 90 mcg/puff 2 puffs INH q4h PRN wheezing"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * dosageInstruction.text = "2 puffs INH q4h PRN wheezing"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
@@ -355,6 +377,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#966524 "Pulmicort Flexhaler 0.18 MG/ACTUAT (0.16 MG/ACTUAT from the mouthpiece) Dry Powder Inhaler, 120 ACTUAT"
 * medicationCodeableConcept.text = "Pulmicort Flexhaler 180mcg 2 puffs INH BID"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * dosageInstruction.text = "2 puffs INH BID"
 * dosageInstruction.timing.repeat.frequency = 2
 * dosageInstruction.timing.repeat.period = 1
@@ -372,6 +395,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#1359031 "LOESTRIN 1.5/30 21 Day Pack"
 * medicationCodeableConcept.text = "Loestrin 1.5/30 (norethindrone acetate 1.5mg / ethinyl estradiol 0.03mg) 1 tab PO daily"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * dosageInstruction.text = "1 tab PO daily"
@@ -391,6 +415,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#330623 "azithromycin 500 MG"
 * medicationCodeableConcept.text = "Azithromycin 500mg 2 tabs x 1"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#STD
 * dosageInstruction.text = "500mg 2 tabs x 1 dose"
@@ -411,6 +436,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#1747692 "Descovy"
 * medicationCodeableConcept.text = "Descovy (tenofovir alafenamide 25mg and emtricitabine 200mg) one tablet PO daily"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#HIV
 * dosageInstruction.text = "one tablet PO daily"
@@ -430,6 +456,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#330381 "mifepristone 200 MG"
 * medicationCodeableConcept.text = "Mifepristone 200mg PO x1"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAMedicalAbortion)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * meta.security[+] = $extraSensitiveCodes#ABORTION
@@ -451,6 +478,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#317128 "misoprostol 0.2 MG Oral Tablet"
 * medicationCodeableConcept.text = "Misoprostol 200mcg take 4 tabs BUC 24-48h after mifepristone x1"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAMedicalAbortion)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * meta.security[+] = $extraSensitiveCodes#ABORTION
@@ -475,6 +503,7 @@ Usage: #example
 * code = $cpt#76801 "Ultrasound scan of pregnant uterus (less than 14 weeks), single or first fetus"
 * code.text = "First trimester ultrasound"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAPrenatalEval)
 * effectiveDateTime = "2024-07-08"
 
 Instance: MonicaRambeauQuadScreen
@@ -491,6 +520,7 @@ Usage: #example
 * code = $loinc#48800-7 "Second trimester quad maternal screen panel - Serum or Plasma"
 * code.text = "Quad screen"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAPrenatalEval)
 * effectiveDateTime = "2024-08-08"
 
 Instance: MonicaRambeauOBHx
@@ -504,6 +534,7 @@ Usage: #example
 * code = $sct#364324000 "Measure of pregnancy (observable entity)"
 * code.text = "OB History G1P0010"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * valueString = "G1P0010"
 * component[0].code = $sct#440425000 "Number of births at term (observable entity)"
 * component[=].valueInteger = 0
@@ -527,6 +558,7 @@ Usage: #example
 * code = $sct#21840007 "Date of last menstrual period (observable entity)"
 * code.text = "Last Menstrual Period"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMASTI)
 * valueDateTime = "2026-03-24"
 * performer = Reference(MonicaRambeauDoctor)
 * effectiveDateTime = "2026-03-24"
@@ -544,6 +576,7 @@ Usage: #example
 * code = $loinc#2106-3 "Choriogonadotropin [Presence] in Urine"
 * code.text = "POC hCG (urine pregnancy test)"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAPrenatalEval)
 * effectiveDateTime = "2024-07-08"
 * performer = Reference(MonicaRambeauDoctor)
 * valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
@@ -562,6 +595,7 @@ Usage: #example
 * code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
 * code.text = "hCG serum quantitative"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAPrenatalEval)
 * effectiveDateTime = "2024-07-08"
 * performer = Reference(MonicaRambeauDoctor)
 * valueQuantity = 85000 '[IU]/L' "IU/L"
@@ -579,9 +613,66 @@ Usage: #example
 * code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
 * code.text = "hCG serum quantitative"
 * subject = Reference(MonicaRambeau)
+* encounter = Reference(MonicaRambeauEncMAMedicalAbortion)
 * effectiveDateTime = "2025-11-08"
 * performer = Reference(MonicaRambeauDoctor)
 * valueQuantity = 22000 '[IU]/L' "IU/L"
+
+Instance: MonicaRambeauEncMASTI
+InstanceOf: Encounter
+Title: "Monica Rambeau's MA STI Evaluation Encounter"
+Description: "This encounter represents Monica Rambeau's STI evaluation visit in Massachusetts, where gonorrhea/chlamydia and HIV testing were performed."
+Usage: #example
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "STI evaluation visit"
+* subject = Reference(MonicaRambeau)
+* diagnosis[0].condition = Reference(MonicaRambeauChlamydia)
+* period.start = "2026-04-07"
+* period.end = "2026-04-07"
+* serviceProvider.display = "MA Community Health Center"
+
+Instance: MonicaRambeauEncMAPrenatalEval
+InstanceOf: Encounter
+Title: "Monica Rambeau's MA Prenatal Evaluation Encounter"
+Description: "This encounter represents the prenatal evaluation in Massachusetts during which pregnancy-related observations and first trimester imaging were performed."
+Usage: #example
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "Prenatal evaluation visit"
+* subject = Reference(MonicaRambeau)
+* diagnosis[0].condition = Reference(MonicaRambeauDandCAbortion)
+* period.start = "2024-07-08"
+* period.end = "2024-07-08"
+* serviceProvider.display = "MA Community Health Center"
+
+Instance: MonicaRambeauEncMADandCProcedure
+InstanceOf: Encounter
+Title: "Monica Rambeau's MA D&C Procedure Encounter"
+Description: "This encounter represents Monica Rambeau's Massachusetts visit for dilation and curettage for termination of pregnancy."
+Usage: #example
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "D&C procedure visit"
+* subject = Reference(MonicaRambeau)
+* diagnosis[0].condition = Reference(MonicaRambeauDandCAbortion)
+* period.start = "2024-09-08"
+* period.end = "2024-09-08"
+* serviceProvider.display = "MA Community Health Center"
+
+Instance: MonicaRambeauEncMAMedicalAbortion
+InstanceOf: Encounter
+Title: "Monica Rambeau's MA Medical Abortion Encounter"
+Description: "This encounter represents Monica Rambeau's Massachusetts visit for medical abortion management."
+Usage: #example
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "Medical abortion visit"
+* subject = Reference(MonicaRambeau)
+* diagnosis[0].condition = Reference(MonicaRambeauMedicalAbortion)
+* period.start = "2025-12-08"
+* period.end = "2025-12-08"
+* serviceProvider.display = "MA Community Health Center"
 
 Instance: MonicaRambeauAmoxicillinAllergy
 InstanceOf: AllergyIntolerance
