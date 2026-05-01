@@ -615,6 +615,10 @@ InstanceOf: Encounter
 Title: "Maxine Mayfield's MA STI Evaluation Encounter"
 Description: "This encounter represents Maxine Mayfield's STI evaluation visit in Massachusetts, where gonorrhea/chlamydia and HIV testing were performed."
 Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $v3-ActCode#STD
+* meta.security[+] = $v3-ActCode#HIV
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "STI evaluation visit"
@@ -629,6 +633,9 @@ InstanceOf: Encounter
 Title: "Maxine Mayfield's MA Prenatal Evaluation Encounter"
 Description: "This encounter represents the prenatal evaluation in Massachusetts during which pregnancy-related observations and first trimester imaging were performed."
 Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $v3-ActCode#GDIS
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "Prenatal evaluation visit"
@@ -643,6 +650,9 @@ InstanceOf: Encounter
 Title: "Maxine Mayfield's MA D&C Procedure Encounter"
 Description: "This encounter represents Maxine Mayfield's Massachusetts visit for dilation and curettage for termination of pregnancy."
 Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $v3-ActCode#ABORTION
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "D&C procedure visit"
@@ -657,6 +667,9 @@ InstanceOf: Encounter
 Title: "Maxine Mayfield's MA Medical Abortion Encounter"
 Description: "This encounter represents Maxine Mayfield's Massachusetts visit for medical abortion management."
 Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $v3-ActCode#ABORTION
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "Medical abortion visit"
