@@ -469,7 +469,6 @@ Description: "This diagnostic report records the results of a first trimester ul
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #final
 * category = $v2-0074#RAD "Radiology"
 * code = $cpt#76801 "Ultrasound scan of pregnant uterus (less than 14 weeks), single or first fetus"
