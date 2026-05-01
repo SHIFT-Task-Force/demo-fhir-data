@@ -531,8 +531,8 @@ Usage: #example
 
 Instance: MonicaRambeauPOChCG
 InstanceOf: Observation
-Title: "Monica Rambeau's POC hCG (Urine Pregnancy Test) — D&C Pregnancy"
-Description: "This observation records a positive point-of-care urine hCG pregnancy test performed on Monica Rambeau at her first prenatal visit for the pregnancy that ended in a D&C abortion at age 18."
+Title: "Monica Rambeau's POC hCG (Urine Pregnancy Test)"
+Description: "This observation records a positive point-of-care urine hCG pregnancy test performed on Monica Rambeau at her first prenatal visit."
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
@@ -549,7 +549,7 @@ Usage: #example
 Instance: MonicaRambeauhCGSerumQuantDandC
 InstanceOf: Observation
 Title: "Monica Rambeau's hCG Serum Quantitative — D&C Pregnancy"
-Description: "This observation records a quantitative serum hCG level obtained at Monica Rambeau's first prenatal visit for the pregnancy that ended in a D&C abortion at age 18."
+Description: "This observation records a quantitative serum hCG level obtained at Monica Rambeau's first prenatal visit."
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
@@ -564,8 +564,8 @@ Usage: #example
 
 Instance: MonicaRambeauhCGSerumQuantMedAbort
 InstanceOf: Observation
-Title: "Monica Rambeau's hCG Serum Quantitative — Medical Abortion"
-Description: "This observation records a quantitative serum hCG level obtained during the workup for Monica Rambeau's medical abortion at age 19."
+Title: "Monica Rambeau's hCG Serum Quantitative"
+Description: "This observation records a quantitative serum hCG level."
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX

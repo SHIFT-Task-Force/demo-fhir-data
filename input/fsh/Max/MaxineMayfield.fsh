@@ -529,7 +529,7 @@ Usage: #example
 Instance: MaxineMayfield16POChCG
 InstanceOf: Observation
 Title: "Maxine Mayfield's POC hCG (Urine Pregnancy Test) — D&C Pregnancy"
-Description: "This observation records a positive point-of-care urine hCG pregnancy test performed on Maxine Mayfield at her first prenatal visit for the pregnancy that ended in a D&C abortion at age 15."
+Description: "This observation records a positive point-of-care urine hCG pregnancy test performed on Maxine Mayfield at her first prenatal"
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
@@ -546,7 +546,7 @@ Usage: #example
 Instance: MaxineMayfield16hCGSerumQuantDandC
 InstanceOf: Observation
 Title: "Maxine Mayfield's hCG Serum Quantitative — D&C Pregnancy"
-Description: "This observation records a quantitative serum hCG level obtained at Maxine Mayfield's first prenatal visit for the pregnancy that ended in a D&C abortion at age 15."
+Description: "This observation records a quantitative serum hCG level obtained at Maxine Mayfield's first prenatal"
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
@@ -561,8 +561,8 @@ Usage: #example
 
 Instance: MaxineMayfield16hCGSerumQuantMedAbort
 InstanceOf: Observation
-Title: "Maxine Mayfield's hCG Serum Quantitative — Medical Abortion"
-Description: "This observation records a quantitative serum hCG level obtained during the workup for Maxine Mayfield's medical abortion at age 16."
+Title: "Maxine Mayfield's hCG Serum Quantitative"
+Description: "This observation records a quantitative serum hCG level."
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
