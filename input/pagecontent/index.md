@@ -4,7 +4,7 @@ Privacy Consent driven access control through data sensitivity tagging.
 
 - [Adolescent](adolescent.html)
   - [Rambeau Sisters](Rambeau.html)
-  - [Steffi Rambeau at 16](SteffiRambeau.html)
+  - [Maxine "Max" Mayfield at 16](MaxineMayfield.html)
   - [Monica Rambeau at 19](MonicaRambeau.html)
 - [Behavioral](behavioral.html)
 - [Veronica Mars](VeronicaMars.html)

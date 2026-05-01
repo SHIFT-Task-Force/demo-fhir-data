@@ -26,7 +26,7 @@ Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
 Instance: CarlFredericksonPHQ9A
 InstanceOf: Observation
 Usage: #example
-Title: "Observation - PHQ-9 Depression Screening"
+Title: "Observation - PHQ-9 A Depression Screening"
 Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
 * meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH

@@ -52,8 +52,8 @@ pages:
     title: "Adolescent Use Case"
   Rambeau.md:
     title: "Background on Rambeau Sisters"
-  SteffiRambeau.md:
-    title: "Steffi Rambeau at 16"
+  MaxineMayfield.md:
+    title: "Maxine Mayfield at 16"
   MonicaRambeau.md:
     title: "Monica Rambeau at 19"
   VeronicaMars.md:
@@ -148,40 +148,48 @@ groups:
       - DiagnosticReport/MonicaRambeauQuadScreen
       - Observation/MonicaRambeauOBHx
       - Observation/MonicaRambeauLMP
+      - Observation/MonicaRambeauPOChCG
+      - Observation/MonicaRambeauhCGSerumQuantDandC
+      - Observation/MonicaRambeauhCGSerumQuantMedAbort
+      - AllergyIntolerance/MonicaRambeauAmoxicillinAllergy
       - RelatedPerson/MariaRambeau
       - RelatedPerson/FrankRambeau
       - Practitioner/MonicaRambeauDoctor
       - Bundle/AllOfMonicaRambeau
-  SteffiRambeau:
-    description: "Resources related to Steffi Rambeau (age 16)"
+  MaxineMayfield:
+    description: "Resources related to Maxine Mayfield (age 16)"
     resources:
-      - Patient/SteffiRambeau16
-      - Observation/SteffiRambeau16SexualOrientation
-      - Condition/SteffiRambeau16ChronicConstipation
-      - Condition/SteffiRambeau16Asthma
-      - Condition/SteffiRambeau16IrregularPeriods
-      - Condition/SteffiRambeau16Chlamydia
-      - Condition/SteffiRambeau16MedicalAbortion
-      - Condition/SteffiRambeau16DandCAbortion
-      - Procedure/SteffiRambeau16DandCProcedure
-      - DiagnosticReport/SteffiRambeau16GCNAAT
-      - DiagnosticReport/SteffiRambeau16HIVELISA
-      - MedicationRequest/SteffiRambeau16Miralax
-      - MedicationRequest/SteffiRambeau16Albuterol
-      - MedicationRequest/SteffiRambeau16Pulmicort
-      - MedicationRequest/SteffiRambeau16Loestrin
-      - MedicationRequest/SteffiRambeau16Azithromycin
-      - MedicationRequest/SteffiRambeau16Descovy
-      - MedicationRequest/SteffiRambeau16Mifepristone
-      - MedicationRequest/SteffiRambeau16Misoprostol
-      - DiagnosticReport/SteffiRambeau16FirstTrimesterUS
-      - DiagnosticReport/SteffiRambeau16QuadScreen
-      - Observation/SteffiRambeau16OBHx
-      - Observation/SteffiRambeau16LMP
-      - RelatedPerson/MariaRambeau16
-      - RelatedPerson/FrankRambeau16
-      - Practitioner/SteffiRambeauDoctor
-      - Bundle/AllOfSteffiRambeau16
+      - Patient/MaxineMayfield16
+      - Observation/MaxineMayfield16SexualOrientation
+      - Condition/MaxineMayfield16ChronicConstipation
+      - Condition/MaxineMayfield16Asthma
+      - Condition/MaxineMayfield16IrregularPeriods
+      - Condition/MaxineMayfield16Chlamydia
+      - Condition/MaxineMayfield16MedicalAbortion
+      - Condition/MaxineMayfield16DandCAbortion
+      - Procedure/MaxineMayfield16DandCProcedure
+      - DiagnosticReport/MaxineMayfield16GCNAAT
+      - DiagnosticReport/MaxineMayfield16HIVELISA
+      - MedicationRequest/MaxineMayfield16Miralax
+      - MedicationRequest/MaxineMayfield16Albuterol
+      - MedicationRequest/MaxineMayfield16Pulmicort
+      - MedicationRequest/MaxineMayfield16Loestrin
+      - MedicationRequest/MaxineMayfield16Azithromycin
+      - MedicationRequest/MaxineMayfield16Descovy
+      - MedicationRequest/MaxineMayfield16Mifepristone
+      - MedicationRequest/MaxineMayfield16Misoprostol
+      - DiagnosticReport/MaxineMayfield16FirstTrimesterUS
+      - DiagnosticReport/MaxineMayfield16QuadScreen
+      - Observation/MaxineMayfield16OBHx
+      - Observation/MaxineMayfield16LMP
+      - Observation/MaxineMayfield16POChCG
+      - Observation/MaxineMayfield16hCGSerumQuantDandC
+      - Observation/MaxineMayfield16hCGSerumQuantMedAbort
+      - AllergyIntolerance/MaxineMayfield16AmoxicillinAllergy
+      - RelatedPerson/SueHargrove16
+      - RelatedPerson/SamMayfield16
+      - Practitioner/MaxineMayfieldDoctor
+      - Bundle/AllOfMaxineMayfield16
   VeronicaMars:
     description: "Resources related to Veronica Mars"
     resources:

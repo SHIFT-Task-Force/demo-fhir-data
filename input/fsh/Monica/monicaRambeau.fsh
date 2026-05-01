@@ -104,6 +104,22 @@ Usage: #example
 * entry[=].resource = MonicaRambeauLMP
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Observation/MonicaRambeauLMP"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauPOChCG"
+* entry[=].resource = MonicaRambeauPOChCG
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauPOChCG"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauhCGSerumQuantDandC"
+* entry[=].resource = MonicaRambeauhCGSerumQuantDandC
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauhCGSerumQuantDandC"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MonicaRambeauhCGSerumQuantMedAbort"
+* entry[=].resource = MonicaRambeauhCGSerumQuantMedAbort
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MonicaRambeauhCGSerumQuantMedAbort"
+* entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/MonicaRambeauAmoxicillinAllergy"
+* entry[=].resource = MonicaRambeauAmoxicillinAllergy
+* entry[=].request.method = #PUT
+* entry[=].request.url = "AllergyIntolerance/MonicaRambeauAmoxicillinAllergy"
 * entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/MariaRambeau"
 * entry[=].resource = MariaRambeau
 * entry[=].request.method = #PUT
@@ -278,6 +294,7 @@ Usage: #example
 * code.text = "Gonorrhea/chlamydia urine NAAT panel"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2026-04-07"
+* conclusion = "GC result negative; CT result positive."
 
 Instance: MonicaRambeauHIVELISA
 InstanceOf: DiagnosticReport
@@ -348,12 +365,12 @@ Usage: #example
 Instance: MonicaRambeauLoestrin
 InstanceOf: MedicationRequest
 Title: "Monica Rambeau's Loestrin Prescription"
-Description: "This medication request indicates that Monica Rambeau has an active prescription for Loestrin 1/20 (norethindrone acetate 1mg / ethinyl estradiol 0.02mg) 1 tab PO daily for her irregular periods and contraception."
+Description: "This medication request indicates that Monica Rambeau has an active prescription for Loestrin 1.5/30 (norethindrone acetate 1.5mg / ethinyl estradiol 0.03mg) 1 tab PO daily for her irregular periods and contraception."
 Usage: #example
 * status = #active
 * intent = #order
-* medicationCodeableConcept = $rxnorm#1358781 "Loestrin 1/20 21 Day Pack"
-* medicationCodeableConcept.text = "Loestrin 1/20 (norethindrone acetate 1mg / ethinyl estradiol 0.02mg) 1 tab PO daily"
+* medicationCodeableConcept = $rxnorm#1359031 "LOESTRIN 1.5/30 21 Day Pack"
+* medicationCodeableConcept.text = "Loestrin 1.5/30 (norethindrone acetate 1.5mg / ethinyl estradiol 0.03mg) 1 tab PO daily"
 * subject = Reference(MonicaRambeau)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
@@ -514,6 +531,75 @@ Usage: #example
 * performer = Reference(MonicaRambeauDoctor)
 * effectiveDateTime = "2026-03-24"
 
+Instance: MonicaRambeauPOChCG
+InstanceOf: Observation
+Title: "Monica Rambeau's POC hCG (Urine Pregnancy Test) — D&C Pregnancy"
+Description: "This observation records a positive point-of-care urine hCG pregnancy test performed on Monica Rambeau at her first prenatal visit for the pregnancy that ended in a D&C abortion at age 18."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $extraSensitiveCodes#ABORTION
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#2106-3 "Choriogonadotropin [Presence] in Urine"
+* code.text = "POC hCG (urine pregnancy test)"
+* subject = Reference(MonicaRambeau)
+* effectiveDateTime = "2024-07-08"
+* performer = Reference(MonicaRambeauDoctor)
+* valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
+* valueCodeableConcept.text = "Positive"
+
+Instance: MonicaRambeauhCGSerumQuantDandC
+InstanceOf: Observation
+Title: "Monica Rambeau's hCG Serum Quantitative — D&C Pregnancy"
+Description: "This observation records a quantitative serum hCG level obtained at Monica Rambeau's first prenatal visit for the pregnancy that ended in a D&C abortion at age 18."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $extraSensitiveCodes#ABORTION
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
+* code.text = "hCG serum quantitative"
+* subject = Reference(MonicaRambeau)
+* effectiveDateTime = "2024-07-08"
+* performer = Reference(MonicaRambeauDoctor)
+* valueQuantity = 85000 '[IU]/L' "IU/L"
+
+Instance: MonicaRambeauhCGSerumQuantMedAbort
+InstanceOf: Observation
+Title: "Monica Rambeau's hCG Serum Quantitative — Medical Abortion"
+Description: "This observation records a quantitative serum hCG level obtained during the workup for Monica Rambeau's medical abortion at age 19."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $extraSensitiveCodes#ABORTION
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
+* code.text = "hCG serum quantitative"
+* subject = Reference(MonicaRambeau)
+* effectiveDateTime = "2025-11-08"
+* performer = Reference(MonicaRambeauDoctor)
+* valueQuantity = 22000 '[IU]/L' "IU/L"
+
+Instance: MonicaRambeauAmoxicillinAllergy
+InstanceOf: AllergyIntolerance
+Title: "Monica Rambeau's Amoxicillin Allergy"
+Description: "This allergy record indicates that Monica Rambeau has an allergy to amoxicillin, with a reaction of hives (urticaria)."
+Usage: #example
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification#confirmed
+* type = #allergy
+* category = #medication
+* code = $rxnorm#723 "Amoxicillin"
+* code.text = "Amoxicillin"
+* patient = Reference(MonicaRambeau)
+* reaction[0].substance = $rxnorm#723 "Amoxicillin"
+* reaction[=].manifestation[0] = $sct#126485001 "Urticaria (disorder)"
+* reaction[=].manifestation[=].text = "Hives"
+* reaction[=].severity = #mild
+
 Instance: MariaRambeau
 InstanceOf: RelatedPerson
 Title: "Maria Rambeau"
@@ -539,5 +625,5 @@ InstanceOf: Practitioner
 Title: "Monica Rambeau's Doctor"
 Description: "This practitioner is Monica Rambeau's primary care doctor."
 Usage: #example
-* name.family = "Smith"
+* name.family = "Hibbert"
 * name.given = "Jane"
