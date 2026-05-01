@@ -16,8 +16,8 @@ The json examples can be pulled from the CI build or a local build; and uploaded
 
 - narrative is not aligned with the spreadsheet.
 - unclear sensitivity tag SICKVIS.
+- Note that $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
 
 ## more to come
 
-- update narrative to align with current spreadsheet
-- extract out sensitive codes into SLS-ValueSets IG
+none identified
