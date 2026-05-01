@@ -556,7 +556,6 @@ Description: "This observation records a quantitative serum hCG level obtained a
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
 * code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
@@ -573,7 +572,6 @@ Description: "This observation records a quantitative serum hCG level obtained d
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
 * code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
