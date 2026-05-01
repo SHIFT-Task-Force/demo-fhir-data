@@ -484,7 +484,6 @@ Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * meta.security[+] = $v3-ActCode#GDIS
-* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #final
 * category = $v2-0074#LAB "Laboratory"
 * code = $loinc#48800-7 "Second trimester quad maternal screen panel - Serum or Plasma"
