@@ -5,6 +5,10 @@ Given today's date of 2026-05-01, so that Monica is 19 years old.
 
 "19 y/o Monica "Mo" Rambeau.  Currently in college at MouseHouse U in Orlando.  Parents are divorced and mother (Maria) lives in Boston, Father (Frank) lives in Orlando, FL.  Monica grew up in Mom's primary custody in Boston, and is now in college near dad in Orlando, but spends most school vacations back with mom in MA. She did establish FL residence with dad for in-state tuition, and is on her Frank's employer-sponsored health insurance (It's not Easy Being Green, Inc. or "Green") under the ACA.  Monica receives her healthcare at a number of different entities: her school health center, a private PCP in FL (who has treated her asthma when she visited her dad since she was young), and MA Community Health Center when she is with her mother in MA.  Since she turned 18 years of age, she has not set up any portal proxies for any EHR.  Monica's medical history is notable for chronc constipation, for which she takes Miralax, moderate persistent asthma for which she uses a Pulmicort Flexhaler BID and albuterol PRN, and an allergy to amoxicillin (hives).  Monica is sexually active with one M boyfriend.
 
+<div>
+<img src="Picture2Monica_Rambeau_headshot.png" caption="Monica">
+</div>
+
 ### STI Module:
 
 Yesterday, she presented to the health system in MA where she is tested for gonorrhea, chlamydia, and HIV; testing is sent to a 3rd party lab.  A POC pregnancy test in the clinic was negative.  Gonorrhea and HIV are negative.  MA has a state law requiring additional consent related to HIV (which some entities interpret as any HIV testing and some entities interpret as positive HIV results only).  Chlamydia came back positive today; Azithromycin for the patient as well as Expedited Partner Therapy are provided to the patient through a Title X clinic grant supply of medications.

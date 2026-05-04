@@ -5,6 +5,10 @@ Given today's date of 2025-01-01, so that Max is 16 years old.
 
 16 y/o Maxine "Max" Mayfield.  Currently attends boarding school at MouseHouse Academy in Orlando.  Parents are divorced and mother (Sue Hargrove) lives in Boston, Father (Sam Mayfield) lives in Orlando, FL.  Max grew up in Mom's primary custody in Boston, and is now in college near dad in Orlando, but spends most school vacations back with mom in MA. She did establish FL residence with dad as MouseHouse Academy gives in-state tuition, and is on her Sam's employer-sponsored health insurance (It's not Easy Being Green, Inc. or "Green").  Sue and Sam have shared custody.  Max receives her healthcare at a number of different entities: her school health center, a private PCP in FL (who has treated her asthma when she visited her dad since she was young), and MA Community Health Center when she is with her mother in MA.  Max's medical history is notable for chronc constipation, for which she takes Miralax, moderate persistent asthma for which she uses a Pulmicort Flexhaler BID and albuterol PRN, and an allergy to amoxicillin (hives).  Max is sexually active with one M boyfriend.
 
+<div>
+<img src="Maxine_Mayfield_headshot.png" caption="Maxine">
+</div>
+
 ### EHR Portals:
 
 - MA Community Health Center EHR: mom is a proxy, dad is not.  Adolescent proxies are not shown any patient-level clinical information such as PAMI data.  In order to further prevent parents from logging in as their child, the EHR further filters out  certain reproductive health labs and imaging studies from encounter-level data.
