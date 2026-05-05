@@ -12,6 +12,7 @@ Given today's date of 2026-05-01, so that Monica is 19 years old.
 ### STI Module:
 
 Yesterday, she presented to the health system in MA where she is tested for gonorrhea, chlamydia, and HIV; testing is sent to a 3rd party lab.  A POC pregnancy test in the clinic was negative.  Gonorrhea and HIV are negative.  MA has a state law requiring additional consent related to HIV (which some entities interpret as any HIV testing and some entities interpret as positive HIV results only).  Chlamydia came back positive today; Azithromycin for the patient as well as Expedited Partner Therapy are provided to the patient through a Title X clinic grant supply of medications.
+
 Chlaymida is a reportable disease in MA and a public health worker follows up with all patients to make sure they have taken their antibiotics and that EPT has been completed.  Monica wishes to not share her data with the public health department but is told this is not optional.  Monica states that she at least wants DPH to only be given the minimum necessary information and to not have any information about her gender identity, in case they speak with her parents.
 
 #### STI HIV Option: 
@@ -26,19 +27,21 @@ OB Hx: G1P0010.
 
 #### Abortion Option 1:
 
-  Monica had a medical abortion at 9 weeks gestation in MA (mifepristone + misoprostol) earlier this year at age 19.  This abortion was part of a more comprehensive medical visit that was billed to her father's insurance; she requests that information about the abortion not be shared with the payer.
+Monica had a medical abortion at 9 weeks gestation in MA (mifepristone + misoprostol) earlier this year at age 19.  This abortion was part of a more comprehensive medical visit that was billed to her father's insurance; she requests that information about the abortion not be shared with the payer.
 
 OR
 
 #### Abortion Option 2:
 
-  Monica had a D&C abortion at 18 weeks gestation at age 18 in MA.   She wasn't sure if she wanted to keep the baby, so she had a normal 1st trimester ultrasound at 10 weeks and a normal quad screen at 14 weeks, before deciding on termination.  Monica's pregnancy services were payed for by the Healthy Start grant program; no bills were sent to her father's insurance for this.  When she decided to terminate her pregnancy, she paid for this out of pocket, and requested that no information be sent to her insurance company. 
+Monica had a D&C abortion at 18 weeks gestation at age 18 in MA.   She wasn't sure if she wanted to keep the baby, so she had a normal 1st trimester ultrasound at 10 weeks and a normal quad screen at 14 weeks, before deciding on termination.  Monica's pregnancy services were payed for by the Healthy Start grant program; no bills were sent to her father's insurance for this.  When she decided to terminate her pregnancy, she paid for this out of pocket, and requested that no information be sent to her insurance company. 
+
 For either option 1 or 2: All pregnancy and abortion care took place in MA.  Monica does not want healthcare providers in FL to know about the abortion in MA due to concern for criminalization.  Monica does not want either parent to know about her pregnancy or abortion.
 
 ### SOGI Module:
 
 Although Monica is in a committed relationship with her boyfriend and has had only male partners in the past, she considers herself bisexual, and considers her gender as nonbinary or genderfluid.  Pronouns are "she/her" or "they/them."  She only shares her SO & GI data in MA, as she is concerned about stigma at her school in FL, so does not want this information shared with them.  While she is fine being called Monica, she commonly goes by "Mo," and asks that this be added as her preferred name in both MA and FL.
-In MA, the state collects deidentified data on gender and sexual minority patients to report to a Health Equity task force.  The clinic staff advises her that this could impact the Commonwealth's ability to provide equitable care to patients such as herself, but she is adament that she does not want to share this data, even in a deidentified manner.
+
+In MA, the state collects deidentified data on gender and sexual minority patients to report to a Health Equity task force.  The clinic staff advises her that this could impact the Commonwealth's ability to provide equitable care to patients such as herself, but she is adamant that she does not want to share this data, even in a deidentified manner.
 
 ### Contraception Module:
 
@@ -50,7 +53,7 @@ Mo's doctors suggest downloading a diet/food tracker to help her manage her cons
 
 ### HIPAA 2024 Privacy Rule Module (optional - depending on state of law):
 
-The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick Riviera)'s practice due to a complaint made by another patient; in the process, they request a review of a number of patient records, including Mo's.  Under the OCR HIPAA Reproductive Health Privacy Rule, the BOM must provide an attestion to Dr. Riviera's office stating they will not use reproductive health data in the chart for impermissible purposes (e.g. criminalization) before obtaining access to the records."
+The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick Riviera)'s practice due to a complaint made by another patient; in the process, they request a review of a number of patient records, including Mo's.  Under the OCR HIPAA Reproductive Health Privacy Rule, the BOM must provide an attestation to Dr. Riviera's office stating they will not use reproductive health data in the chart for impermissible purposes (e.g. criminalization) before obtaining access to the records."
 
 ### Consent
 
@@ -87,6 +90,21 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 6. May access with OCR attestation
 7. upstream recipient would not have access
 8. Note that $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
+
+#### Organizational Policy
+
+Some of the above rules are handled by Organizatinonal policy. That is the policy that would be enforced for all patients for all Treatment use-cases. 
+
+1. All releases of sensitive data will carry with it a Refrain tag of No Redisclosure without explicit consent from the patient" -  http://terminology.hl7.org/ValueSet/v3-RefrainPolicy#NORDSCLCDS
+2. All sensitive data will be tagged with the appropriate sensitivity and confidentiality codes.
+3. Role based access control will be used to prevent unauthorized access to sensitive data by staff within the healthcare organization. For example, only certain roles (e.g., OB/GYNs, sexual health specialists) may have access to reproductive health information, and only certain roles (e.g., infectious disease specialists) may have access to HIV-related information.
+4. All required reporting to public health departments will be done with the minimum necessary information, and required interactions (e.g. OCR attestation)
+5. Tracking that treatment was paid for out-of-pocket and denying Payer access is a policy, not a consent issue.
+
+Thus a Treatment/Payment/Operations Consent needs only address the specific rules for that given unique patient and use-case that differ from the organizational policy.
+
+- [Treatment/Payment/Operations Consent for Monica](Consent-MonicaRambeauTreatmentConsent.html)
+- [Family Consent for Monica](Consent-MonicaRambeauFamilyConsent.html)
 
 ### Data
 

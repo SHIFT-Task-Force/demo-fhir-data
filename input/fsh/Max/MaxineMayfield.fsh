@@ -131,6 +131,14 @@ Usage: #example
 * entry[=].resource = MaxineMayfieldDoctor
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/MaxineMayfieldDoctor"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MaxineMayfield16FamilyConsent"
+* entry[=].resource = MaxineMayfield16FamilyConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MaxineMayfield16FamilyConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MaxineMayfield16TreatmentConsent"
+* entry[=].resource = MaxineMayfield16TreatmentConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MaxineMayfield16TreatmentConsent"
 
 Instance: MaxineMayfield16
 InstanceOf: Patient
@@ -621,3 +629,57 @@ Description: "This practitioner is Maxine Mayfield's primary care doctor."
 Usage: #example
 * name.family = "Hibbert"
 * name.given = "Jane"
+
+Instance: MaxineMayfield16FamilyConsent
+InstanceOf: Consent
+Title: "Maxine Mayfield Family Privacy Consent"
+ Description: "This consent records Maxine Mayfield's privacy preference for family-requested access. The root provision permits access when two conditions are met: the purpose of use is Family Request (FAMRQT), and the requester is one of her two named parents (Sue Hargrove or Sam Mayfield). Both conditions are required — FAMRQT names the authorized activity, and the actor references name who is authorized. A nested exception denies access to any resource carrying the Restricted (R) confidentiality code. Because the security labeling model guarantees that all sensitivity-tagged data (STI, HIV, abortion, sexual/reproductive) is also tagged R, a single R label covers all sensitive categories. This encoding uses the alternating permit/deny exception model: root permit with actor + purpose constraints, nested deny scoped by confidentiality code R."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MaxineMayfield16)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MaxineMayfield16)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/FamilyRequestPolicy"
+ // Root permit: family-requested access is allowed for non-sensitive data.
+ // Both parents are listed explicitly as actors because this Consent is scoped to
+ // these two individuals. FAMRQT names the activity that is authorized; the actors
+ // name who is authorized to perform it. PRCP (Primary Information Recipient) is
+ // used as the actor role because the parents are the intended recipients of data.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose = $v3-ActReason#FAMRQT
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(SueHargrove16)
+* provision.actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(SamMayfield16)
+* provision.securityLabel[0] = $v3-Confidentiality#N
+ // Nested deny: any resource carrying the Restricted (R) confidentiality code is
+ // excluded from family-requested access. The security labeling model guarantees
+ // that all sensitivity-tagged data (STI, HIV, abortion, sexual/reproductive) is
+ // also tagged R, so a single R label here is sufficient to cover all sensitive categories.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-Confidentiality#R
+
+Instance: MaxineMayfield16TreatmentConsent
+InstanceOf: Consent
+Title: "Maxine Mayfield TPO Consent"
+ Description: "This consent records Maxine Mayfield's agreement to disclose her health information for Treatment, Payment, and Healthcare Operations (TPO) purposes. TPO access is broadly permitted without actor restrictions at the root level. Payer-specific restrictions on sensitive data categories are handled by organizational policy rather than this Consent. This Consent is intentionally flat — provider-specific restrictions (e.g., FL PCP not receiving sensitive reproductive data) are enforced downstream via security labels on individual resources. This Consent pairs with the FAMRQT Consent (MaxineMayfield16Consent), which separately governs family-requested access."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MaxineMayfield16)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MaxineMayfield16)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/TPOPolicy"
+ // TPO access is permitted broadly at the root level. All three purposes share the
+ // same set of exceptions; there is no distinction between Treatment, Payment, and
+ // Operations at this level. Payer-specific policy restrictions on sensitive data
+ // are governed by the payer's own organizational policy, not this Consent.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#TREAT
+* provision.purpose[+] = $v3-ActReason#HPAYMT
+* provision.purpose[+] = $v3-ActReason#HOPERAT

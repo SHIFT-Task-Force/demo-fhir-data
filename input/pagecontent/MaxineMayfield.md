@@ -97,6 +97,22 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 7. Proprietary functionality prohibits data exchange
 8. upstream recipient would not have access
 
+
+#### Organizational Policy
+
+Some of the above rules are handled by Organizatinonal policy. That is the policy that would be enforced for all patients for all Treatment use-cases. 
+
+1. All releases of sensitive data will carry with it a Refrain tag of No Redisclosure without explicit consent from the patient" -  http://terminology.hl7.org/ValueSet/v3-RefrainPolicy#NORDSCLCDS
+2. All sensitive data will be tagged with the appropriate sensitivity and confidentiality codes.
+3. Role based access control will be used to prevent unauthorized access to sensitive data by staff within the healthcare organization. For example, only certain roles (e.g., OB/GYNs, sexual health specialists) may have access to reproductive health information, and only certain roles (e.g., infectious disease specialists) may have access to HIV-related information.
+4. All required reporting to public health departments will be done with the minimum necessary information, and without any information
+5. Tracking that treatment was paid for out-of-pocket and denying Payer access is a policy, not a consent issue.
+
+Thus a Treatment/Payment/Operations Consent needs only address the specific rules for that given unique patient and use-case that differ from the organizational policy.
+
+- [Treatment/Payment/Operations Consent for Max](Consent-MaxineMayfield16TreatmentConsent.html)
+- [Family Consent for Max](Consent-MaxineMayfield16FamilyConsent.html)
+
 ### Data
 
 - [Maxine "Max" Mayfield at 16](Patient-MaxineMayfield16.html)

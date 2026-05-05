@@ -48,10 +48,8 @@ pages:
     title: "SHIFT IG Home"
   behavioral.md:
     title: "Behavioral Health Use Case"
-  adolescent.md:
+  Adolescent2.md:
     title: "Adolescent Use Case"
-  Rambeau.md:
-    title: "Background on Rambeau Sisters"
   MaxineMayfield.md:
     title: "Maxine Mayfield at 16"
   MonicaRambeau.md:
@@ -68,9 +66,8 @@ pages:
 menu:
   Home: index.html
   Use-Cases:
-    Adolescent: adolescent.html
     Behavioral-Health: behavioral.html
-    Rambeau Sisters: Rambeau.html
+    Adolescent: Adolescent2.html
     Veronica Mars: VeronicaMars.html
   Artifacts: artifacts.html
   About: download.html
@@ -100,6 +97,11 @@ groups:
       - PractitionerRole/ACOCareManager-practitionerrole
       - Practitioner/ACO-Care-Manager
       - Organization/SpringfieldACO
+      - RelatedPerson/EllieFrederickson
+      - Organization/CarlFredericksonBLP
+      - Organization/CarlFredericksonMapple
+      - Organization/CarlFredericksonMedicare
+      - Organization/CarlFredericksonGreenInc
       - Bundle/AllofCarlTeam
   CarlFrederickson:
     description: "Resources related to Carl Frederickson"
@@ -120,7 +122,8 @@ groups:
       - MedicationRequest/CarlFredericksonIbuprofen
       - Observation/CarlFredericksonBloodPressure
       - Observation/CarlFredericksonOUDThoughtRecord
-      - RelatedPerson/EllieFrederickson
+      - Consent/CarlFredericksonConsent
+      - Consent/CarlFrederickson42CFRPartIIConsent
       - Bundle/AllOfCarlFrederickson
   MonicaRambeau:
     description: "Resources related to Monica Rambeau"
@@ -155,6 +158,15 @@ groups:
       - RelatedPerson/MariaRambeau
       - RelatedPerson/FrankRambeau
       - Practitioner/MonicaRambeauDoctor
+      - Organization/MonicaRambeauBLP
+      - Organization/MonicaRambeauTPL
+      - Practitioner/MonicaRambeauRiviera
+      - Practitioner/MonicaRambeauMcStuffins
+      - Organization/MonicaRambeauBBP
+      - Organization/MonicaRambeauMapple
+      - Organization/MonicaRambeauGreen
+      - Consent/MonicaRambeauFamilyConsent
+      - Consent/MonicaRambeauTreatmentConsent
       - Bundle/AllOfMonicaRambeau
   MaxineMayfield:
     description: "Resources related to Maxine Mayfield (age 16)"
@@ -189,6 +201,8 @@ groups:
       - RelatedPerson/SueHargrove16
       - RelatedPerson/SamMayfield16
       - Practitioner/MaxineMayfieldDoctor
+      - Consent/MaxineMayfield16FamilyConsent
+      - Consent/MaxineMayfield16TreatmentConsent
       - Bundle/AllOfMaxineMayfield16
   VeronicaMars:
     description: "Resources related to Veronica Mars"

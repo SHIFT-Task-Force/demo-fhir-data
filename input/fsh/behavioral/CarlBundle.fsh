@@ -85,7 +85,11 @@ Including the these resources with these security tags:
 * entry[=].fullUrl = "http://example.org/fhir/Observation/CarlFredericksonOUDThoughtRecord"
 * entry[=].request.url = "Observation/CarlFredericksonOUDThoughtRecord"
 * entry[=].request.method = #PUT
-* entry[+].resource = EllieFrederickson
-* entry[=].fullUrl = "http://example.org/fhir/RelatedPerson/EllieFrederickson"
-* entry[=].request.url = "RelatedPerson/EllieFrederickson"
+* entry[+].resource = CarlFredericksonConsent
+* entry[=].fullUrl = "http://example.org/fhir/Consent/CarlFredericksonConsent"
+* entry[=].request.url = "Consent/CarlFredericksonConsent"
+* entry[=].request.method = #PUT
+* entry[+].resource = CarlFrederickson42CFRPartIIConsent
+* entry[=].fullUrl = "http://example.org/fhir/Consent/CarlFrederickson42CFRPartIIConsent"
+* entry[=].request.url = "Consent/CarlFrederickson42CFRPartIIConsent"
 * entry[=].request.method = #PUT

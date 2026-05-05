@@ -132,6 +132,42 @@ Usage: #example
 * entry[=].resource = MonicaRambeauDoctor
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/MonicaRambeauDoctor"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauBLP"
+* entry[=].resource = MonicaRambeauBLP
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/MonicaRambeauBLP"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauTPL"
+* entry[=].resource = MonicaRambeauTPL
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/MonicaRambeauTPL"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauRiviera"
+* entry[=].resource = MonicaRambeauRiviera
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/MonicaRambeauRiviera"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauMcStuffins"
+* entry[=].resource = MonicaRambeauMcStuffins
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/MonicaRambeauMcStuffins"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauBBP"
+* entry[=].resource = MonicaRambeauBBP
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/MonicaRambeauBBP"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauMapple"
+* entry[=].resource = MonicaRambeauMapple
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/MonicaRambeauMapple"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauGreen"
+* entry[=].resource = MonicaRambeauGreen
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/MonicaRambeauGreen"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauFamilyConsent"
+* entry[=].resource = MonicaRambeauFamilyConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauFamilyConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauTreatmentConsent"
+* entry[=].resource = MonicaRambeauTreatmentConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauTreatmentConsent"
 
 
 Instance: MonicaRambeau
@@ -622,3 +658,120 @@ Description: "This practitioner is Monica Rambeau's primary care doctor."
 Usage: #example
 * name.family = "Hibbert"
 * name.given = "Jane"
+
+Instance: MonicaRambeauBLP
+InstanceOf: Organization
+Title: "MA Best Little Pharmacy"
+Description: "The MA Best Little Pharmacy that fills prescriptions for Monica Rambeau."
+Usage: #example
+* name = "Best Little Pharmacy"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+
+Instance: MonicaRambeauTPL
+InstanceOf: Organization
+Title: "MA Third Party Laboratory"
+Description: "The MA Third Party Laboratory that processes Monica Rambeau's lab specimens."
+Usage: #example
+* name = "MA Third Party Laboratory"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+
+Instance: MonicaRambeauRiviera
+InstanceOf: Practitioner
+Title: "Dr. Nick Riviera - FL Private PCP"
+Description: "Dr. Nick Riviera, Monica Rambeau's FL private primary care physician."
+Usage: #example
+* name.family = "Riviera"
+* name.given = "Nick"
+
+Instance: MonicaRambeauMcStuffins
+InstanceOf: Practitioner
+Title: "Dr. McStuffins - FL School Health Provider"
+Description: "Dr. McStuffins, Monica Rambeau's health provider at MouseHouse University."
+Usage: #example
+* name.family = "McStuffins"
+
+Instance: MonicaRambeauBBP
+InstanceOf: Organization
+Title: "FL Big Box Pharmacy"
+Description: "The FL Big Box Pharmacy that fills Monica Rambeau's FL prescriptions."
+Usage: #example
+* name = "Big Box Pharmacy"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+
+Instance: MonicaRambeauMapple
+InstanceOf: Organization
+Title: "Mapple Diet/Food Tracker"
+Description: "Mapple, the third-party diet and food tracking app used by Monica Rambeau."
+Usage: #example
+* name = "Mapple"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#bus "Non-Healthcare Business or Corporation"
+
+Instance: MonicaRambeauGreen
+InstanceOf: Organization
+Title: "It's Not Easy Being Green, Inc. (Payer)"
+Description: "It's Not Easy Being Green, Inc., Monica Rambeau's health insurance payer."
+Usage: #example
+* name = "It's Not Easy Being Green, Inc."
+* type = http://terminology.hl7.org/CodeSystem/organization-type#ins "Insurance Company"
+
+Instance: MonicaRambeauFamilyConsent
+InstanceOf: Consent
+Title: "Monica Rambeau Family Privacy Consent"
+ Description: "This consent records Monica Rambeau's privacy preference for family-requested access. Because Monica is an adult and has not granted parental proxy access, the example is modeled as a direct denial of access when the purpose of use is family request (FAMRQT). This example is intentionally scoped only to parent-access semantics and does not attempt to encode her separate Florida PCP or third-party app disclosure preferences."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MonicaRambeau)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/FamilyRequestPolicy"
+ // This Consent is scoped to parent access only, represented as the purpose of
+ // use Family Request rather than as specific parent actors.
+* provision.type = #deny
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose = $v3-ActReason#FAMRQT
+
+Instance: MonicaRambeauTreatmentConsent
+InstanceOf: Consent
+Title: "Monica Rambeau TPO Consent"
+ Description: "This consent records Monica Rambeau's agreement to disclose her health information for Treatment, Payment, and Healthcare Operations (TPO) purposes. As an adult, Monica broadly permits TPO access without actor restrictions at the root level. Payer-specific restrictions on sensitive data categories (e.g., SOGI, genetic) are handled by organizational policy rather than this Consent. The one explicit exception encoded here is sexual orientation data (SEX label), which is restricted to Monica's MA treating providers and denied to all other actors listed. This Consent pairs with the FAMRQT Consent (MonicaRambeauFamilyConsent), which separately records her denial of family-requested access."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MonicaRambeau)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/TPOPolicy"
+ // TPO access is permitted broadly at the root level. All three purposes share the
+ // same set of exceptions; there is no distinction between Treatment, Payment, and
+ // Operations at this level. Payer-specific policy restrictions (e.g., on SOGI or
+ // genetic data) are governed by the payer's own organizational policy, not this Consent.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#TREAT
+* provision.purpose[+] = $v3-ActReason#HPAYMT
+* provision.purpose[+] = $v3-ActReason#HOPERAT
+ // Nested deny: sexual orientation data (tagged SEX) is restricted to Monica's MA
+ // treating providers (Dr. Hibbert / MA PCP and MA OB/GYN). All other downstream
+ // actors — pharmacies, labs, FL providers, the third-party app, and the payer — are
+ // denied access to SEX-labeled resources. Because provision.actor limits this deny
+ // to the explicitly listed actors only, unlisted actors (the MA providers) retain
+ // the root permit.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#SEX
+* provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauBLP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauTPL)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauMcStuffins)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauBBP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauMapple)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(MonicaRambeauGreen)
