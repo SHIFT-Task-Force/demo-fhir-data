@@ -89,11 +89,15 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 5. Deny as the activity was paid for out of pocket.
 6. May access with OCR attestation
 7. upstream recipient would not have access
-8. Note that $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
+
+**Further concerns:**
+
+1. Note that $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
+2. Note the adolescent use-cases indicate that there should be exclusion rules for Legal Sex, Preferred Name, Gender ID & Pronouns, and Sexual Orientation. These would be handled very differently than data sensitivity. Thus the consent and the data in the IG is focused only on data sensitivity, not these demographics. These would need to be handled with either obligation rules, or element level tagging. Both are another level of complexity.
 
 #### Organizational Policy
 
-Some of the above rules are handled by Organizatinonal policy. That is the policy that would be enforced for all patients for all Treatment use-cases. 
+Some of the above rules are handled by Organizational policy. That is the policy that would be enforced for all patients for all Treatment use-cases.
 
 1. All releases of sensitive data will carry with it a Refrain tag of No Redisclosure without explicit consent from the patient" -  http://terminology.hl7.org/ValueSet/v3-RefrainPolicy#NORDSCLCDS
 2. All sensitive data will be tagged with the appropriate sensitivity and confidentiality codes.
