@@ -115,9 +115,13 @@ Some of the above rules are handled by Organizational policy. That is the policy
 
 Thus a Treatment/Payment/Operations Consent needs only address the specific rules for that given unique patient and use-case that differ from the organizational policy.
 
+#### Consents
+
 - [Treatment/Payment/Operations Consent for Max](Consent-MaxineMayfield16TreatmentConsent.html)
 - [Family Consent for Max](Consent-MaxineMayfield16FamilyConsent.html)
 - [FL BOM OCR Attestation for Max](Consent-MaxineMayfield16BOMAttestation.html)
+- The control of the Gender Identity and Sexual Orientation data is not yet supported by FHIR Consent. Thus it must be handled with organizational policy, not consent, so there are no consents related to this.
+  - There are proposals to add limits to a FHIR Consent permit permission that would allow for defining elements to be removed from the data authorized by that provision.
 
 ### Data
 
