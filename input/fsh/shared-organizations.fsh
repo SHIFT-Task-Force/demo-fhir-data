@@ -8,6 +8,14 @@ Usage: #example
 * name = "MA Third Party Laboratory"
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
 
+Instance: BLP
+InstanceOf: Organization
+Title: "MA Best Little Pharmacy"
+Description: "MA Best Little Pharmacy that fills prescriptions for multiple patients in Massachusetts."
+Usage: #example
+* name = "MA Best Little Pharmacy"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+
 Instance: BBP
 InstanceOf: Organization
 Title: "FL Big Box Pharmacy"
@@ -23,6 +31,16 @@ Description: "Mapple, the third-party diet and food tracking app used by multipl
 Usage: #example
 * name = "Mapple"
 * type = http://terminology.hl7.org/CodeSystem/organization-type#bus "Non-Healthcare Business or Corporation"
+
+Instance: MappleFoodTrackerApp
+InstanceOf: Device
+Title: "Mapple Diet/Food Tracker App"
+Description: "The Mapple diet and food tracking mobile application — a non-HIPAA-covered third-party app that requests access to patient health data via SMART on FHIR / patient-directed data sharing."
+Usage: #example
+* deviceName[0].name = "Mapple Diet/Food Tracker"
+* deviceName[=].type = #user-friendly-name
+* type = http://snomed.info/sct#706689003 "Application program software (physical object)"
+* owner = Reference(Mapple)
 
 Instance: Green
 InstanceOf: Organization

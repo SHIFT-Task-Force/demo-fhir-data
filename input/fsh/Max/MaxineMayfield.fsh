@@ -143,6 +143,10 @@ Usage: #example
 * entry[=].resource = DrMcStuffins
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/DrMcStuffins"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/AnnPerkins"
+* entry[=].resource = AnnPerkins
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/AnnPerkins"
 * entry[+].fullUrl = "http://example.org/fhir/Organization/BBP"
 * entry[=].resource = BBP
 * entry[=].request.method = #PUT
@@ -171,6 +175,18 @@ Usage: #example
 * entry[=].resource = MaxineMayfield16BOMAttestation
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Consent/MaxineMayfield16BOMAttestation"
+* entry[+].fullUrl = "http://example.org/fhir/Device/MappleFoodTrackerApp"
+* entry[=].resource = MappleFoodTrackerApp
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Device/MappleFoodTrackerApp"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MaxineMayfield16ThirdPartyAppConsent"
+* entry[=].resource = MaxineMayfield16ThirdPartyAppConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MaxineMayfield16ThirdPartyAppConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MaxineMayfield16ACOCareManagerOptOutConsent"
+* entry[=].resource = MaxineMayfield16ACOCareManagerOptOutConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MaxineMayfield16ACOCareManagerOptOutConsent"
 
 Instance: MaxineMayfield16
 InstanceOf: Patient
@@ -689,7 +705,7 @@ Usage: #example
 Instance: MaxineMayfield16TreatmentConsent
 InstanceOf: Consent
 Title: "Maxine Mayfield TPO Consent"
- Description: "This consent records Maxine Mayfield's agreement to disclose her health information for Treatment, Payment, and Healthcare Operations (TPO) purposes. TPO access is broadly permitted without actor restrictions at the root level. Payer-specific restrictions on sensitive data categories are handled by organizational policy rather than this Consent. The explicit exceptions encoded here are: (1) sexual/reproductive data (SEX label) is denied to the FL Private PCP (Dr. Riviera) and the third-party app (Mapple), who have no legitimate clinical need for it; (2) STI data (STD label) is denied to those same two actors plus the payer (Green), because Max's STI care was paid out of pocket; (3) HIV-related data (HIV label) is denied to Riviera and Mapple; and (4) abortion history (ABORTION label) is additionally denied to the MA Third Party Lab (TPL) and the FL school and pharmacy actors (McStuffins and BBP), who may receive other SEX-labeled data under the root permit but must not receive abortion history. Riviera and Mapple are already excluded from all SEX-labeled resources — including ABORTION — by provision (1). SOGI exclusions for adolescent actors (McStuffins, BBP) are out of scope for data-sensitivity-based consent and require obligation rules or element-level tagging. This Consent pairs with the FAMRQT Consent (MaxineMayfield16FamilyConsent), which separately governs family-requested access."
+ Description: "This consent records Maxine Mayfield's agreement to disclose her health information for Treatment, Payment, and Healthcare Operations (TPO) purposes. TPO access is broadly permitted without actor restrictions at the root level. Payer-specific restrictions on sensitive data categories are handled by organizational policy rather than this Consent. The explicit exceptions encoded here are: (1) sexual/reproductive data (SEX label) is denied to the FL Private PCP (Dr. Riviera) and the third-party app (Mapple), who have no legitimate clinical need for it; (2) STI data (STD label) is denied to those same two actors plus the payer (Green), because Max's STI care was paid out of pocket; (3) HIV-related data (HIV label) is denied to Riviera and Mapple; (4) abortion history (ABORTION label) is additionally denied to the MA Third Party Lab (TPL) and the FL school and pharmacy actors (McStuffins and BBP), who may receive other SEX-labeled data under the root permit but must not receive abortion history; and (5) genetic-history data (GDIS label) is denied to BLP, Riviera, McStuffins, BBP, Mapple, and Green. Riviera and Mapple are already excluded from all SEX-labeled resources — including ABORTION — by provision (1). SOGI exclusions for adolescent actors (McStuffins, BBP) are out of scope for data-sensitivity-based consent and require obligation rules or element-level tagging. This Consent pairs with the FAMRQT Consent (MaxineMayfield16FamilyConsent), which separately governs family-requested access."
 Usage: #example
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
@@ -743,7 +759,44 @@ Usage: #example
  // resources (including ABORTION) by the SEX provision above, so they are not repeated here.
 * provision.provision[+].type = #deny
 * provision.provision[=].securityLabel[0] = $extraSensitiveCodes#ABORTION
+ // Nested deny: genetic-history data (GDIS label) is denied to recipients marked
+ // as deny in the Genetic Hx permissions grid.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#GDIS
 * provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(BLP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrMcStuffins)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(BBP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Mapple)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Green)
+
+Instance: MaxineMayfield16ACOCareManagerOptOutConsent
+InstanceOf: Consent
+Title: "Maxine Mayfield ACO Care Manager Opt-Out Consent"
+Description: "This Consent records Maxine Mayfield's opt-out from ACO care-management follow-up related to PrEP. The root provision denies access to Maxine's data for the named MA ACO care manager actor (Ann Perkins), across treatment and healthcare operations use-cases. This models the Permissions Grid row where the MA ACO Care Manager is not authorized to receive Max's data in this use-case."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MaxineMayfield16)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MaxineMayfield16)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/ACOCareManagerOptOut"
+// Root deny: Max opts out of ACO care-manager follow-up, so this actor is denied
+// access for treatment and operations contexts in this scenario.
+* provision.type = #deny
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#TREAT
+* provision.purpose[+] = $v3-ActReason#HOPERAT
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(AnnPerkins)
+* provision.provision[0].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
 * provision.provision[=].actor[=].reference = Reference(TPL)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
 * provision.provision[=].actor[=].reference = Reference(DrMcStuffins)
@@ -783,3 +836,41 @@ Usage: #example
 * provision.provision[=].securityLabel[+] = $v3-ActCode#STD
 * provision.provision[=].securityLabel[+] = $v3-ActCode#HIV
 * provision.provision[=].securityLabel[+] = $extraSensitiveCodes#ABORTION
+
+Instance: MaxineMayfield16ThirdPartyAppConsent
+InstanceOf: Consent
+Title: "Maxine Mayfield 3rd Party App Consent (PATRQT)"
+ Description: "This Consent records Maxine Mayfield's patient-directed authorization for the Mapple diet/food tracker app to receive a subset of her health data. The request is initiated by Max through the app (PurposeOfUse = PATRQT). The actor in the root provision is the Mapple app Device, scoping this Consent exclusively to patient-directed data sharing with that application. Max permits the app to receive non-sensitive clinical data — specifically her allergies and non-sensitive medications (e.g., Miralax, Albuterol, Pulmicort) — to support her constipation management. She explicitly withholds: contraceptive medications and sexual/reproductive history (SEX label), STI information (STD label), HIV-related data including PrEP (HIV label), and abortion history (ABORTION label). The root provision permits access for PATRQT, and nested deny provisions enforce Max's data-sharing restrictions by security label."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MaxineMayfield16)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MaxineMayfield16)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/PatientDirectedDataSharing"
+ // Root permit: Max authorizes the Mapple app to receive her health data for
+ // patient-requested purposes (PATRQT). The actor is the Device (the app itself),
+ // narrowing this permit strictly to that application.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#PATRQT
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(MappleFoodTrackerApp)
+ // Nested deny: sexual/reproductive data (SEX label) — includes contraceptive medications
+ // (Loestrin), sexual history, and reproductive history. Max does not want the app to
+ // receive her OCP or OB history due to privacy concerns.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#SEX
+ // Nested deny: STI data (STD label). Max does not wish to share STI information
+ // (chlamydia diagnosis, related labs) with the non-HIPAA-covered app.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#STD
+ // Nested deny: HIV-related data (HIV label) — includes PrEP medications (Descovy).
+ // Max does not want the app to receive any HIV-related data.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#HIV
+ // Nested deny: abortion history (ABORTION label). Max does not want the app to
+ // receive any information about her pregnancy or abortion history.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $extraSensitiveCodes#ABORTION

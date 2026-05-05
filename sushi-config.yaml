@@ -48,8 +48,6 @@ pages:
     title: "SHIFT IG Home"
   behavioral.md:
     title: "Behavioral Health Use Case"
-  Adolescent2.md:
-    title: "Adolescent Use Case"
   MaxineMayfield.md:
     title: "Maxine Mayfield at 16"
   MonicaRambeau.md:
@@ -67,7 +65,8 @@ menu:
   Home: index.html
   Use-Cases:
     Behavioral-Health: behavioral.html
-    Adolescent: Adolescent2.html
+    Maxine at 16: MaxineMayfield.html
+    Monica Rambeau at 19: MonicaRambeau.html
     Veronica Mars: VeronicaMars.html
   Artifacts: artifacts.html
   About: download.html
@@ -79,9 +78,11 @@ groups:
       - Practitioner/DrHibbert
       - Practitioner/DrRiviera
       - Practitioner/DrMcStuffins
+      - Practitioner/AnnPerkins
       - Organization/TPL
       - Organization/BBP
       - Organization/Mapple
+      - Device/MappleFoodTrackerApp
       - Organization/Green
       - Organization/BOM
   CarlFredericksonCareTeam:
@@ -109,10 +110,6 @@ groups:
       - Practitioner/ACO-Care-Manager
       - Organization/SpringfieldACO
       - RelatedPerson/EllieFrederickson
-      - Organization/CarlFredericksonBLP
-      - Organization/CarlFredericksonMapple
-      - Organization/CarlFredericksonMedicare
-      - Organization/CarlFredericksonGreenInc
       - Bundle/AllofCarlTeam
   CarlFrederickson:
     description: "Resources related to Carl Frederickson"
@@ -168,10 +165,11 @@ groups:
       - AllergyIntolerance/MonicaRambeauAmoxicillinAllergy
       - RelatedPerson/MariaRambeau
       - RelatedPerson/FrankRambeau
-      - Organization/MonicaRambeauBLP
       - Consent/MonicaRambeauFamilyConsent
       - Consent/MonicaRambeauTreatmentConsent
       - Consent/MonicaRambeauBOMAttestation
+      - Consent/MonicaRambeauThirdPartyAppConsent
+      - Consent/MonicaRambeauACOCareManagerOptOutConsent
       - Bundle/AllOfMonicaRambeau
   MaxineMayfield:
     description: "Resources related to Maxine Mayfield (age 16)"
@@ -208,6 +206,8 @@ groups:
       - Consent/MaxineMayfield16FamilyConsent
       - Consent/MaxineMayfield16TreatmentConsent
       - Consent/MaxineMayfield16BOMAttestation
+      - Consent/MaxineMayfield16ThirdPartyAppConsent
+      - Consent/MaxineMayfield16ACOCareManagerOptOutConsent
       - Bundle/AllOfMaxineMayfield16
   VeronicaMars:
     description: "Resources related to Veronica Mars"

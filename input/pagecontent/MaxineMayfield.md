@@ -59,11 +59,11 @@ Max's doctors suggest downloading a diet/food tracker to help her manage her con
 
 ### HIPAA 2024 Privacy Rule Module (optional - depending on state of law):
 
-The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick Riviera)'s practice due to a complaint made by another patient; in the process, they request a review of a number of patient records, including Max's.  Under the OCR HIPAA Reproductive Health Privacy Rule, the BOM must provide an attestion to Dr. Riviera's office stating they will not use reproductive health data in the chart for impermissible purposes (e.g. criminalization) before obtaining access to the records.
+The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick Riviera)'s practice due to a complaint made by another patient; in the process, they request a review of a number of patient records, including Max's.  Under the OCR HIPAA Reproductive Health Privacy Rule, the BOM must provide an attestation to Dr. Riviera's office stating they will not use reproductive health data in the chart for impermissible purposes (e.g. criminalization) before obtaining access to the records.
 
-### Consent
+### Permissions Grid
 
-| Entity                                               | Medical    | Legal Sex  | Preferred Name | Gender ID & Pronouns | Sex.Orientation | Sex. Hx & Contraception | STI        | HIV        | TAB Hx     | All other OB Hx | Other Repro Hx | Genetic Hx |
+| Entity                                               | Medical    | Legal Sex  | Preferred Name | Gender ID & Pronouns | Sex Orientation | Sex Hx & Contraception | STI        | HIV        | TAB Hx     | All other OB Hx | Other Repro Hx | Genetic Hx |
 | ---------------------------------------------------- | ---------- | ---------- | -------------- | -------------------- | --------------- | ----------------------- | ---------- | ---------- | ---------- | --------------- | -------------- | ---------- |
 | MA Health Center PCP (Dr. Hibbert)                   | permit     | permit     | permit         | permit               | permit          | permit                  | permit     | permit (1) | permit     | permit          | permit         | permit (1) |
 | MA Health Center OB/GYN (Dr. Lahiri)                 | permit     | permit     | permit         | permit               | permit          | permit                  | permit     | permit (1) | permit     | permit          | permit         | permit (1) |
@@ -101,6 +101,7 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 
 1. Note that Observation $sct#364324000, specifically $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
 2. Note the adolescent use-cases indicate that there should be exclusion rules for Legal Sex, Preferred Name, Gender ID & Pronouns, and Sexual Orientation. These would be handled very differently than data sensitivity. Thus the consent and the data in the IG is focused only on data sensitivity, not these demographics. These would need to be handled with either obligation rules, or element level tagging. Both are another level of complexity.
+3. The control of the Gender Identity and Sexual Orientation data is not yet supported by FHIR Consent. Thus it must be handled with organizational policy, not consent, so there are no consents related to this.
 
 #### Organizational Policy
 
@@ -120,6 +121,8 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
 - [Treatment/Payment/Operations Consent for Max](Consent-MaxineMayfield16TreatmentConsent.html)
 - [Family Consent for Max](Consent-MaxineMayfield16FamilyConsent.html)
 - [FL BOM OCR Attestation for Max](Consent-MaxineMayfield16BOMAttestation.html)
+- [3rd Party App Consent for Max (PATRQT)](Consent-MaxineMayfield16ThirdPartyAppConsent.html)
+- [ACO Care Manager Opt-Out Consent for Max](Consent-MaxineMayfield16ACOCareManagerOptOutConsent.html)
 - The control of the Gender Identity and Sexual Orientation data is not yet supported by FHIR Consent. Thus it must be handled with organizational policy, not consent, so there are no consents related to this.
   - There are proposals to add limits to a FHIR Consent permit permission that would allow for defining elements to be removed from the data authorized by that provision.
 

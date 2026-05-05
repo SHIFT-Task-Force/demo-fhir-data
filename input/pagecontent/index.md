@@ -2,7 +2,7 @@ Privacy Consent driven access control through data sensitivity tagging.
 
 ### SHIFT use-cases
 
-- [Adolescent](Adolescent2.html)
+- Adolescent
   - [Maxine "Max" Mayfield at 16](MaxineMayfield.html)
   - [Monica Rambeau at 19](MonicaRambeau.html)
 - [Behavioral](behavioral.html)

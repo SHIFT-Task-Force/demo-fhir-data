@@ -22,3 +22,11 @@ Title: "Dr. McStuffins - FL School Health Provider"
 Description: "Dr. McStuffins, health provider at MouseHouse University, serving student patients."
 Usage: #example
 * name.family = "McStuffins"
+
+Instance: AnnPerkins
+InstanceOf: Practitioner
+Title: "Ann Perkins - MA ACO Care Manager"
+Description: "Ann Perkins, ACO care manager in Massachusetts who performs PrEP follow-up outreach."
+Usage: #example
+* name.family = "Perkins"
+* name.given = "Ann"
