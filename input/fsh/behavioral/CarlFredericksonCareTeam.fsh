@@ -26,7 +26,7 @@ Usage: #example
 
 // Team Members
 // Primary Care Practitioner
-* participant[+].member = Reference(PractitionerRole/DrHibbert-pcp)
+* participant[+].member = Reference(PractitionerRole/DrJuliusHibbert-pcp)
 * participant[=].period.start = "2020-03-15"
 
 // SMC Primary Psychiatrist 
@@ -66,19 +66,19 @@ Description: "Springfield Medical Center, providing comprehensive healthcare ser
 * active = true
 * type[+] = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
 
-// Dr. Hibbert Primary Care Physician
-Instance: DrHibbert-pcp
+// Dr. Julius Hibbert Primary Care Physician
+Instance: DrJuliusHibbert-pcp
 InstanceOf: PractitionerRole
-Title: "Dr. Hibbert - Primary Care PractitionerRole"
-Description: "Primary care provider role for Dr. Hibbert at Springfield Medical Center"
-* practitioner = Reference(Practitioner/DrHibbert)
+Title: "Dr. Julius Hibbert - Primary Care PractitionerRole"
+Description: "Primary care provider role for Dr. Julius Hibbert at Springfield Medical Center"
+* practitioner = Reference(Practitioner/DrJuliusHibbert)
 * code = http://snomed.info/sct#446050000 "Primary care physician"
 * active = true
 * organization = Reference(Organization/SpringfieldMedicalCenter)
-Instance: DrHibbert
+Instance: DrJuliusHibbert
 InstanceOf: Practitioner
-Title: "Dr. Hibbert - Primary Care Physician"
-Description: "Dr. Hibbert, primary care physician at Springfield Medical Center"
+Title: "Dr. Julius Hibbert - Primary Care Physician"
+Description: "Dr. Julius Hibbert, primary care physician at Springfield Medical Center"
 * name[0].family = "Hibbert"
 * name[0].given[0] = "Julius"
 * name[0].text = "Dr. Julius Hibbert"
@@ -289,13 +289,13 @@ Description: "A FHIR Bundle containing Carl Frederickson's Care Team and all rel
 * entry[=].fullUrl = "http://example.org/fhir/Organization/SpringfieldMedicalCenter"
 * entry[=].request.url = "Organization/SpringfieldMedicalCenter"
 * entry[=].request.method = #PUT
-* entry[+].resource = DrHibbert-pcp
-* entry[=].fullUrl = "http://example.org/fhir/PractitionerRole/DrHibbert-pcp"
-* entry[=].request.url = "PractitionerRole/DrHibbert-pcp"
+* entry[+].resource = DrJuliusHibbert-pcp
+* entry[=].fullUrl = "http://example.org/fhir/PractitionerRole/DrJuliusHibbert-pcp"
+* entry[=].request.url = "PractitionerRole/DrJuliusHibbert-pcp"
 * entry[=].request.method = #PUT
-* entry[+].resource = DrHibbert
-* entry[=].fullUrl = "http://example.org/fhir/Practitioner/DrHibbert"
-* entry[=].request.url = "Practitioner/DrHibbert"
+* entry[+].resource = DrJuliusHibbert
+* entry[=].fullUrl = "http://example.org/fhir/Practitioner/DrJuliusHibbert"
+* entry[=].request.url = "Practitioner/DrJuliusHibbert"
 * entry[=].request.method = #PUT
 * entry[+].resource = DrFunke-psychiatrist
 * entry[=].fullUrl = "http://example.org/fhir/PractitionerRole/DrFunke-psychiatrist"

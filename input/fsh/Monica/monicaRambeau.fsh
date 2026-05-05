@@ -128,38 +128,42 @@ Usage: #example
 * entry[=].resource = FrankRambeau
 * entry[=].request.method = #PUT
 * entry[=].request.url = "RelatedPerson/FrankRambeau"
-* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauDoctor"
-* entry[=].resource = MonicaRambeauDoctor
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrHibbert"
+* entry[=].resource = DrHibbert
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Practitioner/MonicaRambeauDoctor"
+* entry[=].request.url = "Practitioner/DrHibbert"
 * entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauBLP"
 * entry[=].resource = MonicaRambeauBLP
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Organization/MonicaRambeauBLP"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauTPL"
-* entry[=].resource = MonicaRambeauTPL
+* entry[+].fullUrl = "http://example.org/fhir/Organization/TPL"
+* entry[=].resource = TPL
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/MonicaRambeauTPL"
-* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauRiviera"
-* entry[=].resource = MonicaRambeauRiviera
+* entry[=].request.url = "Organization/TPL"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrRiviera"
+* entry[=].resource = DrRiviera
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Practitioner/MonicaRambeauRiviera"
-* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauMcStuffins"
-* entry[=].resource = MonicaRambeauMcStuffins
+* entry[=].request.url = "Practitioner/DrRiviera"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrMcStuffins"
+* entry[=].resource = DrMcStuffins
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Practitioner/MonicaRambeauMcStuffins"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauBBP"
-* entry[=].resource = MonicaRambeauBBP
+* entry[=].request.url = "Practitioner/DrMcStuffins"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/BBP"
+* entry[=].resource = BBP
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/MonicaRambeauBBP"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauMapple"
-* entry[=].resource = MonicaRambeauMapple
+* entry[=].request.url = "Organization/BBP"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/Mapple"
+* entry[=].resource = Mapple
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/MonicaRambeauMapple"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauGreen"
-* entry[=].resource = MonicaRambeauGreen
+* entry[=].request.url = "Organization/Mapple"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/Green"
+* entry[=].resource = Green
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/MonicaRambeauGreen"
+* entry[=].request.url = "Organization/Green"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/BOM"
+* entry[=].resource = BOM
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/BOM"
 * entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauFamilyConsent"
 * entry[=].resource = MonicaRambeauFamilyConsent
 * entry[=].request.method = #PUT
@@ -168,6 +172,10 @@ Usage: #example
 * entry[=].resource = MonicaRambeauTreatmentConsent
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Consent/MonicaRambeauTreatmentConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauBOMAttestation"
+* entry[=].resource = MonicaRambeauBOMAttestation
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauBOMAttestation"
 
 
 Instance: MonicaRambeau
@@ -547,7 +555,7 @@ Usage: #example
 * component[=].valueInteger = 1
 * component[+].code = $sct#248991006 "Number of live deliveries (observable entity)"
 * component[=].valueInteger = 0
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * effectiveDateTime = "2026-03-24"
 
 Instance: MonicaRambeauLMP
@@ -562,7 +570,7 @@ Usage: #example
 * code.text = "Last Menstrual Period"
 * subject = Reference(MonicaRambeau)
 * valueDateTime = "2026-03-24"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * effectiveDateTime = "2026-03-24"
 
 Instance: MonicaRambeauPOChCG
@@ -578,7 +586,7 @@ Usage: #example
 * code.text = "POC hCG (urine pregnancy test)"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2024-07-08"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
 * valueCodeableConcept.text = "Positive"
 
@@ -595,7 +603,7 @@ Usage: #example
 * code.text = "hCG serum quantitative"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2024-07-08"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * valueQuantity = 85000 '[IU]/L' "IU/L"
 
 Instance: MonicaRambeauhCGSerumQuantMedAbort
@@ -611,7 +619,7 @@ Usage: #example
 * code.text = "hCG serum quantitative"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2025-11-08"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * valueQuantity = 22000 '[IU]/L' "IU/L"
 
 Instance: MonicaRambeauAmoxicillinAllergy
@@ -651,14 +659,6 @@ Usage: #example
 * name.family = "Rambeau"
 * name.given = "Frank"
 
-Instance: MonicaRambeauDoctor
-InstanceOf: Practitioner
-Title: "Monica Rambeau's Doctor"
-Description: "This practitioner is Monica Rambeau's primary care doctor."
-Usage: #example
-* name.family = "Hibbert"
-* name.given = "Jane"
-
 Instance: MonicaRambeauBLP
 InstanceOf: Organization
 Title: "MA Best Little Pharmacy"
@@ -666,53 +666,6 @@ Description: "The MA Best Little Pharmacy that fills prescriptions for Monica Ra
 Usage: #example
 * name = "Best Little Pharmacy"
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-
-Instance: MonicaRambeauTPL
-InstanceOf: Organization
-Title: "MA Third Party Laboratory"
-Description: "The MA Third Party Laboratory that processes Monica Rambeau's lab specimens."
-Usage: #example
-* name = "MA Third Party Laboratory"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-
-Instance: MonicaRambeauRiviera
-InstanceOf: Practitioner
-Title: "Dr. Nick Riviera - FL Private PCP"
-Description: "Dr. Nick Riviera, Monica Rambeau's FL private primary care physician."
-Usage: #example
-* name.family = "Riviera"
-* name.given = "Nick"
-
-Instance: MonicaRambeauMcStuffins
-InstanceOf: Practitioner
-Title: "Dr. McStuffins - FL School Health Provider"
-Description: "Dr. McStuffins, Monica Rambeau's health provider at MouseHouse University."
-Usage: #example
-* name.family = "McStuffins"
-
-Instance: MonicaRambeauBBP
-InstanceOf: Organization
-Title: "FL Big Box Pharmacy"
-Description: "The FL Big Box Pharmacy that fills Monica Rambeau's FL prescriptions."
-Usage: #example
-* name = "Big Box Pharmacy"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-
-Instance: MonicaRambeauMapple
-InstanceOf: Organization
-Title: "Mapple Diet/Food Tracker"
-Description: "Mapple, the third-party diet and food tracking app used by Monica Rambeau."
-Usage: #example
-* name = "Mapple"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#bus "Non-Healthcare Business or Corporation"
-
-Instance: MonicaRambeauGreen
-InstanceOf: Organization
-Title: "It's Not Easy Being Green, Inc. (Payer)"
-Description: "It's Not Easy Being Green, Inc., Monica Rambeau's health insurance payer."
-Usage: #example
-* name = "It's Not Easy Being Green, Inc."
-* type = http://terminology.hl7.org/CodeSystem/organization-type#ins "Insurance Company"
 
 Instance: MonicaRambeauFamilyConsent
 InstanceOf: Consent
@@ -764,14 +717,48 @@ Usage: #example
 * provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
 * provision.provision[=].actor[=].reference = Reference(MonicaRambeauBLP)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauTPL)
+* provision.provision[=].actor[=].reference = Reference(TPL)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauRiviera)
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauMcStuffins)
+* provision.provision[=].actor[=].reference = Reference(DrMcStuffins)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauBBP)
+* provision.provision[=].actor[=].reference = Reference(BBP)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauMapple)
+* provision.provision[=].actor[=].reference = Reference(Mapple)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauGreen)
+* provision.provision[=].actor[=].reference = Reference(Green)
+
+Instance: MonicaRambeauBOMAttestation
+InstanceOf: Consent
+Title: "FL BOM OCR Attestation — Monica Rambeau"
+ Description: "This Consent models the OCR HIPAA Reproductive Health Privacy Rule attestation provided by the FL Board of Medicine (BOM) prior to accessing Monica Rambeau's records during a provider practice review. Under the 2024 OCR Reproductive Health Privacy Rule (45 CFR 164.512(d)), the BOM must attest that it will not use or disclose reproductive health data to investigate, prosecute, or impose liability on any person for seeking, obtaining, providing, or facilitating lawful reproductive health care. The BOM is the performer — it is the attesting party. The root provision permits the BOM to access Monica's records for health oversight activities (HOPERAT). The nested deny encodes the substantive commitment of the attestation: resources carrying any of the reproductive health sensitive labels (SEX, STD, HIV, ABORTION) are outside the scope of this disclosure. Dr. Riviera's office should not release those records to the BOM even during the practice review.
+ 
+ This Consent is executed by the FL BOM, so it is what many would not consider a Consent in the traditional sense. Specifically the Consent.performer is FL BOM, as is the Consent.organization. This Consent is also specific to the Legal Review (PurposeOfUse)."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(BOM)
+* organization = Reference(BOM)
+* policy.uri = "https://example.org/hipaa/for-professionals/privacy/reproductive-health/index.html"
+ // Root permit: the BOM is authorized to access Monica's non-reproductive-health records
+ // for health oversight activities (provider practice review under 45 CFR 164.512(d)).
+ // The BOM is named as the actor so that this permit applies only to their access.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[+] = $v3-ActReason#HOPERAT
+* provision.purpose[+] = $v3-ActReason#HLEGAL
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(BOM)
+ // Nested deny: resources carrying any reproductive health sensitive label are excluded
+ // from this disclosure. A single provision with multiple securityLabels uses OR semantics:
+ // a resource tagged with ANY of these labels is denied. This encodes the BOM's attestation
+ // that it will not seek or receive reproductive health data for this oversight review.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#SEX
+* provision.provision[=].securityLabel[+] = $v3-ActCode#STD
+* provision.provision[=].securityLabel[+] = $v3-ActCode#HIV
+* provision.provision[=].securityLabel[+] = $extraSensitiveCodes#ABORTION

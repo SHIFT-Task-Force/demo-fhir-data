@@ -111,11 +111,13 @@ Some of the above rules are handled by Organizational policy. That is the policy
 3. Role based access control will be used to prevent unauthorized access to sensitive data by staff within the healthcare organization. For example, only certain roles (e.g., OB/GYNs, sexual health specialists) may have access to reproductive health information, and only certain roles (e.g., infectious disease specialists) may have access to HIV-related information.
 4. All required reporting to public health departments will be done with the minimum necessary information, and without any information
 5. Tracking that treatment was paid for out-of-pocket and denying Payer access is a policy, not a consent issue.
+6. Given Maxine is a minor, organizational policy would trigger for new Consent/Authorization upon her turning 18.
 
 Thus a Treatment/Payment/Operations Consent needs only address the specific rules for that given unique patient and use-case that differ from the organizational policy.
 
 - [Treatment/Payment/Operations Consent for Max](Consent-MaxineMayfield16TreatmentConsent.html)
 - [Family Consent for Max](Consent-MaxineMayfield16FamilyConsent.html)
+- [FL BOM OCR Attestation for Max](Consent-MaxineMayfield16BOMAttestation.html)
 
 ### Data
 

@@ -73,11 +73,22 @@ menu:
   About: download.html
 
 groups:
+  SharedPractitionerOrgs:
+    description: "Shared practitioners and organizations used across multiple patient use-cases"
+    resources:
+      - Practitioner/DrHibbert
+      - Practitioner/DrRiviera
+      - Practitioner/DrMcStuffins
+      - Organization/TPL
+      - Organization/BBP
+      - Organization/Mapple
+      - Organization/Green
+      - Organization/BOM
   CarlFredericksonCareTeam:
     description: "Resources related to Carl Frederickson's Care Team"
     resources:
-      - PractitionerRole/DrHibbert-pcp
-      - Practitioner/DrHibbert
+      - PractitionerRole/DrJuliusHibbert-pcp
+      - Practitioner/DrJuliusHibbert
       - Organization/SpringfieldMedicalCenter
       - PractitionerRole/DrFunke-psychiatrist
       - Practitioner/DrFunke
@@ -157,16 +168,10 @@ groups:
       - AllergyIntolerance/MonicaRambeauAmoxicillinAllergy
       - RelatedPerson/MariaRambeau
       - RelatedPerson/FrankRambeau
-      - Practitioner/MonicaRambeauDoctor
       - Organization/MonicaRambeauBLP
-      - Organization/MonicaRambeauTPL
-      - Practitioner/MonicaRambeauRiviera
-      - Practitioner/MonicaRambeauMcStuffins
-      - Organization/MonicaRambeauBBP
-      - Organization/MonicaRambeauMapple
-      - Organization/MonicaRambeauGreen
       - Consent/MonicaRambeauFamilyConsent
       - Consent/MonicaRambeauTreatmentConsent
+      - Consent/MonicaRambeauBOMAttestation
       - Bundle/AllOfMonicaRambeau
   MaxineMayfield:
     description: "Resources related to Maxine Mayfield (age 16)"
@@ -200,9 +205,9 @@ groups:
       - AllergyIntolerance/MaxineMayfield16AmoxicillinAllergy
       - RelatedPerson/SueHargrove16
       - RelatedPerson/SamMayfield16
-      - Practitioner/MaxineMayfieldDoctor
       - Consent/MaxineMayfield16FamilyConsent
       - Consent/MaxineMayfield16TreatmentConsent
+      - Consent/MaxineMayfield16BOMAttestation
       - Bundle/AllOfMaxineMayfield16
   VeronicaMars:
     description: "Resources related to Veronica Mars"
