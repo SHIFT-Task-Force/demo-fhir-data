@@ -5,6 +5,10 @@ Given today's date of 2025-01-01, so that Max is 16 years old.
 
 16 y/o Maxine "Max" Mayfield.  Currently attends boarding school at MouseHouse Academy in Orlando.  Parents are divorced and mother (Sue Hargrove) lives in Boston, Father (Sam Mayfield) lives in Orlando, FL.  Max grew up in Mom's primary custody in Boston, and is now in college near dad in Orlando, but spends most school vacations back with mom in MA. She did establish FL residence with dad as MouseHouse Academy gives in-state tuition, and is on her Sam's employer-sponsored health insurance (It's not Easy Being Green, Inc. or "Green").  Sue and Sam have shared custody.  Max receives her healthcare at a number of different entities: her school health center, a private PCP in FL (who has treated her asthma when she visited her dad since she was young), and MA Community Health Center when she is with her mother in MA.  Max's medical history is notable for chronc constipation, for which she takes Miralax, moderate persistent asthma for which she uses a Pulmicort Flexhaler BID and albuterol PRN, and an allergy to amoxicillin (hives).  Max is sexually active with one M boyfriend.
 
+<div>
+<img src="Maxine_Mayfield_headshot.png" caption="Maxine">
+</div>
+
 ### EHR Portals:
 
 - MA Community Health Center EHR: mom is a proxy, dad is not.  Adolescent proxies are not shown any patient-level clinical information such as PAMI data.  In order to further prevent parents from logging in as their child, the EHR further filters out  certain reproductive health labs and imaging studies from encounter-level data.
@@ -55,11 +59,11 @@ Max's doctors suggest downloading a diet/food tracker to help her manage her con
 
 ### HIPAA 2024 Privacy Rule Module (optional - depending on state of law):
 
-The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick Riviera)'s practice due to a complaint made by another patient; in the process, they request a review of a number of patient records, including Max's.  Under the OCR HIPAA Reproductive Health Privacy Rule, the BOM must provide an attestion to Dr. Riviera's office stating they will not use reproductive health data in the chart for impermissible purposes (e.g. criminalization) before obtaining access to the records.
+The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick Riviera)'s practice due to a complaint made by another patient; in the process, they request a review of a number of patient records, including Max's.  Under the OCR HIPAA Reproductive Health Privacy Rule, the BOM must provide an attestation to Dr. Riviera's office stating they will not use reproductive health data in the chart for impermissible purposes (e.g. criminalization) before obtaining access to the records.
 
-### Consent
+### Permissions Grid
 
-| Entity                                               | Medical    | Legal Sex  | Preferred Name | Gender ID & Pronouns | Sex.Orientation | Sex. Hx & Contraception | STI        | HIV        | TAB Hx     | All other OB Hx | Other Repro Hx | Genetic Hx |
+| Entity                                               | Medical    | Legal Sex  | Preferred Name | Gender ID & Pronouns | Sex Orientation | Sex Hx & Contraception | STI        | HIV        | TAB Hx     | All other OB Hx | Other Repro Hx | Genetic Hx |
 | ---------------------------------------------------- | ---------- | ---------- | -------------- | -------------------- | --------------- | ----------------------- | ---------- | ---------- | ---------- | --------------- | -------------- | ---------- |
 | MA Health Center PCP (Dr. Hibbert)                   | permit     | permit     | permit         | permit               | permit          | permit                  | permit     | permit (1) | permit     | permit          | permit         | permit (1) |
 | MA Health Center OB/GYN (Dr. Lahiri)                 | permit     | permit     | permit         | permit               | permit          | permit                  | permit     | permit (1) | permit     | permit          | permit         | permit (1) |
@@ -93,10 +97,40 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 7. Proprietary functionality prohibits data exchange
 8. upstream recipient would not have access
 
+**Further concerns:**
+
+1. Note that Observation $sct#364324000, specifically $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
+2. Note the adolescent use-cases indicate that there should be exclusion rules for Legal Sex, Preferred Name, Gender ID & Pronouns, and Sexual Orientation. These would be handled very differently than data sensitivity. Thus the consent and the data in the IG is focused only on data sensitivity, not these demographics. These would need to be handled with either obligation rules, or element level tagging. Both are another level of complexity.
+3. The control of the Gender Identity and Sexual Orientation data is not yet supported by FHIR Consent. Thus it must be handled with organizational policy, not consent, so there are no consents related to this.
+
+#### Organizational Policy
+
+Some of the above rules are handled by Organizational policy. That is the policy that would be enforced for all patients for all Treatment use-cases.
+
+1. All releases of sensitive data will carry with it a Refrain tag of No Redisclosure without explicit consent from the patient" -  http://terminology.hl7.org/ValueSet/v3-RefrainPolicy#NORDSCLCDS
+2. All sensitive data will be tagged with the appropriate sensitivity and confidentiality codes.
+3. Role based access control will be used to prevent unauthorized access to sensitive data by staff within the healthcare organization. For example, only certain roles (e.g., OB/GYNs, sexual health specialists) may have access to reproductive health information, and only certain roles (e.g., infectious disease specialists) may have access to HIV-related information.
+4. All required reporting to public health departments will be done with the minimum necessary information, and without any information
+5. Tracking that treatment was paid for out-of-pocket and denying Payer access is a policy, not a consent issue.
+6. Given Maxine is a minor, organizational policy would trigger for new Consent/Authorization upon her turning 18.
+
+Thus a Treatment/Payment/Operations Consent needs only address the specific rules for that given unique patient and use-case that differ from the organizational policy.
+
+#### Consents
+
+- [Treatment/Payment/Operations Consent for Max](Consent-MaxineMayfield16TreatmentConsent.html)
+- [Family Consent for Max](Consent-MaxineMayfield16FamilyConsent.html)
+- [FL BOM OCR Attestation for Max](Consent-MaxineMayfield16BOMAttestation.html)
+- [3rd Party App Consent for Max (PATRQT)](Consent-MaxineMayfield16ThirdPartyAppConsent.html)
+- [ACO Care Manager Opt-Out Consent for Max](Consent-MaxineMayfield16ACOCareManagerOptOutConsent.html)
+- The control of the Gender Identity and Sexual Orientation data is not yet supported by FHIR Consent. Thus it must be handled with organizational policy, not consent, so there are no consents related to this.
+  - There are proposals to add limits to a FHIR Consent permit permission that would allow for defining elements to be removed from the data authorized by that provision.
+
 ### Data
 
 - [Maxine "Max" Mayfield at 16](Patient-MaxineMayfield16.html)
 - [Maxine Mayfield data bundle](Bundle-AllOfMaxineMayfield16.html)
+<<<<<<< HEAD
 
 #### Data grouped by Encounter
 
@@ -140,3 +174,6 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
   - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MaxineMayfield16HIVELISA.html)
   - [Observation — Last Menstrual Period](Observation-MaxineMayfield16LMP.html)
   - [MedicationRequest — Azithromycin (CT treatment)](MedicationRequest-MaxineMayfield16Azithromycin.html)
+=======
+- [Shared data bundle](Bundle-BundleOrganizations.html)
+>>>>>>> main

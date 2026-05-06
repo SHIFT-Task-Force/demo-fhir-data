@@ -48,10 +48,6 @@ pages:
     title: "SHIFT IG Home"
   behavioral.md:
     title: "Behavioral Health Use Case"
-  adolescent.md:
-    title: "Adolescent Use Case"
-  Rambeau.md:
-    title: "Background on Rambeau Sisters"
   MaxineMayfield.md:
     title: "Maxine Mayfield at 16"
   MonicaRambeau.md:
@@ -68,19 +64,34 @@ pages:
 menu:
   Home: index.html
   Use-Cases:
-    Adolescent: adolescent.html
     Behavioral-Health: behavioral.html
-    Rambeau Sisters: Rambeau.html
+    Maxine at 16: MaxineMayfield.html
+    Monica Rambeau at 19: MonicaRambeau.html
     Veronica Mars: VeronicaMars.html
   Artifacts: artifacts.html
   About: download.html
 
 groups:
+  SharedPractitionerOrgs:
+    description: "Shared practitioners and organizations used across multiple patient use-cases"
+    resources:
+      - Practitioner/DrHibbert
+      - Practitioner/DrRiviera
+      - Practitioner/DrMcStuffins
+      - Practitioner/AnnPerkins
+      - Organization/TPL
+      - Organization/BBP
+      - Organization/Mapple
+      - Device/MappleFoodTrackerApp
+      - Organization/Green
+      - Organization/BOM
+      - Organization/BLP
+      - Bundle/BundleOrganizations
   CarlFredericksonCareTeam:
     description: "Resources related to Carl Frederickson's Care Team"
     resources:
-      - PractitionerRole/DrHibbert-pcp
-      - Practitioner/DrHibbert
+      - PractitionerRole/DrJuliusHibbert-pcp
+      - Practitioner/DrJuliusHibbert
       - Organization/SpringfieldMedicalCenter
       - PractitionerRole/DrFunke-psychiatrist
       - Practitioner/DrFunke
@@ -100,6 +111,8 @@ groups:
       - PractitionerRole/ACOCareManager-practitionerrole
       - Practitioner/ACO-Care-Manager
       - Organization/SpringfieldACO
+      - Organization/CarlFredericksonMedicare
+      - RelatedPerson/EllieFrederickson
       - Bundle/AllofCarlTeam
   CarlFrederickson:
     description: "Resources related to Carl Frederickson"
@@ -120,7 +133,8 @@ groups:
       - MedicationRequest/CarlFredericksonIbuprofen
       - Observation/CarlFredericksonBloodPressure
       - Observation/CarlFredericksonOUDThoughtRecord
-      - RelatedPerson/EllieFrederickson
+      - Consent/CarlFredericksonConsent
+      - Consent/CarlFrederickson42CFRPartIIConsent
       - Bundle/AllOfCarlFrederickson
   MonicaRambeau:
     description: "Resources related to Monica Rambeau"
@@ -158,7 +172,11 @@ groups:
       - Observation/MonicaRambeauSexualOrientation
       - RelatedPerson/MariaRambeau
       - RelatedPerson/FrankRambeau
-      - Practitioner/MonicaRambeauDoctor
+      - Consent/MonicaRambeauFamilyConsent
+      - Consent/MonicaRambeauTreatmentConsent
+      - Consent/MonicaRambeauBOMAttestation
+      - Consent/MonicaRambeauThirdPartyAppConsent
+      - Consent/MonicaRambeauACOCareManagerOptOutConsent
       - Bundle/AllOfMonicaRambeau
   MaxineMayfield:
     description: "Resources related to Maxine Mayfield (age 16)"
@@ -196,7 +214,11 @@ groups:
       - Observation/MaxineMayfield16SexualOrientation
       - RelatedPerson/SueHargrove16
       - RelatedPerson/SamMayfield16
-      - Practitioner/MaxineMayfieldDoctor
+      - Consent/MaxineMayfield16FamilyConsent
+      - Consent/MaxineMayfield16TreatmentConsent
+      - Consent/MaxineMayfield16BOMAttestation
+      - Consent/MaxineMayfield16ThirdPartyAppConsent
+      - Consent/MaxineMayfield16ACOCareManagerOptOutConsent
       - Bundle/AllOfMaxineMayfield16
   VeronicaMars:
     description: "Resources related to Veronica Mars"
