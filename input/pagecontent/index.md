@@ -2,11 +2,11 @@ Privacy Consent driven access control through data sensitivity tagging.
 
 ### SHIFT use-cases
 
+- [Carl Frederickson - behavioral health use-case](behavioral.html)
 - Adolescent
   - [Maxine "Max" Mayfield at 16](MaxineMayfield.html)
   - [Monica Rambeau at 19](MonicaRambeau.html)
-- [Behavioral](behavioral.html)
-- [Veronica Mars](VeronicaMars.html)
+- [Veronica Mars](VeronicaMars.html) (under construction)
 
 ### Sensitive data as Venn diagram
 

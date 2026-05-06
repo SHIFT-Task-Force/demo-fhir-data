@@ -47,7 +47,7 @@ pages:
   index.md:
     title: "SHIFT IG Home"
   behavioral.md:
-    title: "Behavioral Health Use Case"
+    title: "Carl Frederickson - behavioral health use-case"
   MaxineMayfield.md:
     title: "Maxine Mayfield at 16"
   MonicaRambeau.md:
@@ -64,7 +64,7 @@ pages:
 menu:
   Home: index.html
   Use-Cases:
-    Behavioral-Health: behavioral.html
+    Carl Frederickson: behavioral.html
     Maxine at 16: MaxineMayfield.html
     Monica Rambeau at 19: MonicaRambeau.html
     Veronica Mars: VeronicaMars.html
