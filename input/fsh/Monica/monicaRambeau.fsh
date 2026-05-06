@@ -128,10 +128,50 @@ Usage: #example
 * entry[=].resource = FrankRambeau
 * entry[=].request.method = #PUT
 * entry[=].request.url = "RelatedPerson/FrankRambeau"
-* entry[+].fullUrl = "http://example.org/fhir/Practitioner/MonicaRambeauDoctor"
-* entry[=].resource = MonicaRambeauDoctor
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrHibbert"
+* entry[=].resource = DrHibbert
 * entry[=].request.method = #PUT
-* entry[=].request.url = "Practitioner/MonicaRambeauDoctor"
+* entry[=].request.url = "Practitioner/DrHibbert"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrRiviera"
+* entry[=].resource = DrRiviera
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/DrRiviera"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrMcStuffins"
+* entry[=].resource = DrMcStuffins
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/DrMcStuffins"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/AnnPerkins"
+* entry[=].resource = AnnPerkins
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/AnnPerkins"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/BBP"
+* entry[=].resource = BBP
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/BBP"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauFamilyConsent"
+* entry[=].resource = MonicaRambeauFamilyConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauFamilyConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauTreatmentConsent"
+* entry[=].resource = MonicaRambeauTreatmentConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauTreatmentConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauBOMAttestation"
+* entry[=].resource = MonicaRambeauBOMAttestation
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauBOMAttestation"
+* entry[+].fullUrl = "http://example.org/fhir/Device/MappleFoodTrackerApp"
+* entry[=].resource = MappleFoodTrackerApp
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Device/MappleFoodTrackerApp"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauThirdPartyAppConsent"
+* entry[=].resource = MonicaRambeauThirdPartyAppConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauThirdPartyAppConsent"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauACOCareManagerOptOutConsent"
+* entry[=].resource = MonicaRambeauACOCareManagerOptOutConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/MonicaRambeauACOCareManagerOptOutConsent"
 
 
 Instance: MonicaRambeau
@@ -511,7 +551,7 @@ Usage: #example
 * component[=].valueInteger = 1
 * component[+].code = $sct#248991006 "Number of live deliveries (observable entity)"
 * component[=].valueInteger = 0
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * effectiveDateTime = "2026-03-24"
 
 Instance: MonicaRambeauLMP
@@ -526,7 +566,7 @@ Usage: #example
 * code.text = "Last Menstrual Period"
 * subject = Reference(MonicaRambeau)
 * valueDateTime = "2026-03-24"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * effectiveDateTime = "2026-03-24"
 
 Instance: MonicaRambeauPOChCG
@@ -542,7 +582,7 @@ Usage: #example
 * code.text = "POC hCG (urine pregnancy test)"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2024-07-08"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
 * valueCodeableConcept.text = "Positive"
 
@@ -559,7 +599,7 @@ Usage: #example
 * code.text = "hCG serum quantitative"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2024-07-08"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * valueQuantity = 85000 '[IU]/L' "IU/L"
 
 Instance: MonicaRambeauhCGSerumQuantMedAbort
@@ -575,7 +615,7 @@ Usage: #example
 * code.text = "hCG serum quantitative"
 * subject = Reference(MonicaRambeau)
 * effectiveDateTime = "2025-11-08"
-* performer = Reference(MonicaRambeauDoctor)
+* performer = Reference(DrHibbert)
 * valueQuantity = 22000 '[IU]/L' "IU/L"
 
 Instance: MonicaRambeauAmoxicillinAllergy
@@ -615,10 +655,192 @@ Usage: #example
 * name.family = "Rambeau"
 * name.given = "Frank"
 
-Instance: MonicaRambeauDoctor
-InstanceOf: Practitioner
-Title: "Monica Rambeau's Doctor"
-Description: "This practitioner is Monica Rambeau's primary care doctor."
+Instance: MonicaRambeauFamilyConsent
+InstanceOf: Consent
+Title: "Monica Rambeau Family Privacy Consent"
+ Description: "This consent records Monica Rambeau's privacy preference for family-requested access. Because Monica is an adult and has not granted parental proxy access, the example is modeled as a direct denial of access when the purpose of use is family request (FAMRQT). This example is intentionally scoped only to parent-access semantics and does not attempt to encode her separate Florida PCP or third-party app disclosure preferences."
 Usage: #example
-* name.family = "Hibbert"
-* name.given = "Jane"
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MonicaRambeau)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/FamilyRequestPolicy"
+ // This Consent is scoped to parent access only, represented as the purpose of
+ // use Family Request rather than as specific parent actors.
+* provision.type = #deny
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose = $v3-ActReason#FAMRQT
+
+Instance: MonicaRambeauTreatmentConsent
+InstanceOf: Consent
+Title: "Monica Rambeau TPO Consent"
+ Description: "This consent records Monica Rambeau's agreement to disclose her health information for Treatment, Payment, and Healthcare Operations (TPO) purposes. As an adult, Monica broadly permits TPO access without actor restrictions at the root level. Payer-specific restrictions on sensitive data categories (e.g., SOGI, genetic) are handled by organizational policy rather than this Consent. Explicit exceptions encoded here are: (1) SEX-labeled data is denied to the FL private PCP and the third-party app (Mapple), who have no legitimate clinical need for sexual/reproductive data; (2) STD-labeled data is denied to FL PCP, Mapple, and payer Green due to privacy and out-of-pocket constraints; (3) HIV-labeled data is denied to FL PCP and Mapple; (4) ABORTION-labeled data is denied to TPL and FL downstream actors who should not receive abortion history; and (5) genetic-history data (GDIS label) is denied to BLP, Riviera, McStuffins, BBP, Mapple, and Green. Because SEX labels are also used for some non-SOGI reproductive data (e.g., contraception), SOGI-only exclusions for BLP, TPL, McStuffins, BBP, and Green are handled as organizational policy/obligation logic rather than this Consent. This Consent pairs with the FAMRQT Consent (MonicaRambeauFamilyConsent), which separately records her denial of family-requested access."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MonicaRambeau)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/TPOPolicy"
+ // TPO access is permitted broadly at the root level. All three purposes share the
+ // same set of exceptions; there is no distinction between Treatment, Payment, and
+ // Operations at this level. Payer-specific policy restrictions (e.g., on SOGI or
+ // genetic data) are governed by the payer's own organizational policy, not this Consent.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#TREAT
+* provision.purpose[+] = $v3-ActReason#HPAYMT
+* provision.purpose[+] = $v3-ActReason#HOPERAT
+ // Nested deny: sexual/reproductive data (SEX label) is denied to Riviera and Mapple.
+ // This avoids overblocking contraception recipients who must still receive some
+ // SEX-labeled data in this scenario. SOGI-only exclusions for other actors are
+ // handled via organizational policy/obligation logic.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#SEX
+* provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Mapple)
+ // Nested deny: STI data (STD label) is denied to Riviera and Mapple (no clinical need)
+ // and to the payer (Green) because Monica's STI care was paid out of pocket.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#STD
+* provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Mapple)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Green)
+ // Nested deny: HIV-related data (HIV label) is denied to Riviera and Mapple.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#HIV
+* provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Mapple)
+ // Nested deny: abortion history (ABORTION label) is denied to TPL, Riviera,
+ // McStuffins, BBP, and Mapple.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $extraSensitiveCodes#ABORTION
+* provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(TPL)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrMcStuffins)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(BBP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Mapple)
+ // Nested deny: genetic-history data (GDIS label) is denied to recipients marked
+ // as deny in the Genetic Hx permissions grid.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#GDIS
+* provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(BLP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrRiviera)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(DrMcStuffins)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(BBP)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Mapple)
+* provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.provision[=].actor[=].reference = Reference(Green)
+
+Instance: MonicaRambeauBOMAttestation
+InstanceOf: Consent
+Title: "FL BOM OCR Attestation — Monica Rambeau"
+ Description: "This Consent models the OCR HIPAA Reproductive Health Privacy Rule attestation provided by the FL Board of Medicine (BOM) prior to accessing Monica Rambeau's records during a provider practice review. Under the 2024 OCR Reproductive Health Privacy Rule (45 CFR 164.512(d)), the BOM must attest that it will not use or disclose reproductive health data to investigate, prosecute, or impose liability on any person for seeking, obtaining, providing, or facilitating lawful reproductive health care. The BOM is the performer — it is the attesting party. The root provision permits the BOM to access Monica's records for health oversight activities (HOPERAT). The nested deny encodes the substantive commitment of the attestation: resources carrying any of the reproductive health sensitive labels (SEX, STD, HIV, ABORTION) are outside the scope of this disclosure. Dr. Riviera's office should not release those records to the BOM even during the practice review.
+ 
+ This Consent is executed by the FL BOM, so it is what many would not consider a Consent in the traditional sense. Specifically the Consent.performer is FL BOM, as is the Consent.organization. This Consent is also specific to the Legal Review (PurposeOfUse)."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(BOM)
+* organization = Reference(BOM)
+* policy.uri = "https://example.org/hipaa/for-professionals/privacy/reproductive-health/index.html"
+ // Root permit: the BOM is authorized to access Monica's non-reproductive-health records
+ // for health oversight activities (provider practice review under 45 CFR 164.512(d)).
+ // The BOM is named as the actor so that this permit applies only to their access.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[+] = $v3-ActReason#HOPERAT
+* provision.purpose[+] = $v3-ActReason#HLEGAL
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(BOM)
+ // Nested deny: resources carrying any reproductive health sensitive label are excluded
+ // from this disclosure. A single provision with multiple securityLabels uses OR semantics:
+ // a resource tagged with ANY of these labels is denied. This encodes the BOM's attestation
+ // that it will not seek or receive reproductive health data for this oversight review.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#SEX
+* provision.provision[=].securityLabel[+] = $v3-ActCode#STD
+* provision.provision[=].securityLabel[+] = $v3-ActCode#HIV
+* provision.provision[=].securityLabel[+] = $extraSensitiveCodes#ABORTION
+
+Instance: MonicaRambeauThirdPartyAppConsent
+InstanceOf: Consent
+Title: "Monica Rambeau 3rd Party App Consent (PATRQT)"
+ Description: "This Consent records Monica Rambeau's patient-directed authorization for the Mapple diet/food tracker app to receive a subset of her health data. The access request is initiated on behalf of Monica through the app (PurposeOfUse = PATRQT). The actor in the root provision is the Mapple app Device, scoping this Consent exclusively to patient-directed data sharing with that application. Monica permits the app to receive non-sensitive clinical data — specifically her allergies and non-sensitive medications (e.g., Miralax, Albuterol, Pulmicort) — to support her constipation management. She explicitly withholds: contraceptive medications and sexual/reproductive history (SEX label), STI information (STD label), HIV-related data including PrEP (HIV label), and abortion history (ABORTION label). The root provision permits access for PATRQT, and nested deny provisions enforce Monica's data-sharing restrictions by security label."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MonicaRambeau)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/PatientDirectedDataSharing"
+ // Root permit: Monica authorizes the Mapple app to receive her health data for
+ // patient-requested purposes (PATRQT). The actor is the Device (the app itself),
+ // narrowing this permit strictly to that application.
+* provision.type = #permit
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#PATRQT
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(MappleFoodTrackerApp)
+ // Nested deny: sexual/reproductive data (SEX label) — includes contraceptive medications
+ // (Loestrin), sexual history, and reproductive history. Monica does not want the app to
+ // receive her OCP or OB history due to privacy concerns.
+* provision.provision[0].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#SEX
+ // Nested deny: STI data (STD label). Monica does not wish to share STI information
+ // (chlamydia diagnosis, related labs) with the non-HIPAA-covered app.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#STD
+ // Nested deny: HIV-related data (HIV label) — includes PrEP medications (Descovy).
+ // Monica does not want the app to receive any HIV-related data.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $v3-ActCode#HIV
+ // Nested deny: abortion history (ABORTION label). Monica does not want the app to
+ // receive any information about her pregnancy or abortion history.
+* provision.provision[+].type = #deny
+* provision.provision[=].securityLabel[0] = $extraSensitiveCodes#ABORTION
+
+Instance: MonicaRambeauACOCareManagerOptOutConsent
+InstanceOf: Consent
+Title: "Monica Rambeau ACO Care Manager Opt-Out Consent"
+Description: "This Consent records Monica Rambeau's opt-out from ACO care-management follow-up related to PrEP. The root provision denies access to Monica's data for the named MA ACO care manager actor (Ann Perkins), across treatment and healthcare operations use-cases. This models the Permissions Grid row where the MA ACO Care Manager is not authorized to receive Monica's data in this use-case."
+Usage: #example
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category = $loinc#59284-0 "Consent Document"
+* patient = Reference(MonicaRambeau)
+* dateTime = "2026-05-05"
+* performer[0] = Reference(MonicaRambeau)
+* policy.uri = "http://example.org/fhir/ConsentPolicy/ACOCareManagerOptOut"
+// Root deny: Monica opts out of ACO care-manager follow-up, so this actor is denied
+// access for treatment and operations contexts in this scenario.
+* provision.type = #deny
+* provision.action = http://terminology.hl7.org/CodeSystem/consentaction#access "Access"
+* provision.purpose[0] = $v3-ActReason#TREAT
+* provision.purpose[+] = $v3-ActReason#HOPERAT
+* provision.actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
+* provision.actor[=].reference = Reference(AnnPerkins)

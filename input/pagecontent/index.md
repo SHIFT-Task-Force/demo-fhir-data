@@ -2,8 +2,7 @@ Privacy Consent driven access control through data sensitivity tagging.
 
 ### SHIFT use-cases
 
-- [Adolescent](adolescent.html)
-  - [Rambeau Sisters](Rambeau.html)
+- Adolescent
   - [Maxine "Max" Mayfield at 16](MaxineMayfield.html)
   - [Monica Rambeau at 19](MonicaRambeau.html)
 - [Behavioral](behavioral.html)
@@ -18,7 +17,7 @@ Sensitive topics are generally potentially stigmatizing information, for which e
 Normal data is often not tagged as Normal, but rather is just the absence of any sensitive tag. This is recognizing that the vast majority of medical data are Normal (algorithmically average). The presence of any sensitive tag would make the data Restricted, indicated as `R` restricted Confidentiality code.
 
 <div>
-<img src="patient-health-data-venn.svg" caption="Sensitive data Venn diagram"/>
+<img src="patient-health-data-venn.svg" caption="Sensitive data Venn diagram" width="50%"/>
 </div>
 
 The data are tagged purely due to their data content, and not due to any other factors such as the Patient consent status. The labeling does not imply that there is any particular access control policy in place, but rather that the data is sensitive and may require special handling. The access control policies would be defined separately, and could use the presence of these sensitivity tag to make decisions about who can access the data and under what circumstances.
