@@ -251,30 +251,6 @@ Usage: #example
 * name = "Medicare"
 * type = http://terminology.hl7.org/CodeSystem/organization-type#ins "Insurance Company"
 
-Instance: CarlFredericksonGreenInc
-InstanceOf: Organization
-Title: "It's Not Easy Being Green, Inc. (Carl)"
-Description: "It's Not Easy Being Green, Inc., Carl Frederickson's Medigap supplemental insurance payer."
-Usage: #example
-* name = "It's Not Easy Being Green, Inc."
-* type = http://terminology.hl7.org/CodeSystem/organization-type#ins "Insurance Company"
-
-Instance: CarlFredericksonBLP
-InstanceOf: Organization
-Title: "Best Little Pharmacy (Carl)"
-Description: "Best Little Pharmacy, where Carl Frederickson fills his SMC prescriptions."
-Usage: #example
-* name = "Best Little Pharmacy"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-
-Instance: CarlFredericksonMapple
-InstanceOf: Organization
-Title: "Mapple Wellness App (Carl)"
-Description: "The Mapple Wellness app used by Carl Frederickson to track symptoms and PGHD. Carl uploads data to this non-HIPAA-covered app but does NOT consent to this app receiving any data from his clinical record."
-Usage: #example
-* name = "Mapple"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#bus "Non-Healthcare Business or Corporation"
-
 
 Instance: AllofCarlTeam
 InstanceOf: Bundle
@@ -373,20 +349,8 @@ Description: "A FHIR Bundle containing Carl Frederickson's Care Team and all rel
 * entry[=].fullUrl = "http://example.org/fhir/RelatedPerson/EllieFrederickson"
 * entry[=].request.url = "RelatedPerson/EllieFrederickson"
 * entry[=].request.method = #PUT
-* entry[+].resource = CarlFredericksonBLP
-* entry[=].fullUrl = "http://example.org/fhir/Organization/CarlFredericksonBLP"
-* entry[=].request.url = "Organization/CarlFredericksonBLP"
-* entry[=].request.method = #PUT
-* entry[+].resource = CarlFredericksonMapple
-* entry[=].fullUrl = "http://example.org/fhir/Organization/CarlFredericksonMapple"
-* entry[=].request.url = "Organization/CarlFredericksonMapple"
-* entry[=].request.method = #PUT
 * entry[+].resource = CarlFredericksonMedicare
 * entry[=].fullUrl = "http://example.org/fhir/Organization/CarlFredericksonMedicare"
 * entry[=].request.url = "Organization/CarlFredericksonMedicare"
-* entry[=].request.method = #PUT
-* entry[+].resource = CarlFredericksonGreenInc
-* entry[=].fullUrl = "http://example.org/fhir/Organization/CarlFredericksonGreenInc"
-* entry[=].request.url = "Organization/CarlFredericksonGreenInc"
 * entry[=].request.method = #PUT
 

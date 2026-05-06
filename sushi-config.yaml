@@ -85,6 +85,8 @@ groups:
       - Device/MappleFoodTrackerApp
       - Organization/Green
       - Organization/BOM
+      - Organization/BLP
+      - Bundle/BundleOrganizations
   CarlFredericksonCareTeam:
     description: "Resources related to Carl Frederickson's Care Team"
     resources:
@@ -109,6 +111,7 @@ groups:
       - PractitionerRole/ACOCareManager-practitionerrole
       - Practitioner/ACO-Care-Manager
       - Organization/SpringfieldACO
+      - Organization/CarlFredericksonMedicare
       - RelatedPerson/EllieFrederickson
       - Bundle/AllofCarlTeam
   CarlFrederickson:

@@ -132,14 +132,6 @@ Usage: #example
 * entry[=].resource = DrHibbert
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/DrHibbert"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/MonicaRambeauBLP"
-* entry[=].resource = MonicaRambeauBLP
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/MonicaRambeauBLP"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/TPL"
-* entry[=].resource = TPL
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/TPL"
 * entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrRiviera"
 * entry[=].resource = DrRiviera
 * entry[=].request.method = #PUT
@@ -156,18 +148,6 @@ Usage: #example
 * entry[=].resource = BBP
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Organization/BBP"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/Mapple"
-* entry[=].resource = Mapple
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/Mapple"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/Green"
-* entry[=].resource = Green
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/Green"
-* entry[+].fullUrl = "http://example.org/fhir/Organization/BOM"
-* entry[=].resource = BOM
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/BOM"
 * entry[+].fullUrl = "http://example.org/fhir/Consent/MonicaRambeauFamilyConsent"
 * entry[=].resource = MonicaRambeauFamilyConsent
 * entry[=].request.method = #PUT
@@ -675,14 +655,6 @@ Usage: #example
 * name.family = "Rambeau"
 * name.given = "Frank"
 
-Instance: MonicaRambeauBLP
-InstanceOf: Organization
-Title: "MA Best Little Pharmacy"
-Description: "The MA Best Little Pharmacy that fills prescriptions for Monica Rambeau."
-Usage: #example
-* name = "Best Little Pharmacy"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-
 Instance: MonicaRambeauFamilyConsent
 InstanceOf: Consent
 Title: "Monica Rambeau Family Privacy Consent"
@@ -768,7 +740,7 @@ Usage: #example
 * provision.provision[+].type = #deny
 * provision.provision[=].securityLabel[0] = $v3-ActCode#GDIS
 * provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(MonicaRambeauBLP)
+* provision.provision[=].actor[=].reference = Reference(BLP)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
 * provision.provision[=].actor[=].reference = Reference(DrRiviera)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"

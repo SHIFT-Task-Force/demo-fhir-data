@@ -72,7 +72,7 @@ Usage: #example
 * provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
 * provision.provision[=].actor[=].reference = Reference(DrBanner)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(CarlFredericksonMapple)
+* provision.provision[=].actor[=].reference = Reference(Mapple)
 
  // [1] Deny BH-labeled data to OHS providers and Carl's portal proxy (Ellie).
  // Covers: general BH (MDD, fluoxetine, PHQ9), OCPD, and all SUD data (including
@@ -171,7 +171,7 @@ Usage: #example
  // [3] Permit: Best Little Pharmacy (BLP) — authorized for medication dispensing.
 * provision.provision[3].type = #permit
 * provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(CarlFredericksonBLP)
+* provision.provision[=].actor[=].reference = Reference(BLP)
 
  // [4] Permit: Payers (Medicare and Green, Inc.) — authorized for payment processing.
  // This authorization covers both payers under a single permit provision.
@@ -179,4 +179,4 @@ Usage: #example
 * provision.provision[=].actor[0].role = $v3-ParticipationType#PRCP "primary information recipient"
 * provision.provision[=].actor[=].reference = Reference(CarlFredericksonMedicare)
 * provision.provision[=].actor[+].role = $v3-ParticipationType#PRCP "primary information recipient"
-* provision.provision[=].actor[=].reference = Reference(CarlFredericksonGreenInc)
+* provision.provision[=].actor[=].reference = Reference(Green)
