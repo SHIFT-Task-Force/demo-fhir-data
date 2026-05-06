@@ -708,7 +708,7 @@ Description: "This encounter represents Maxine Mayfield's Massachusetts visit fo
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = $v3-ActCode#ABORTION
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "D&C procedure visit"
@@ -725,7 +725,7 @@ Description: "This encounter represents Maxine Mayfield's Massachusetts visit fo
 Usage: #example
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
-* meta.security[+] = $v3-ActCode#ABORTION
+* meta.security[+] = $extraSensitiveCodes#ABORTION
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "Medical abortion visit"
