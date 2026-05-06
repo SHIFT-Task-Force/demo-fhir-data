@@ -122,7 +122,7 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
 
 - [Patient](Patient-MonicaRambeau.html)
 - [Monica's Bundle](Bundle-AllOfMonicaRambeau.html)
-<<<<<<< HEAD
+- [Shared data bundle](Bundle-BundleOrganizations.html)
 
 #### Data grouped by Encounter
 
@@ -166,7 +166,3 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
   - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MonicaRambeauHIVELISA.html)
   - [Observation — Last Menstrual Period (2026-03-24)](Observation-MonicaRambeauLMP.html)
   - [MedicationRequest — Azithromycin (CT treatment)](MedicationRequest-MonicaRambeauAzithromycin.html)
-
-=======
-- [Shared data bundle](Bundle-BundleOrganizations.html)
->>>>>>> main

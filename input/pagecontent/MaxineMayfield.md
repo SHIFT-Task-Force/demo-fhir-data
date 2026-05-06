@@ -130,7 +130,7 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
 
 - [Maxine "Max" Mayfield at 16](Patient-MaxineMayfield16.html)
 - [Maxine Mayfield data bundle](Bundle-AllOfMaxineMayfield16.html)
-<<<<<<< HEAD
+- [Shared data bundle](Bundle-BundleOrganizations.html)
 
 #### Data grouped by Encounter
 
@@ -174,6 +174,4 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
   - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MaxineMayfield16HIVELISA.html)
   - [Observation — Last Menstrual Period](Observation-MaxineMayfield16LMP.html)
   - [MedicationRequest — Azithromycin (CT treatment)](MedicationRequest-MaxineMayfield16Azithromycin.html)
-=======
-- [Shared data bundle](Bundle-BundleOrganizations.html)
->>>>>>> main
+
