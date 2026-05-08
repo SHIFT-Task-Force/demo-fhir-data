@@ -119,6 +119,10 @@ groups:
     resources:
       - Patient/CarlFrederickson
       - CareTeam/CarlFredericksonCareTeam
+      - Encounter/CarlFredericksonEncPodiatryEval
+      - DiagnosticReport/CarlFredericksonXrayFeet
+      - MedicationRequest/CarlFredericksonIbuprofen
+      - Encounter/CarlFredericksonEncTherapy
       - Observation/CarlFredericksonPHQ9
       - Observation/CarlFredericksonPHQ9A  
       - Condition/CarlFredericksonBunions
@@ -126,11 +130,9 @@ groups:
       - Condition/CarlFredericksonMDD
       - Condition/CarlFredericksonOCPD
       - Condition/CarlFredericksonOUD
-      - DiagnosticReport/CarlFredericksonXrayFeet
       - MedicationRequest/CarlFredericksonBuprenorphineNaltrexone
       - MedicationRequest/CarlFredericksonCaptopril
       - MedicationRequest/CarlFredericksonFluoxetine
-      - MedicationRequest/CarlFredericksonIbuprofen
       - Observation/CarlFredericksonBloodPressure
       - Observation/CarlFredericksonOUDThoughtRecord
       - Consent/CarlFredericksonConsent

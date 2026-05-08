@@ -16,6 +16,7 @@ Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
 * code.text = "Mapple Screening - PHQ-9 depression assessment"
 
 * subject = Reference(CarlFrederickson)
+* encounter = Reference(CarlFredericksonEncTherapy)
 * focus = Reference(CarlFredericksonPHQ9A )
 * performer[0].display = "Lucy van Pelt"
 * effectiveDateTime = "2023-08-12T14:30:00Z"
@@ -38,6 +39,7 @@ Description: "PHQ-9 Depression screening questionnaire for Carl Frederickson"
 * code.coding[0] = http://www.ama-assn.org/go/cpt#96127 "Brief emotional/behavioral assessment (eg, depression inventory, attention-deficit/hyperactivity disorder [ADHD] scale), with scoring and documentation, per standardized instrument"
 
 * subject = Reference(CarlFrederickson)
+* encounter = Reference(CarlFredericksonEncTherapy)
 * performer[0].display = "Lucy van Pelt"
 * effectiveDateTime = "2023-08-12T14:30:00Z"
 

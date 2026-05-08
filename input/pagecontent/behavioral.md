@@ -86,3 +86,29 @@ When surgery is decided upon, Carl sees Dr. Aurora.  She does believe she needs 
 - [All of Carl's data](artifacts.html#carlfrederickson)
 - [All of Carl's team](artifacts.html#carlfredericksoncareteam)
 - [Shared data bundle](Bundle-BundleOrganizations.html)
+
+#### Data grouped by Encounter
+
+- **No Encounter (Background / Ongoing)**
+  - [Patient — Carl Frederickson](Patient-CarlFrederickson.html)
+  - [CareTeam — Carl's Care Team](CareTeam-CarlFredericksonCareTeam.html)
+  - [Condition — Essential Hypertension](Condition-CarlFredericksonHTN.html)
+  - [Condition — Bilateral Bunions](Condition-CarlFredericksonBunions.html)
+  - [Condition — Major Depressive Disorder](Condition-CarlFredericksonMDD.html)
+  - [Condition — Obsessive-Compulsive Personality Disorder](Condition-CarlFredericksonOCPD.html)
+  - [Condition — Opiate Use Disorder](Condition-CarlFredericksonOUD.html)
+  - [MedicationRequest — Captopril 12.5mg BID](MedicationRequest-CarlFredericksonCaptopril.html)
+  - [MedicationRequest — Fluoxetine 20mg daily](MedicationRequest-CarlFredericksonFluoxetine.html)
+  - [MedicationRequest — Buprenorphine/Naloxone (MAT for OUD)](MedicationRequest-CarlFredericksonBuprenorphineNaltrexone.html)
+  - [Observation — Blood Pressure (Mapple PGHD, 2023-08-15)](Observation-CarlFredericksonBloodPressure.html)
+  - [Observation — OUD Thought Record (Mapple CBT, 2023-08-05)](Observation-CarlFredericksonOUDThoughtRecord.html)
+  - [Consent — Treatment/Payment/Operations Consent](Consent-CarlFredericksonConsent.html)
+  - [Consent — 42 CFR Part II Consent](Consent-CarlFrederickson42CFRPartIIConsent.html)
+
+- **2022-11-15 — Podiatry Evaluation ([CarlFredericksonEncPodiatryEval](Encounter-CarlFredericksonEncPodiatryEval.html))**
+  - [DiagnosticReport — X-ray Bilateral Feet](DiagnosticReport-CarlFredericksonXrayFeet.html)
+  - [MedicationRequest — Ibuprofen 800mg (not placed — DDI alert)](MedicationRequest-CarlFredericksonIbuprofen.html)
+
+- **2023-08-12 — Therapy Visit ([CarlFredericksonEncTherapy](Encounter-CarlFredericksonEncTherapy.html))**
+  - [Observation — PHQ-9 Depression Screening](Observation-CarlFredericksonPHQ9.html)
+  - [Observation — PHQ-9 A (brief behavioral assessment)](Observation-CarlFredericksonPHQ9A.html)

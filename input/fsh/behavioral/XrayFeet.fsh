@@ -12,6 +12,7 @@ Description: "X-ray, bilateral feet, weightbearing, 2 views: dorsoplantar (DP) a
 * code.coding[0] = http://www.ama-assn.org/go/cpt#73620 "Radiologic examination, foot; 2 views"
 * code.text = "X-ray, bilateral feet, weightbearing, 2 views: dorsoplantar (DP) and axial"
 * subject = Reference(CarlFrederickson)
+* encounter = Reference(CarlFredericksonEncPodiatryEval)
 * effectiveDateTime = "2022-11-15T10:30:00Z"
 * issued = "2022-11-15T14:45:00Z"
 * performer.display = "Dr. Robert Smith, Radiologist"
