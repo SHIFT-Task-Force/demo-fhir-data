@@ -141,26 +141,26 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
   - [MedicationRequest — Loestrin 1.5/30 (OCP)](MedicationRequest-MonicaRambeauLoestrin.html)
   - [MedicationRequest — Descovy (PrEP)](MedicationRequest-MonicaRambeauDescovy.html)
 
-- **2024-07-08 — Prenatal Evaluation ([MonicaRambeauEncMAPrenatalEval](Encounter-MonicaRambeauEncMAPrenatalEval.html))**
+- **Age 17y 11m — Prenatal Evaluation ([MonicaRambeauEncMAPrenatalEval](Encounter-MonicaRambeauEncMAPrenatalEval.html))**
   - [Observation — POC hCG (urine, positive)](Observation-MonicaRambeauPOChCG.html)
   - [Observation — hCG Serum Quantitative, 85,000 IU/L](Observation-MonicaRambeauhCGSerumQuantDandC.html)
   - [Observation — Obstetric History (G1P0010)](Observation-MonicaRambeauOBHx.html)
   - [DiagnosticReport — First Trimester Ultrasound](DiagnosticReport-MonicaRambeauFirstTrimesterUS.html)
 
-- **2024-08-08 — (No dedicated Encounter — Quad Screen)**
+- **Age 18y 0m — (No dedicated Encounter — Quad Screen)**
   - [DiagnosticReport — Quad Screen](DiagnosticReport-MonicaRambeauQuadScreen.html)
 
-- **2024-09-08 — D&C Procedure ([MonicaRambeauEncMADandCProcedure](Encounter-MonicaRambeauEncMADandCProcedure.html))**
+- **Age 18y 1m — D&C Procedure ([MonicaRambeauEncMADandCProcedure](Encounter-MonicaRambeauEncMADandCProcedure.html))**
   - [Condition — D&C Abortion](Condition-MonicaRambeauDandCAbortion.html)
   - [Procedure — D&C Abortion Procedure](Procedure-MonicaRambeauDandCProcedure.html)
 
-- **2025-12-08 — Medical Abortion ([MonicaRambeauEncMAMedicalAbortion](Encounter-MonicaRambeauEncMAMedicalAbortion.html))**
+- **Age 19y 4m — Medical Abortion ([MonicaRambeauEncMAMedicalAbortion](Encounter-MonicaRambeauEncMAMedicalAbortion.html))**
   - [Condition — Medical Abortion](Condition-MonicaRambeauMedicalAbortion.html)
   - [Observation — hCG Serum Quantitative, 22,000 IU/L](Observation-MonicaRambeauhCGSerumQuantMedAbort.html)
   - [MedicationRequest — Mifepristone](MedicationRequest-MonicaRambeauMifepristone.html)
   - [MedicationRequest — Misoprostol](MedicationRequest-MonicaRambeauMisoprostol.html)
 
-- **2026-04-07 — STI Evaluation ([MonicaRambeauEncMASTI](Encounter-MonicaRambeauEncMASTI.html))**
+- **Age 19y 7m — STI Evaluation ([MonicaRambeauEncMASTI](Encounter-MonicaRambeauEncMASTI.html))**
   - [Condition — Chlamydia](Condition-MonicaRambeauChlamydia.html)
   - [DiagnosticReport — GC/CT NAAT (GC negative, CT positive)](DiagnosticReport-MonicaRambeauGCNAAT.html)
   - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MonicaRambeauHIVELISA.html)

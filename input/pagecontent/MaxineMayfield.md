@@ -149,26 +149,26 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
   - [MedicationRequest — Loestrin 1.5/30 (OCP)](MedicationRequest-MaxineMayfield16Loestrin.html)
   - [MedicationRequest — Descovy (PrEP)](MedicationRequest-MaxineMayfield16Descovy.html)
 
-- **2024-07-18 — Prenatal Evaluation ([MaxineMayfield16EncMAPrenatalEval](Encounter-MaxineMayfield16EncMAPrenatalEval.html))**
+- **Age 15y 0m — Prenatal Evaluation ([MaxineMayfield16EncMAPrenatalEval](Encounter-MaxineMayfield16EncMAPrenatalEval.html))**
   - [Observation — POC hCG (urine, positive)](Observation-MaxineMayfield16POChCG.html)
   - [Observation — hCG Serum Quantitative, 85,000 IU/L](Observation-MaxineMayfield16hCGSerumQuantDandC.html)
   - [Observation — Obstetric History (G1P0010)](Observation-MaxineMayfield16OBHx.html)
   - [DiagnosticReport — First Trimester Ultrasound](DiagnosticReport-MaxineMayfield16FirstTrimesterUS.html)
 
-- **2024-08-18 — (No dedicated Encounter — Quad Screen)**
+- **Age 15y 1m — (No dedicated Encounter — Quad Screen)**
   - [DiagnosticReport — Quad Screen](DiagnosticReport-MaxineMayfield16QuadScreen.html)
 
-- **2024-09-18 — D&C Procedure ([MaxineMayfield16EncMADandCProcedure](Encounter-MaxineMayfield16EncMADandCProcedure.html))**
+- **Age 15y 2m — D&C Procedure ([MaxineMayfield16EncMADandCProcedure](Encounter-MaxineMayfield16EncMADandCProcedure.html))**
   - [Condition — D&C Abortion](Condition-MaxineMayfield16DandCAbortion.html)
   - [Procedure — D&C Abortion Procedure](Procedure-MaxineMayfield16DandCProcedure.html)
 
-- **2025-12-18 — Medical Abortion ([MaxineMayfield16EncMAMedicalAbortion](Encounter-MaxineMayfield16EncMAMedicalAbortion.html))**
+- **Age 16y 5m — Medical Abortion ([MaxineMayfield16EncMAMedicalAbortion](Encounter-MaxineMayfield16EncMAMedicalAbortion.html))**
   - [Condition — Medical Abortion](Condition-MaxineMayfield16MedicalAbortion.html)
   - [Observation — hCG Serum Quantitative, 22,000 IU/L](Observation-MaxineMayfield16hCGSerumQuantMedAbort.html)
   - [MedicationRequest — Mifepristone](MedicationRequest-MaxineMayfield16Mifepristone.html)
   - [MedicationRequest — Misoprostol](MedicationRequest-MaxineMayfield16Misoprostol.html)
 
-- **2026-04-17 — STI Evaluation ([MaxineMayfield16EncMASTI](Encounter-MaxineMayfield16EncMASTI.html))**
+- **Age 16y 8m — STI Evaluation ([MaxineMayfield16EncMASTI](Encounter-MaxineMayfield16EncMASTI.html))**
   - [Condition — Chlamydia](Condition-MaxineMayfield16Chlamydia.html)
   - [DiagnosticReport — GC/CT NAAT (GC negative, CT positive)](DiagnosticReport-MaxineMayfield16GCNAAT.html)
   - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MaxineMayfield16HIVELISA.html)
