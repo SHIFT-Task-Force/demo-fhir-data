@@ -6,7 +6,6 @@ Privacy Consent driven access control through data sensitivity tagging.
 - Adolescent
   - [Maxine "Max" Mayfield at 16](MaxineMayfield.html)
   - [Monica Rambeau at 19](MonicaRambeau.html)
-- [Veronica Mars](VeronicaMars.html) (under construction)
 
 ### Sensitive data as Venn diagram
 
