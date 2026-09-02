@@ -95,6 +95,7 @@ The FL Board of Medicine (BOM) is doing a review of her FL Private PCP (Dr. Nick
 1. Note that Observation $sct#364324000, specifically $sct#252113007 "Number of abortions (observable entity)" as a code does not indicate abortion, but a valueInteger greater than 0 does. This is not simple code tagging, but would require an SLS that understands values. This data would be tagged as SEX sensitive but not ABORTION sensitive, which will leak abortion details if the rules for SEX and ABORTION are not exactly the same.
 2. Note the adolescent use-cases indicate that there should be exclusion rules for Legal Sex, Preferred Name, Gender ID & Pronouns, and Sexual Orientation. These would be handled very differently than data sensitivity. Thus the consent and the data in the IG is focused only on data sensitivity, not these demographics. These would need to be handled with either obligation rules, or element level tagging. Both are another level of complexity.
 3. The control of the Gender Identity and Sexual Orientation data is not yet supported by FHIR Consent. Thus it must be handled with organizational policy, not consent, so there are no consents related to this.
+4. I have been having side discussions around overall grouping of all the related encounters for a given pregnancy. Some indicate that this would be grouped with an EpisodeOfCare, while others are saying that a Condition would be used. Our data do not have either of these. They have conditions, but not for the pregnancy condition. I am looking for a logical way to address the case we have where a pregnancy was terminated by abortion, where the abortion is a special kind of sensitivity. AND because of the abortion, the whole pregnancy likely needs to then be treated as abortion sensitivity. As having the beginning of a pregnancy without delivery is easy to imply abortion. So, the logic I added on Encounter, likely needs to be added for EpisodeOfCare and Condition.
 
 #### Organizational Policy
 
@@ -123,3 +124,46 @@ Thus a Treatment/Payment/Operations Consent needs only address the specific rule
 - [Patient](Patient-MonicaRambeau.html)
 - [Monica's Bundle](Bundle-AllOfMonicaRambeau.html)
 - [Shared data bundle](Bundle-BundleOrganizations.html)
+
+#### Data grouped by Encounter
+
+- **No Encounter (Background / Ongoing)**
+  - [Patient — Monica Rambeau](Patient-MonicaRambeau.html)
+  - [Related Person — Maria Rambeau (mother)](RelatedPerson-MariaRambeau.html)
+  - [Related Person — Frank Rambeau (father)](RelatedPerson-FrankRambeau.html)
+  - [Condition — Chronic Constipation](Condition-MonicaRambeauChronicConstipation.html)
+  - [Condition — Moderate Persistent Asthma](Condition-MonicaRambeauAsthma.html)
+  - [Condition — Irregular Periods](Condition-MonicaRambeauIrregularPeriods.html)
+  - [AllergyIntolerance — Amoxicillin (hives)](AllergyIntolerance-MonicaRambeauAmoxicillinAllergy.html)
+  - [Observation — Sexual Orientation](Observation-MonicaRambeauSexualOrientation.html)
+  - [MedicationRequest — Miralax (polyethylene glycol)](MedicationRequest-MonicaRambeauMiralax.html)
+  - [MedicationRequest — Albuterol inhaler PRN](MedicationRequest-MonicaRambeauAlbuterol.html)
+  - [MedicationRequest — Pulmicort Flexhaler BID](MedicationRequest-MonicaRambeauPulmicort.html)
+  - [MedicationRequest — Loestrin 1.5/30 (OCP)](MedicationRequest-MonicaRambeauLoestrin.html)
+  - [MedicationRequest — Descovy (PrEP)](MedicationRequest-MonicaRambeauDescovy.html)
+
+- **Age 17y 11m — Prenatal Evaluation ([MonicaRambeauEncMAPrenatalEval](Encounter-MonicaRambeauEncMAPrenatalEval.html))**
+  - [Observation — POC hCG (urine, positive)](Observation-MonicaRambeauPOChCG.html)
+  - [Observation — hCG Serum Quantitative, 85,000 IU/L](Observation-MonicaRambeauhCGSerumQuantDandC.html)
+  - [Observation — Obstetric History (G1P0010)](Observation-MonicaRambeauOBHx.html)
+  - [DiagnosticReport — First Trimester Ultrasound](DiagnosticReport-MonicaRambeauFirstTrimesterUS.html)
+
+- **Age 18y 0m — (No dedicated Encounter — Quad Screen)**
+  - [DiagnosticReport — Quad Screen](DiagnosticReport-MonicaRambeauQuadScreen.html)
+
+- **Age 18y 1m — D&C Procedure ([MonicaRambeauEncMADandCProcedure](Encounter-MonicaRambeauEncMADandCProcedure.html))**
+  - [Condition — D&C Abortion](Condition-MonicaRambeauDandCAbortion.html)
+  - [Procedure — D&C Abortion Procedure](Procedure-MonicaRambeauDandCProcedure.html)
+
+- **Age 19y 4m — Medical Abortion ([MonicaRambeauEncMAMedicalAbortion](Encounter-MonicaRambeauEncMAMedicalAbortion.html))**
+  - [Condition — Medical Abortion](Condition-MonicaRambeauMedicalAbortion.html)
+  - [Observation — hCG Serum Quantitative, 22,000 IU/L](Observation-MonicaRambeauhCGSerumQuantMedAbort.html)
+  - [MedicationRequest — Mifepristone](MedicationRequest-MonicaRambeauMifepristone.html)
+  - [MedicationRequest — Misoprostol](MedicationRequest-MonicaRambeauMisoprostol.html)
+
+- **Age 19y 7m — STI Evaluation ([MonicaRambeauEncMASTI](Encounter-MonicaRambeauEncMASTI.html))**
+  - [Condition — Chlamydia](Condition-MonicaRambeauChlamydia.html)
+  - [DiagnosticReport — GC/CT NAAT (GC negative, CT positive)](DiagnosticReport-MonicaRambeauGCNAAT.html)
+  - [DiagnosticReport — HIV ELISA (negative)](DiagnosticReport-MonicaRambeauHIVELISA.html)
+  - [Observation — Last Menstrual Period (2026-03-24)](Observation-MonicaRambeauLMP.html)
+  - [MedicationRequest — Azithromycin (CT treatment)](MedicationRequest-MonicaRambeauAzithromycin.html)

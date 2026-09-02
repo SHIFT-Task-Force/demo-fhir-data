@@ -15,10 +15,6 @@ Usage: #example
 * entry[=].resource = MaxineMayfield16
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Patient/MaxineMayfield16"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16SexualOrientation"
-* entry[=].resource = MaxineMayfield16SexualOrientation
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MaxineMayfield16SexualOrientation"
 * entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16ChronicConstipation"
 * entry[=].resource = MaxineMayfield16ChronicConstipation
 * entry[=].request.method = #PUT
@@ -31,90 +27,6 @@ Usage: #example
 * entry[=].resource = MaxineMayfield16IrregularPeriods
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Condition/MaxineMayfield16IrregularPeriods"
-* entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16Chlamydia"
-* entry[=].resource = MaxineMayfield16Chlamydia
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition/MaxineMayfield16Chlamydia"
-* entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16MedicalAbortion"
-* entry[=].resource = MaxineMayfield16MedicalAbortion
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition/MaxineMayfield16MedicalAbortion"
-* entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16DandCAbortion"
-* entry[=].resource = MaxineMayfield16DandCAbortion
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition/MaxineMayfield16DandCAbortion"
-* entry[+].fullUrl = "http://example.org/fhir/Procedure/MaxineMayfield16DandCProcedure"
-* entry[=].resource = MaxineMayfield16DandCProcedure
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Procedure/MaxineMayfield16DandCProcedure"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16GCNAAT"
-* entry[=].resource = MaxineMayfield16GCNAAT
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MaxineMayfield16GCNAAT"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16HIVELISA"
-* entry[=].resource = MaxineMayfield16HIVELISA
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MaxineMayfield16HIVELISA"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Miralax"
-* entry[=].resource = MaxineMayfield16Miralax
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Miralax"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Albuterol"
-* entry[=].resource = MaxineMayfield16Albuterol
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Albuterol"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Pulmicort"
-* entry[=].resource = MaxineMayfield16Pulmicort
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Pulmicort"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Loestrin"
-* entry[=].resource = MaxineMayfield16Loestrin
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Loestrin"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Azithromycin"
-* entry[=].resource = MaxineMayfield16Azithromycin
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Azithromycin"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Descovy"
-* entry[=].resource = MaxineMayfield16Descovy
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Descovy"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Mifepristone"
-* entry[=].resource = MaxineMayfield16Mifepristone
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Mifepristone"
-* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Misoprostol"
-* entry[=].resource = MaxineMayfield16Misoprostol
-* entry[=].request.method = #PUT
-* entry[=].request.url = "MedicationRequest/MaxineMayfield16Misoprostol"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16FirstTrimesterUS"
-* entry[=].resource = MaxineMayfield16FirstTrimesterUS
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MaxineMayfield16FirstTrimesterUS"
-* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16QuadScreen"
-* entry[=].resource = MaxineMayfield16QuadScreen
-* entry[=].request.method = #PUT
-* entry[=].request.url = "DiagnosticReport/MaxineMayfield16QuadScreen"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16OBHx"
-* entry[=].resource = MaxineMayfield16OBHx
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MaxineMayfield16OBHx"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16LMP"
-* entry[=].resource = MaxineMayfield16LMP
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MaxineMayfield16LMP"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16POChCG"
-* entry[=].resource = MaxineMayfield16POChCG
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MaxineMayfield16POChCG"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16hCGSerumQuantDandC"
-* entry[=].resource = MaxineMayfield16hCGSerumQuantDandC
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MaxineMayfield16hCGSerumQuantDandC"
-* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16hCGSerumQuantMedAbort"
-* entry[=].resource = MaxineMayfield16hCGSerumQuantMedAbort
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/MaxineMayfield16hCGSerumQuantMedAbort"
 * entry[+].fullUrl = "http://example.org/fhir/AllergyIntolerance/MaxineMayfield16AmoxicillinAllergy"
 * entry[=].resource = MaxineMayfield16AmoxicillinAllergy
 * entry[=].request.method = #PUT
@@ -131,6 +43,110 @@ Usage: #example
 * entry[=].resource = DrHibbert
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/DrHibbert"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MaxineMayfield16EncMAPrenatalEval"
+* entry[=].resource = MaxineMayfield16EncMAPrenatalEval
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MaxineMayfield16EncMAPrenatalEval"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16POChCG"
+* entry[=].resource = MaxineMayfield16POChCG
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MaxineMayfield16POChCG"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16hCGSerumQuantDandC"
+* entry[=].resource = MaxineMayfield16hCGSerumQuantDandC
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MaxineMayfield16hCGSerumQuantDandC"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16FirstTrimesterUS"
+* entry[=].resource = MaxineMayfield16FirstTrimesterUS
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MaxineMayfield16FirstTrimesterUS"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16QuadScreen"
+* entry[=].resource = MaxineMayfield16QuadScreen
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MaxineMayfield16QuadScreen"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16OBHx"
+* entry[=].resource = MaxineMayfield16OBHx
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MaxineMayfield16OBHx"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MaxineMayfield16EncMADandCProcedure"
+* entry[=].resource = MaxineMayfield16EncMADandCProcedure
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MaxineMayfield16EncMADandCProcedure"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16DandCAbortion"
+* entry[=].resource = MaxineMayfield16DandCAbortion
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/MaxineMayfield16DandCAbortion"
+* entry[+].fullUrl = "http://example.org/fhir/Procedure/MaxineMayfield16DandCProcedure"
+* entry[=].resource = MaxineMayfield16DandCProcedure
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Procedure/MaxineMayfield16DandCProcedure"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MaxineMayfield16EncMAMedicalAbortion"
+* entry[=].resource = MaxineMayfield16EncMAMedicalAbortion
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MaxineMayfield16EncMAMedicalAbortion"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16hCGSerumQuantMedAbort"
+* entry[=].resource = MaxineMayfield16hCGSerumQuantMedAbort
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MaxineMayfield16hCGSerumQuantMedAbort"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16MedicalAbortion"
+* entry[=].resource = MaxineMayfield16MedicalAbortion
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/MaxineMayfield16MedicalAbortion"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Mifepristone"
+* entry[=].resource = MaxineMayfield16Mifepristone
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Mifepristone"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Misoprostol"
+* entry[=].resource = MaxineMayfield16Misoprostol
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Misoprostol"
+* entry[+].fullUrl = "http://example.org/fhir/Encounter/MaxineMayfield16EncMASTI"
+* entry[=].resource = MaxineMayfield16EncMASTI
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Encounter/MaxineMayfield16EncMASTI"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/MaxineMayfield16Chlamydia"
+* entry[=].resource = MaxineMayfield16Chlamydia
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/MaxineMayfield16Chlamydia"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16GCNAAT"
+* entry[=].resource = MaxineMayfield16GCNAAT
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MaxineMayfield16GCNAAT"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/MaxineMayfield16HIVELISA"
+* entry[=].resource = MaxineMayfield16HIVELISA
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/MaxineMayfield16HIVELISA"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Azithromycin"
+* entry[=].resource = MaxineMayfield16Azithromycin
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Azithromycin"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Descovy"
+* entry[=].resource = MaxineMayfield16Descovy
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Descovy"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Loestrin"
+* entry[=].resource = MaxineMayfield16Loestrin
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Loestrin"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Miralax"
+* entry[=].resource = MaxineMayfield16Miralax
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Miralax"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Albuterol"
+* entry[=].resource = MaxineMayfield16Albuterol
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Albuterol"
+* entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/MaxineMayfield16Pulmicort"
+* entry[=].resource = MaxineMayfield16Pulmicort
+* entry[=].request.method = #PUT
+* entry[=].request.url = "MedicationRequest/MaxineMayfield16Pulmicort"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16LMP"
+* entry[=].resource = MaxineMayfield16LMP
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MaxineMayfield16LMP"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/MaxineMayfield16SexualOrientation"
+* entry[=].resource = MaxineMayfield16SexualOrientation
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/MaxineMayfield16SexualOrientation"
 * entry[+].fullUrl = "http://example.org/fhir/Organization/TPL"
 * entry[=].resource = TPL
 * entry[=].request.method = #PUT
@@ -228,6 +244,7 @@ Usage: #example
 * status = #final
 * code = $loinc#76690-7 "Sexual orientation"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * valueCodeableConcept = $sct#42035005 "Bisexual (finding)"
 * valueCodeableConcept.text = "Bisexual"
 * performer = Reference(MaxineMayfield16)
@@ -331,6 +348,7 @@ Usage: #example
 * code.coding[+] = $healthcare-common-procedure-system#S2260 "Induced abortion 17-24 weeks"
 * code.text = "Dilatation and Curettage, uterus, for therapeutic Abortion"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMADandCProcedure)
 * performedDateTime = "2024-09-18"
 
 Instance: MaxineMayfield16GCNAAT
@@ -345,6 +363,7 @@ Usage: #example
 * code = $loinc#92684-0 "CT + NG + TV DNA Pnl Ur NAA+probe"
 * code.text = "Gonorrhea/chlamydia urine NAAT panel"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * effectiveDateTime = "2026-04-17"
 * conclusion = "GC result negative; CT result positive."
 
@@ -360,6 +379,7 @@ Usage: #example
 * code = $loinc#80203-3 "HIV 1 & 2 Ab SerPlBld IA.rapid"
 * code.text = "HIV ELISA with reflex Western blot"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * effectiveDateTime = "2026-04-17"
 * conclusion = "HIV negative."
 
@@ -373,6 +393,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#876195 "Miralax 17 GM Powder for Oral Solution"
 * medicationCodeableConcept.text = "Miralax 17g PO daily"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * dosageInstruction.text = "17g PO daily"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
@@ -390,6 +411,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#2123072 "albuterol 90 MCG/ACTUAT Metered Dose Inhaler, 200 Actuations, generic for ProAir"
 * medicationCodeableConcept.text = "Albuterol 90 mcg/puff 2 puffs INH q4h PRN wheezing"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * dosageInstruction.text = "2 puffs INH q4h PRN wheezing"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
@@ -408,6 +430,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#966524 "Pulmicort Flexhaler 180 MCG/ACTUAT Dry Powder Inhaler, 120 ACTUAT"
 * medicationCodeableConcept.text = "Pulmicort Flexhaler 180mcg 2 puffs INH BID"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * dosageInstruction.text = "2 puffs INH BID"
 * dosageInstruction.timing.repeat.frequency = 2
 * dosageInstruction.timing.repeat.period = 1
@@ -425,6 +448,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#1359031 "LOESTRIN 1.5/30 21 Day Pack"
 * medicationCodeableConcept.text = "Loestrin 1.5/30 (norethindrone acetate 1.5mg / ethinyl estradiol 0.03mg) 1 tab PO daily"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * dosageInstruction.text = "1 tab PO daily"
@@ -444,6 +468,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#330623 "azithromycin 500 MG"
 * medicationCodeableConcept.text = "Azithromycin 500mg 2 tabs x 1"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#STD
 * dosageInstruction.text = "500mg 2 tabs x 1 dose"
@@ -464,6 +489,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#1747692 "Descovy"
 * medicationCodeableConcept.text = "Descovy (tenofovir alafenamide 25mg and emtricitabine 200mg) one tablet PO daily"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#HIV
 * dosageInstruction.text = "one tablet PO daily"
@@ -483,6 +509,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#330381 "mifepristone 200 MG"
 * medicationCodeableConcept.text = "Mifepristone 200mg PO x1"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAMedicalAbortion)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * meta.security[+] = $extraSensitiveCodes#ABORTION
@@ -504,6 +531,7 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#317128 "misoprostol 0.2 MG Oral Tablet"
 * medicationCodeableConcept.text = "Misoprostol 200mcg take 4 tabs BUC 24-48h after mifepristone x1"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAMedicalAbortion)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SEX
 * meta.security[+] = $extraSensitiveCodes#ABORTION
@@ -527,6 +555,7 @@ Usage: #example
 * code = $cpt#76801 "Ultrasound, pregnant uterus, real time with image documentation, fetal and maternal evaluation, first trimester (< 14 weeks 0 days), transabdominal approach; single or first gestation"
 * code.text = "First trimester ultrasound"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAPrenatalEval)
 * effectiveDateTime = "2024-07-18"
 
 Instance: MaxineMayfield16QuadScreen
@@ -542,6 +571,7 @@ Usage: #example
 * code = $loinc#48800-7 "Second trimester quad maternal screen panel - Serum or Plasma"
 * code.text = "Quad screen"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAPrenatalEval)
 * effectiveDateTime = "2024-08-18"
 
 Instance: MaxineMayfield16OBHx
@@ -555,6 +585,7 @@ Usage: #example
 * code = $sct#364324000 "Measure of pregnancy (observable entity)"
 * code.text = "OB History G1P0010"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAPrenatalEval)
 * valueString = "G1P0010"
 * component[0].code = $sct#440425000 "Number of births at term (observable entity)"
 * component[=].valueInteger = 0
@@ -578,6 +609,7 @@ Usage: #example
 * code = $sct#21840007 "Date of last menstrual period (observable entity)"
 * code.text = "Last Menstrual Period"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMASTI)
 * valueDateTime = "2026-04-03"
 * performer = Reference(DrHibbert)
 * effectiveDateTime = "2026-04-17"
@@ -594,6 +626,7 @@ Usage: #example
 * code = $loinc#2106-3 "Choriogonadotropin [Presence] in Urine"
 * code.text = "POC hCG (urine pregnancy test)"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAPrenatalEval)
 * effectiveDateTime = "2024-07-18"
 * performer = Reference(DrHibbert)
 * valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
@@ -611,6 +644,7 @@ Usage: #example
 * code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
 * code.text = "hCG serum quantitative"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAPrenatalEval)
 * effectiveDateTime = "2024-07-18"
 * performer = Reference(DrHibbert)
 * valueQuantity = 85000 '[IU]/L' "IU/L"
@@ -627,9 +661,79 @@ Usage: #example
 * code = $loinc#19080-1 "Choriogonadotropin [Units/volume] in Serum or Plasma"
 * code.text = "hCG serum quantitative"
 * subject = Reference(MaxineMayfield16)
+* encounter = Reference(MaxineMayfield16EncMAMedicalAbortion)
 * effectiveDateTime = "2025-11-18"
 * performer = Reference(DrHibbert)
 * valueQuantity = 22000 '[IU]/L' "IU/L"
+
+Instance: MaxineMayfield16EncMASTI
+InstanceOf: Encounter
+Title: "Maxine Mayfield's MA STI Evaluation Encounter"
+Description: "This encounter represents Maxine Mayfield's STI evaluation visit in Massachusetts, where gonorrhea/chlamydia and HIV testing were performed."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $v3-ActCode#STD
+* meta.security[+] = $v3-ActCode#HIV
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "STI evaluation visit"
+* subject = Reference(MaxineMayfield16)
+* diagnosis[0].condition = Reference(MaxineMayfield16Chlamydia)
+* period.start = "2026-04-17"
+* period.end = "2026-04-17"
+* serviceProvider.display = "MA Community Health Center"
+
+Instance: MaxineMayfield16EncMAPrenatalEval
+InstanceOf: Encounter
+Title: "Maxine Mayfield's MA Prenatal Evaluation Encounter"
+Description: "This encounter represents the prenatal evaluation in Massachusetts during which pregnancy-related observations and first trimester imaging were performed."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $v3-ActCode#GDIS
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "Prenatal evaluation visit"
+* subject = Reference(MaxineMayfield16)
+* diagnosis[0].condition = Reference(MaxineMayfield16DandCAbortion)
+* period.start = "2024-07-18"
+* period.end = "2024-07-18"
+* serviceProvider.display = "MA Community Health Center"
+
+Instance: MaxineMayfield16EncMADandCProcedure
+InstanceOf: Encounter
+Title: "Maxine Mayfield's MA D&C Procedure Encounter"
+Description: "This encounter represents Maxine Mayfield's Massachusetts visit for dilation and curettage for termination of pregnancy."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $extraSensitiveCodes#ABORTION
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "D&C procedure visit"
+* subject = Reference(MaxineMayfield16)
+* diagnosis[0].condition = Reference(MaxineMayfield16DandCAbortion)
+* period.start = "2024-09-18"
+* period.end = "2024-09-18"
+* serviceProvider.display = "MA Community Health Center"
+
+Instance: MaxineMayfield16EncMAMedicalAbortion
+InstanceOf: Encounter
+Title: "Maxine Mayfield's MA Medical Abortion Encounter"
+Description: "This encounter represents Maxine Mayfield's Massachusetts visit for medical abortion management."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SEX
+* meta.security[+] = $extraSensitiveCodes#ABORTION
+* status = #finished
+* class = $v3-ActCode#AMB "ambulatory"
+* type.text = "Medical abortion visit"
+* subject = Reference(MaxineMayfield16)
+* diagnosis[0].condition = Reference(MaxineMayfield16MedicalAbortion)
+* period.start = "2025-12-18"
+* period.end = "2025-12-18"
+* serviceProvider.display = "MA Community Health Center"
 
 Instance: MaxineMayfield16AmoxicillinAllergy
 InstanceOf: AllergyIntolerance

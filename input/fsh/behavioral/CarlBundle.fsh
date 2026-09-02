@@ -29,6 +29,14 @@ Including the these resources with these security tags:
 * entry[=].fullUrl = "http://example.org/fhir/CareTeam/CarlFredericksonCareTeam"
 * entry[=].request.url = "CareTeam/CarlFredericksonCareTeam"
 * entry[=].request.method = #PUT
+* entry[+].resource = CarlFredericksonEncPodiatryEval
+* entry[=].fullUrl = "http://example.org/fhir/Encounter/CarlFredericksonEncPodiatryEval"
+* entry[=].request.url = "Encounter/CarlFredericksonEncPodiatryEval"
+* entry[=].request.method = #PUT
+* entry[+].resource = CarlFredericksonEncTherapy
+* entry[=].fullUrl = "http://example.org/fhir/Encounter/CarlFredericksonEncTherapy"
+* entry[=].request.url = "Encounter/CarlFredericksonEncTherapy"
+* entry[=].request.method = #PUT
 * entry[+].resource = CarlFredericksonPHQ9
 * entry[=].fullUrl = "http://example.org/fhir/Observation/CarlFredericksonPHQ9"
 * entry[=].request.url = "Observation/CarlFredericksonPHQ9"

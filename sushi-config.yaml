@@ -67,7 +67,6 @@ menu:
     Carl Frederickson: behavioral.html
     Maxine at 16: MaxineMayfield.html
     Monica Rambeau at 19: MonicaRambeau.html
-    Veronica Mars: VeronicaMars.html
   Artifacts: artifacts.html
   About: download.html
 
@@ -119,6 +118,10 @@ groups:
     resources:
       - Patient/CarlFrederickson
       - CareTeam/CarlFredericksonCareTeam
+      - Encounter/CarlFredericksonEncPodiatryEval
+      - DiagnosticReport/CarlFredericksonXrayFeet
+      - MedicationRequest/CarlFredericksonIbuprofen
+      - Encounter/CarlFredericksonEncTherapy
       - Observation/CarlFredericksonPHQ9
       - Observation/CarlFredericksonPHQ9A  
       - Condition/CarlFredericksonBunions
@@ -126,11 +129,9 @@ groups:
       - Condition/CarlFredericksonMDD
       - Condition/CarlFredericksonOCPD
       - Condition/CarlFredericksonOUD
-      - DiagnosticReport/CarlFredericksonXrayFeet
       - MedicationRequest/CarlFredericksonBuprenorphineNaltrexone
       - MedicationRequest/CarlFredericksonCaptopril
       - MedicationRequest/CarlFredericksonFluoxetine
-      - MedicationRequest/CarlFredericksonIbuprofen
       - Observation/CarlFredericksonBloodPressure
       - Observation/CarlFredericksonOUDThoughtRecord
       - Consent/CarlFredericksonConsent
@@ -140,32 +141,36 @@ groups:
     description: "Resources related to Monica Rambeau"
     resources:
       - Patient/MonicaRambeau
-      - Observation/MonicaRambeauSexualOrientation
       - Condition/MonicaRambeauChronicConstipation
       - Condition/MonicaRambeauAsthma
       - Condition/MonicaRambeauIrregularPeriods
-      - Condition/MonicaRambeauChlamydia
-      - Condition/MonicaRambeauMedicalAbortion
+      - AllergyIntolerance/MonicaRambeauAmoxicillinAllergy
+      - Encounter/MonicaRambeauEncMAPrenatalEval
+      - Observation/MonicaRambeauPOChCG
+      - Observation/MonicaRambeauhCGSerumQuantDandC
+      - DiagnosticReport/MonicaRambeauFirstTrimesterUS
+      - DiagnosticReport/MonicaRambeauQuadScreen
+      - Encounter/MonicaRambeauEncMADandCProcedure
       - Condition/MonicaRambeauDandCAbortion
       - Procedure/MonicaRambeauDandCProcedure
+      - Encounter/MonicaRambeauEncMAMedicalAbortion
+      - Observation/MonicaRambeauhCGSerumQuantMedAbort
+      - Condition/MonicaRambeauMedicalAbortion
+      - MedicationRequest/MonicaRambeauMifepristone
+      - MedicationRequest/MonicaRambeauMisoprostol
+      - Encounter/MonicaRambeauEncMASTI
+      - Condition/MonicaRambeauChlamydia
       - DiagnosticReport/MonicaRambeauGCNAAT
       - DiagnosticReport/MonicaRambeauHIVELISA
+      - MedicationRequest/MonicaRambeauAzithromycin
+      - MedicationRequest/MonicaRambeauDescovy
+      - MedicationRequest/MonicaRambeauLoestrin
       - MedicationRequest/MonicaRambeauMiralax
       - MedicationRequest/MonicaRambeauAlbuterol
       - MedicationRequest/MonicaRambeauPulmicort
-      - MedicationRequest/MonicaRambeauLoestrin
-      - MedicationRequest/MonicaRambeauAzithromycin
-      - MedicationRequest/MonicaRambeauDescovy
-      - MedicationRequest/MonicaRambeauMifepristone
-      - MedicationRequest/MonicaRambeauMisoprostol
-      - DiagnosticReport/MonicaRambeauFirstTrimesterUS
-      - DiagnosticReport/MonicaRambeauQuadScreen
-      - Observation/MonicaRambeauOBHx
       - Observation/MonicaRambeauLMP
-      - Observation/MonicaRambeauPOChCG
-      - Observation/MonicaRambeauhCGSerumQuantDandC
-      - Observation/MonicaRambeauhCGSerumQuantMedAbort
-      - AllergyIntolerance/MonicaRambeauAmoxicillinAllergy
+      - Observation/MonicaRambeauOBHx
+      - Observation/MonicaRambeauSexualOrientation
       - RelatedPerson/MariaRambeau
       - RelatedPerson/FrankRambeau
       - Consent/MonicaRambeauFamilyConsent
@@ -178,32 +183,36 @@ groups:
     description: "Resources related to Maxine Mayfield (age 16)"
     resources:
       - Patient/MaxineMayfield16
-      - Observation/MaxineMayfield16SexualOrientation
       - Condition/MaxineMayfield16ChronicConstipation
       - Condition/MaxineMayfield16Asthma
       - Condition/MaxineMayfield16IrregularPeriods
-      - Condition/MaxineMayfield16Chlamydia
-      - Condition/MaxineMayfield16MedicalAbortion
-      - Condition/MaxineMayfield16DandCAbortion
-      - Procedure/MaxineMayfield16DandCProcedure
-      - DiagnosticReport/MaxineMayfield16GCNAAT
-      - DiagnosticReport/MaxineMayfield16HIVELISA
-      - MedicationRequest/MaxineMayfield16Miralax
-      - MedicationRequest/MaxineMayfield16Albuterol
-      - MedicationRequest/MaxineMayfield16Pulmicort
-      - MedicationRequest/MaxineMayfield16Loestrin
-      - MedicationRequest/MaxineMayfield16Azithromycin
-      - MedicationRequest/MaxineMayfield16Descovy
-      - MedicationRequest/MaxineMayfield16Mifepristone
-      - MedicationRequest/MaxineMayfield16Misoprostol
+      - AllergyIntolerance/MaxineMayfield16AmoxicillinAllergy
+      - Encounter/MaxineMayfield16EncMAPrenatalEval
+      - Observation/MaxineMayfield16POChCG
+      - Observation/MaxineMayfield16hCGSerumQuantDandC
       - DiagnosticReport/MaxineMayfield16FirstTrimesterUS
       - DiagnosticReport/MaxineMayfield16QuadScreen
       - Observation/MaxineMayfield16OBHx
-      - Observation/MaxineMayfield16LMP
-      - Observation/MaxineMayfield16POChCG
-      - Observation/MaxineMayfield16hCGSerumQuantDandC
+      - Encounter/MaxineMayfield16EncMADandCProcedure
+      - Condition/MaxineMayfield16DandCAbortion
+      - Procedure/MaxineMayfield16DandCProcedure
+      - Encounter/MaxineMayfield16EncMAMedicalAbortion
       - Observation/MaxineMayfield16hCGSerumQuantMedAbort
-      - AllergyIntolerance/MaxineMayfield16AmoxicillinAllergy
+      - Condition/MaxineMayfield16MedicalAbortion
+      - MedicationRequest/MaxineMayfield16Mifepristone
+      - MedicationRequest/MaxineMayfield16Misoprostol
+      - Encounter/MaxineMayfield16EncMASTI
+      - Condition/MaxineMayfield16Chlamydia
+      - DiagnosticReport/MaxineMayfield16GCNAAT
+      - DiagnosticReport/MaxineMayfield16HIVELISA
+      - MedicationRequest/MaxineMayfield16Azithromycin
+      - MedicationRequest/MaxineMayfield16Descovy
+      - MedicationRequest/MaxineMayfield16Loestrin
+      - MedicationRequest/MaxineMayfield16Miralax
+      - MedicationRequest/MaxineMayfield16Albuterol
+      - MedicationRequest/MaxineMayfield16Pulmicort
+      - Observation/MaxineMayfield16LMP
+      - Observation/MaxineMayfield16SexualOrientation
       - RelatedPerson/SueHargrove16
       - RelatedPerson/SamMayfield16
       - Consent/MaxineMayfield16FamilyConsent
@@ -216,28 +225,28 @@ groups:
     description: "Resources related to Veronica Mars"
     resources:
       - Patient/VeronicaMars
+      - RelatedPerson/LucasCage
+      - Practitioner/VeronicaMarsDoctor
       - Condition/VeronicaMarsAtopicDermatitis
+      - Condition/VeronicaMarsCSAHx
+      - MedicationRequest/VeronicaMarsHydrocortisone
+      - Condition/VeronicaMarsIPV
+      - Encounter/VeronicaMarsEncSMC2wk
+      - Condition/VeronicaMarsWellAdultExam
       - Condition/VeronicaMarsFoodInsecurity
       - Condition/VeronicaMarsHousingInstability
       - Condition/VeronicaMarsFinancialInsecurity
-      - Condition/VeronicaMarsIPV
+      - Observation/VeronicaMarsEmploymentStatus
+      - Encounter/VeronicaMarsEncOHSED
+      - Condition/VeronicaMarsIPVOHSEnc
       - Condition/VeronicaMarsElevatedBP
       - Condition/VeronicaMarsCreatinine
       - Condition/VeronicaMarsProteinuria
       - Condition/VeronicaMarsHematuria
-      - Condition/VeronicaMarsCSAHx
-      - Encounter/VeronicaMarsEncSMC2wk
-      - Condition/VeronicaMarsWellAdultExam
-      - Encounter/VeronicaMarsEncOHSED
-      - Condition/VeronicaMarsIPVOHSEnc
       - Encounter/VeronicaMarsEncSMCToday
       - Condition/VeronicaMarsIPVSMCToday
-      - Observation/VeronicaMarsEmploymentStatus
       - DiagnosticReport/VeronicaMarsBMP
       - DiagnosticReport/VeronicaMarsUA
-      - MedicationRequest/VeronicaMarsHydrocortisone
-      - RelatedPerson/LucasCage
-      - Practitioner/VeronicaMarsDoctor
       - Bundle/AllOfVeronicaMars
 
 

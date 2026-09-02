@@ -6,6 +6,7 @@ Description: "Ibuprofen 800mg PO TID as needed - Note: Not placed"
 * identifier[0].system = "http://example.com/demo/medication-identifier"
 * identifier[0].value = "IBPROFEN-45678"
 * subject = Reference(CarlFrederickson)
+* encounter = Reference(CarlFredericksonEncPodiatryEval)
 * status = #draft
 * intent = #order
 * medicationCodeableConcept.coding[0] = http://www.nlm.nih.gov/research/umls/rxnorm#5640 //"Ibuprofen 800 MG Oral Tablet"
