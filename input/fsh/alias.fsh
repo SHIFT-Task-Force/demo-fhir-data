@@ -15,3 +15,4 @@ Alias: $v3-ActReason = http://terminology.hl7.org/CodeSystem/v3-ActReason
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $extraSensitiveCodes = http://SHIFT-Task-Force.github.io/SLS-ValueSets/CodeSystem/extraSensitivityCodes
+Alias: $customSensitivity = http://SHIFT-Task-Force.github.io/demo-fhir-data/CodeSystem/CustomSensitivity

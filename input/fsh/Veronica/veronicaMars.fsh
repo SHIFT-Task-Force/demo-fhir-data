@@ -1,3 +1,19 @@
+// converted from https://docs.google.com/spreadsheets/d/15Foz-WGTSa7pXXTFzp6L-CSzrltRO0-hXhAFKqJgSvQ/edit?gid=1240919167#gid=1240919167
+// September 11, 2026
+
+CodeSystem: CustomSensitivity
+Title: "Custom Sensitivity Codes"
+Description: "Custom sensitivity codes for marking FHIR resources with appropriate privacy labels."
+* ^experimental = false
+* ^caseSensitive = false
+* #SDoH-FoodInsecurity "Food insecurity"
+* #SDoH-HousingInstability "Housing instability"
+* #SDoH-FinancialInsecurity "Financial insecurity"
+* #SDoH-TransportationInsecurity "Transportation insecurity"
+* #SDoH-EmploymentStatus "Employment status"
+* #SDoH-IPV "Intimate partner violence"
+* #ImmigrationStatus "Immigration status"
+* #SDoH-CSA "History of victim of child sexual abuse"
 
 Instance: AllOfVeronicaMars
 InstanceOf: Bundle
@@ -11,6 +27,10 @@ Usage: #example
 * entry[=].resource = VeronicaMars
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Patient/VeronicaMars"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsImmigrationStatus"
+* entry[=].resource = VeronicaMarsImmigrationStatus
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsImmigrationStatus"
 * entry[+].fullUrl = "http://example.org/fhir/Condition/VeronicaMarsAtopicDermatitis"
 * entry[=].resource = VeronicaMarsAtopicDermatitis
 * entry[=].request.method = #PUT
@@ -31,6 +51,10 @@ Usage: #example
 * entry[=].resource = VeronicaMarsIPV
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Condition/VeronicaMarsIPV"
+* entry[+].fullUrl = "http://example.org/fhir/Condition/VeronicaMarsLeftRadiusFracture"
+* entry[=].resource = VeronicaMarsLeftRadiusFracture
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Condition/VeronicaMarsLeftRadiusFracture"
 * entry[+].fullUrl = "http://example.org/fhir/Condition/VeronicaMarsElevatedBP"
 * entry[=].resource = VeronicaMarsElevatedBP
 * entry[=].request.method = #PUT
@@ -87,33 +111,144 @@ Usage: #example
 * entry[=].resource = VeronicaMarsUA
 * entry[=].request.method = #PUT
 * entry[=].request.url = "DiagnosticReport/VeronicaMarsUA"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/VeronicaMarsCurrentBMP"
+* entry[=].resource = VeronicaMarsCurrentBMP
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/VeronicaMarsCurrentBMP"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/VeronicaMarsCurrentUA"
+* entry[=].resource = VeronicaMarsCurrentUA
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/VeronicaMarsCurrentUA"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsEDBloodPressure"
+* entry[=].resource = VeronicaMarsEDBloodPressure
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsEDBloodPressure"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsEDHeartRate"
+* entry[=].resource = VeronicaMarsEDHeartRate
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsEDHeartRate"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsEDTemperature"
+* entry[=].resource = VeronicaMarsEDTemperature
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsEDTemperature"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsEDOxygenSaturation"
+* entry[=].resource = VeronicaMarsEDOxygenSaturation
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsEDOxygenSaturation"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/VeronicaMarsLeftWristXray"
+* entry[=].resource = VeronicaMarsLeftWristXray
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/VeronicaMarsLeftWristXray"
+* entry[+].fullUrl = "http://example.org/fhir/ServiceRequest/VeronicaMarsSocialWorkReferral"
+* entry[=].resource = VeronicaMarsSocialWorkReferral
+* entry[=].request.method = #PUT
+* entry[=].request.url = "ServiceRequest/VeronicaMarsSocialWorkReferral"
+* entry[+].fullUrl = "http://example.org/fhir/ServiceRequest/VeronicaMarsCounselingReferral"
+* entry[=].resource = VeronicaMarsCounselingReferral
+* entry[=].request.method = #PUT
+* entry[=].request.url = "ServiceRequest/VeronicaMarsCounselingReferral"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsCurrentBloodPressure"
+* entry[=].resource = VeronicaMarsCurrentBloodPressure
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsCurrentBloodPressure"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsCurrentHeartRate"
+* entry[=].resource = VeronicaMarsCurrentHeartRate
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsCurrentHeartRate"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsCurrentTemperature"
+* entry[=].resource = VeronicaMarsCurrentTemperature
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsCurrentTemperature"
+* entry[+].fullUrl = "http://example.org/fhir/Observation/VeronicaMarsCurrentOxygenSaturation"
+* entry[=].resource = VeronicaMarsCurrentOxygenSaturation
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/VeronicaMarsCurrentOxygenSaturation"
+* entry[+].fullUrl = "http://example.org/fhir/DiagnosticReport/VeronicaMarsEKG"
+* entry[=].resource = VeronicaMarsEKG
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/VeronicaMarsEKG"
 * entry[+].fullUrl = "http://example.org/fhir/MedicationRequest/VeronicaMarsHydrocortisone"
 * entry[=].resource = VeronicaMarsHydrocortisone
 * entry[=].request.method = #PUT
 * entry[=].request.url = "MedicationRequest/VeronicaMarsHydrocortisone"
-* entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/LucasCage"
-* entry[=].resource = LucasCage
+* entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/SteveRogers"
+* entry[=].resource = SteveRogers
 * entry[=].request.method = #PUT
-* entry[=].request.url = "RelatedPerson/LucasCage"
+* entry[=].request.url = "RelatedPerson/SteveRogers"
 * entry[+].fullUrl = "http://example.org/fhir/Practitioner/VeronicaMarsDoctor"
 * entry[=].resource = VeronicaMarsDoctor
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Practitioner/VeronicaMarsDoctor"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/JaneAddams"
+* entry[=].resource = JaneAddams
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/JaneAddams"
+* entry[+].fullUrl = "http://example.org/fhir/Practitioner/DrRobbyRobinavitch"
+* entry[=].resource = DrRobbyRobinavitch
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Practitioner/DrRobbyRobinavitch"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/BottomlessBowl"
+* entry[=].resource = BottomlessBowl
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/BottomlessBowl"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/FriendlyFunders"
+* entry[=].resource = FriendlyFunders
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/FriendlyFunders"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/MiCasaEsSuCasa"
+* entry[=].resource = MiCasaEsSuCasa
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/MiCasaEsSuCasa"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/CommonwealthMA"
+* entry[=].resource = CommonwealthMA
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/CommonwealthMA"
+* entry[+].fullUrl = "http://example.org/fhir/Organization/StateFL"
+* entry[=].resource = StateFL
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Organization/StateFL"
+* entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/SteveRogersSMCPortal"
+* entry[=].resource = SteveRogersSMCPortal
+* entry[=].request.method = #PUT
+* entry[=].request.url = "RelatedPerson/SteveRogersSMCPortal"
+* entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/SteveRogersOHSPortal"
+* entry[=].resource = SteveRogersOHSPortal
+* entry[=].request.method = #PUT
+* entry[=].request.url = "RelatedPerson/SteveRogersOHSPortal"
+* entry[+].fullUrl = "http://example.org/fhir/RelatedPerson/SteveRogersFLClinicPortal"
+* entry[=].resource = SteveRogersFLClinicPortal
+* entry[=].request.method = #PUT
+* entry[=].request.url = "RelatedPerson/SteveRogersFLClinicPortal"
+* entry[+].fullUrl = "http://example.org/fhir/Consent/VeronicaMarsConsent"
+* entry[=].resource = VeronicaMarsConsent
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Consent/VeronicaMarsConsent"
 
 Instance: VeronicaMars
 InstanceOf: Patient
 Title: "Veronica Mars"
 Description: "Veronica Mars is a fictional adult patient created for testing purposes."
 Usage: #example
+* meta.security = $v3-Confidentiality#N
 * name.use = #official
 * name.family = "Mars"
 * name.given = "Veronica"
+* name[+].use = #nickname
+* name[=].given = "Veronica"
 * gender = #female
-* birthDate = "1994-08-07"
-* contact.relationship = $v2-0131#C "Emergency Contact"
-* contact.relationship.text = "Husband"
-* contact.name.family = "Cage"
-* contact.name.given = "Lucas"
+* birthDate = "1995-01-11"
+* contact[0].relationship = $v2-0131#C "Emergency Contact"
+* contact[=].relationship.text = "Husband (SMC)"
+* contact[=].name.family = "Rogers"
+* contact[=].name.given = "Steve"
+* contact[+].relationship = $v2-0131#C "Emergency Contact"
+* contact[=].relationship.text = "Husband (OHS)"
+* contact[=].name.family = "Rogers"
+* contact[=].name.given = "Steve"
+* contact[+].relationship = $v2-0131#C "Emergency Contact"
+* contact[=].relationship.text = "Husband (FL Clinic)"
+* contact[=].name.family = "Rogers"
+* contact[=].name.given = "Steve"
 
 Instance: VeronicaMarsAtopicDermatitis
 InstanceOf: Condition
@@ -126,7 +261,7 @@ Usage: #example
 * code.coding[+] = $sct#24079001 "Atopic dermatitis (disorder)"
 * code.text = "Atopic dermatitis"
 * subject = Reference(VeronicaMars)
-* recordedDate = "2014-04-21"
+* recordedDate = "2014-09-14"
 
 Instance: VeronicaMarsFoodInsecurity
 InstanceOf: Condition
@@ -141,7 +276,8 @@ Usage: #example
 * code.text = "Food insecurity"
 * subject = Reference(VeronicaMars)
 * meta.security = $v3-Confidentiality#R
-* recordedDate = "2026-04-04"
+* meta.security[+] = $customSensitivity#SDoH-FoodInsecurity
+* recordedDate = "2026-08-28"
 
 Instance: VeronicaMarsHousingInstability
 InstanceOf: Condition
@@ -151,12 +287,13 @@ Usage: #example
 * clinicalStatus = $condition-clinical#active
 * category[0] = $condition-category#problem-list-item
 * category[+] = $condition-category#encounter-diagnosis
-* code.coding[0] = $icd-10-cm#Z59.811 "Housing instability, housed, with risk of homelessness"
+// not found, should it be  Z59.819? * code.coding[0] = $icd-10-cm#Z49.811 "Housing instability"
 * code.coding[+] = $sct#1156191002 "Housing instability (finding)"
 * code.text = "Housing instability"
 * subject = Reference(VeronicaMars)
 * meta.security = $v3-Confidentiality#R
-* recordedDate = "2026-04-04"
+* meta.security[+] = $customSensitivity#SDoH-HousingInstability
+* recordedDate = "2026-08-28"
 
 Instance: VeronicaMarsFinancialInsecurity
 InstanceOf: Condition
@@ -171,7 +308,8 @@ Usage: #example
 * code.text = "Financial insecurity"
 * subject = Reference(VeronicaMars)
 * meta.security = $v3-Confidentiality#R
-* recordedDate = "2026-04-04"
+* meta.security[+] = $customSensitivity#SDoH-FinancialInsecurity
+* recordedDate = "2026-08-28"
 
 Instance: VeronicaMarsIPV
 InstanceOf: Condition
@@ -187,7 +325,8 @@ Usage: #example
 * subject = Reference(VeronicaMars)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SDV
-* recordedDate = "2026-04-04"
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* recordedDate = "2026-08-28"
 
 Instance: VeronicaMarsElevatedBP
 InstanceOf: Condition
@@ -199,7 +338,7 @@ Usage: #example
 * code = $icd-10-cm#R03.0 "Elevated blood-pressure reading, without diagnosis of hypertension"
 * code.text = "Elevated blood pressure without diagnosis of hypertension"
 * subject = Reference(VeronicaMars)
-* recordedDate = "2026-04-18"
+* recordedDate = "2026-09-11"
 
 Instance: VeronicaMarsCreatinine
 InstanceOf: Condition
@@ -212,7 +351,7 @@ Usage: #example
 * code.coding[+] = $sct#166714005 "Serum creatinine outside reference range (finding)"
 * code.text = "Borderline elevated creatinine"
 * subject = Reference(VeronicaMars)
-* recordedDate = "2026-04-18"
+* recordedDate = "2026-09-11"
 
 Instance: VeronicaMarsProteinuria
 InstanceOf: Condition
@@ -225,7 +364,7 @@ Usage: #example
 * code.coding[+] = $sct#29738008 "Proteinuria (finding)"
 * code.text = "Proteinuria"
 * subject = Reference(VeronicaMars)
-* recordedDate = "2026-04-18"
+* recordedDate = "2026-09-11"
 
 Instance: VeronicaMarsHematuria
 InstanceOf: Condition
@@ -238,7 +377,7 @@ Usage: #example
 * code.coding[+] = $sct#271349002 "Urine microscopy: red blood cells present (finding)"
 * code.text = "Microscopic hematuria"
 * subject = Reference(VeronicaMars)
-* recordedDate = "2026-04-18"
+* recordedDate = "2026-09-11"
 
 Instance: VeronicaMarsCSAHx
 InstanceOf: Condition
@@ -247,13 +386,14 @@ Description: "This condition record indicates that Veronica Mars has a personal 
 Usage: #example
 * clinicalStatus = $condition-clinical#active
 * category = $condition-category#problem-list-item
-* code.coding[0] = $icd-10-cm#Z62.810 "Personal history of physical and sexual abuse in childhood"
-* code.coding[+] = $sct#713834002  "Victim of child sexual exploitation (finding)"
+* code.coding[0] = $icd-10-cm#Z62.81 "Personal history of abuse in childhood"
+* code.coding[+] = $sct|20260501#1365666006 "History of victim of child sexual abuse (situation)" // Note that this code is from newer SNOMED CT versions than tx.fhir.org supports
 * code.text = "History of child sexual abuse"
 * subject = Reference(VeronicaMars)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SDV
-* recordedDate = "2014-04-21"
+* meta.security[+] = $customSensitivity#SDoH-CSA
+* recordedDate = "2014-09-14"
 
 Instance: VeronicaMarsEncSMC2wk
 InstanceOf: Encounter
@@ -265,8 +405,8 @@ Usage: #example
 * type = $sct#185349003 "Encounter for check up (procedure)"
 * type.text = "Well adult exam"
 * subject = Reference(VeronicaMars)
-* period.start = "2026-04-04"
-* period.end = "2026-04-04"
+* period.start = "2026-08-28"
+* period.end = "2026-08-28"
 * serviceProvider.display = "Springfield Medical Center (SMC)"
 
 Instance: VeronicaMarsWellAdultExam
@@ -279,7 +419,7 @@ Usage: #example
 * code = $icd-10-cm#Z00.00 "Encounter for general adult medical examination without abnormal findings"
 * code.text = "Well adult exam"
 * subject = Reference(VeronicaMars)
-* recordedDate = "2026-04-04"
+* recordedDate = "2026-08-28"
 
 Instance: VeronicaMarsEncOHSED
 InstanceOf: Encounter
@@ -289,8 +429,8 @@ Usage: #example
 * status = #finished
 * class = $v3-ActCode#EMER "emergency"
 * subject = Reference(VeronicaMars)
-* period.start = "2026-04-13"
-* period.end = "2026-04-13"
+* period.start = "2026-09-06"
+* period.end = "2026-09-06"
 * serviceProvider.display = "Other Health System (OHS) ED"
 
 Instance: VeronicaMarsIPVOHSEnc
@@ -306,7 +446,8 @@ Usage: #example
 * subject = Reference(VeronicaMars)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SDV
-* recordedDate = "2026-04-13"
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* recordedDate = "2026-09-06"
 
 Instance: VeronicaMarsEncSMCToday
 InstanceOf: Encounter
@@ -316,7 +457,7 @@ Usage: #example
 * status = #in-progress
 * class = $v3-ActCode#AMB "ambulatory"
 * subject = Reference(VeronicaMars)
-* period.start = "2026-04-18"
+* period.start = "2026-09-11"
 * serviceProvider.display = "Springfield Medical Center (SMC)"
 
 Instance: VeronicaMarsIPVSMCToday
@@ -332,7 +473,8 @@ Usage: #example
 * subject = Reference(VeronicaMars)
 * meta.security[0] = $v3-Confidentiality#R
 * meta.security[+] = $v3-ActCode#SDV
-* recordedDate = "2026-04-18"
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* recordedDate = "2026-09-11"
 
 Instance: VeronicaMarsEmploymentStatus
 InstanceOf: Observation
@@ -346,8 +488,7 @@ Usage: #example
 * code.coding[+] = $loinc#67875-5 "Employment status - current"
 * code.text = "Employment status"
 * subject = Reference(VeronicaMars)
-* effectiveDateTime = "2026-04-04"
-* valueCodeableConcept = $sct#7348004 "Coagulation factor II"
+* effectiveDateTime = "2026-08-28"
 * valueCodeableConcept.text = "Unemployed"
 * performer = Reference(VeronicaMarsDoctor)
 
@@ -361,8 +502,8 @@ Usage: #example
 * code = $loinc#51990-0 "Basic metabolic panel - Blood"
 * code.text = "Basic metabolic panel"
 * subject = Reference(VeronicaMars)
-* effectiveDateTime = "2026-04-18"
-* encounter = Reference(VeronicaMarsEncSMCToday)
+* effectiveDateTime = "2026-09-06"
+* encounter = Reference(VeronicaMarsEncOHSED)
 
 Instance: VeronicaMarsUA
 InstanceOf: DiagnosticReport
@@ -374,7 +515,33 @@ Usage: #example
 * code = $loinc#24356-8 "Urinalysis complete panel - Urine"
 * code.text = "Urinalysis"
 * subject = Reference(VeronicaMars)
-* effectiveDateTime = "2026-04-18"
+* effectiveDateTime = "2026-09-06"
+* encounter = Reference(VeronicaMarsEncOHSED)
+
+Instance: VeronicaMarsCurrentBMP
+InstanceOf: DiagnosticReport
+Title: "Veronica Mars's Current Basic Metabolic Panel"
+Description: "This diagnostic report records the basic metabolic panel performed during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $v2-0074#LAB "Laboratory"
+* code = $loinc#51990-0 "Basic metabolic panel - Blood"
+* code.text = "Basic metabolic panel"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
+* encounter = Reference(VeronicaMarsEncSMCToday)
+
+Instance: VeronicaMarsCurrentUA
+InstanceOf: DiagnosticReport
+Title: "Veronica Mars's Current Urinalysis"
+Description: "This diagnostic report records the complete urinalysis performed during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $v2-0074#LAB "Laboratory"
+* code = $loinc#24356-8 "Urinalysis complete panel - Urine"
+* code.text = "Urinalysis"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
 * encounter = Reference(VeronicaMarsEncSMCToday)
 
 Instance: VeronicaMarsHydrocortisone
@@ -387,25 +554,247 @@ Usage: #example
 * medicationCodeableConcept = $rxnorm#203105 "hydrocortisone 1 % Topical Ointment"
 * medicationCodeableConcept.text = "Hydrocortisone 1% ointment"
 * subject = Reference(VeronicaMars)
-* authoredOn = "2014-04-21"
+* authoredOn = "2014-09-14"
 * dosageInstruction.text = "Apply topically as needed"
 * dosageInstruction.route = $sct#6064005 "Topical route"
 * dosageInstruction.asNeededBoolean = true
 
-Instance: LucasCage
+Instance: SteveRogers
 InstanceOf: RelatedPerson
-Title: "Lucas Cage"
-Description: "This related person is Veronica Mars's husband."
+Title: "Steve Rogers"
+Description: "This related person is Veronica Mars's husband and emergency contact."
 Usage: #example
+* meta.security = $v3-Confidentiality#N
 * patient = Reference(VeronicaMars)
 * relationship = $v3-RoleCode#HUSB "husband"
-* name.family = "Cage"
-* name.given = "Lucas"
+* name.family = "Rogers"
+* name.given = "Steve"
 
 Instance: VeronicaMarsDoctor
 InstanceOf: Practitioner
 Title: "Veronica Mars's Doctor"
-Description: "This practitioner is Veronica Mars's primary care doctor."
+Description: "This practitioner is Veronica Mars's primary care doctor, Dr Hibbert."
 Usage: #example
-* name.family = "Smith"
+* name.family = "Hibbert"
 * name.given = "John"
+
+Instance: VeronicaMarsImmigrationStatus
+InstanceOf: Observation
+Title: "Veronica Mars's Immigration Status"
+Description: "This observation records Veronica Mars's immigration status as Canadian."
+Usage: #example
+* meta.security = $v3-Confidentiality#R
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code.text = "Immigration status"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-08-28"
+* valueString = "Canadian"
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsLeftRadiusFracture
+InstanceOf: Condition
+Title: "Veronica Mars's Left Radius Fracture"
+Description: "This condition records Veronica Mars's left radius fracture from the OHS emergency department encounter."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SDV
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* clinicalStatus = $condition-clinical#active
+* category = $condition-category#encounter-diagnosis
+* code.coding[0] = $icd-10-cm#S52.302A "Unspecified fracture of shaft of left radius, initial encounter for closed fracture"
+* code.coding[+] = $sct#12960001000004104 "Fracture of left radius (disorder)"
+* code.text = "Left radius fracture"
+* subject = Reference(VeronicaMars)
+* encounter = Reference(VeronicaMarsEncOHSED)
+* recordedDate = "2026-09-06"
+
+Instance: VeronicaMarsEDBloodPressure
+InstanceOf: Observation
+Title: "Veronica Mars's ED Blood Pressure"
+Description: "Blood pressure recorded during Veronica Mars's OHS emergency department encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#75367002 "Blood pressure (observable entity)"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-06"
+* valueQuantity.value = 155
+* valueQuantity.unit = "mm[Hg]"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mm[Hg]
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsEDHeartRate
+InstanceOf: Observation
+Title: "Veronica Mars's ED Heart Rate"
+Description: "Heart rate recorded during Veronica Mars's OHS emergency department encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#364075005 "Heart rate (observable entity)"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-06"
+* valueQuantity.value = 120
+* valueQuantity.unit = "beats/minute"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #/min
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsEDTemperature
+InstanceOf: Observation
+Title: "Veronica Mars's ED Temperature"
+Description: "Temperature recorded during Veronica Mars's OHS emergency department encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#386725007 "Body temperature (observable entity)"
+* code.coding[+] = $loinc#8310-5 "Body temperature"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-06"
+* valueQuantity.value = 97.9
+* valueQuantity.unit = "[degF]"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #[degF]
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsEDOxygenSaturation
+InstanceOf: Observation
+Title: "Veronica Mars's ED Oxygen Saturation"
+Description: "Oxygen saturation recorded during Veronica Mars's OHS emergency department encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#103228002 "Hemoglobin saturation with oxygen (observable entity)"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-06"
+* valueQuantity.value = 98
+* valueQuantity.unit = "%"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #%
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsLeftWristXray
+InstanceOf: DiagnosticReport
+Title: "Veronica Mars's Left Wrist X-Ray"
+Description: "This diagnostic report records the three-view left wrist X-ray from the OHS emergency department encounter."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SDV
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* status = #final
+* category = $v2-0074#RAD "Radiology"
+* code = $loinc#37455-3 "XR Wrist - left 3 Views"
+* code.text = "Left wrist x-ray, 3 views"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-06"
+* encounter = Reference(VeronicaMarsEncOHSED)
+
+Instance: VeronicaMarsSocialWorkReferral
+InstanceOf: ServiceRequest
+Title: "Veronica Mars's Social Work Referral"
+Description: "This service request records the OHS emergency department referral to social work."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SDV
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* status = #active
+* intent = #order
+* code = $sct#308440001 "Referral to social worker (procedure)"
+* subject = Reference(VeronicaMars)
+* authoredOn = "2026-09-06"
+* encounter = Reference(VeronicaMarsEncOHSED)
+
+Instance: VeronicaMarsCounselingReferral
+InstanceOf: ServiceRequest
+Title: "Veronica Mars's Counseling Referral"
+Description: "This service request records the SMC referral to a psychologist for counseling."
+Usage: #example
+* meta.security[0] = $v3-Confidentiality#R
+* meta.security[+] = $v3-ActCode#SDV
+* meta.security[+] = $customSensitivity#SDoH-IPV
+* status = #active
+* intent = #order
+* code = $sct#308459004 "Referral to psychologist (procedure)"
+* subject = Reference(VeronicaMars)
+* authoredOn = "2026-08-28"
+* encounter = Reference(VeronicaMarsEncSMC2wk)
+
+Instance: VeronicaMarsCurrentBloodPressure
+InstanceOf: Observation
+Title: "Veronica Mars's Current Blood Pressure"
+Description: "Blood pressure recorded during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#75367002 "Blood pressure (observable entity)"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
+* valueQuantity.value = 148
+* valueQuantity.unit = "mm[Hg]"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mm[Hg]
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsCurrentHeartRate
+InstanceOf: Observation
+Title: "Veronica Mars's Current Heart Rate"
+Description: "Heart rate recorded during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#364075005 "Heart rate (observable entity)"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
+* valueQuantity.value = 84
+* valueQuantity.unit = "beats/minute"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #/min
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsCurrentTemperature
+InstanceOf: Observation
+Title: "Veronica Mars's Current Temperature"
+Description: "Temperature recorded during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#386725007 "Body temperature (observable entity)"
+* code.coding[+] = $loinc#8310-5 "Body temperature"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
+* valueQuantity.value = 98.4
+* valueQuantity.unit = "[degF]"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #[degF]
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsCurrentOxygenSaturation
+InstanceOf: Observation
+Title: "Veronica Mars's Current Oxygen Saturation"
+Description: "Oxygen saturation recorded during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs "Vital Signs"
+* code = $sct#103228002 "Hemoglobin saturation with oxygen (observable entity)"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
+* valueQuantity.value = 97
+* valueQuantity.unit = "%"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #%
+* performer = Reference(VeronicaMarsDoctor)
+
+Instance: VeronicaMarsEKG
+InstanceOf: DiagnosticReport
+Title: "Veronica Mars's 12-Lead EKG"
+Description: "This diagnostic report records the 12-lead EKG performed during Veronica Mars's current SMC encounter."
+Usage: #example
+* status = #final
+* category = $loinc#LP29708-2 "Cardiology"
+* code.coding[0] = $cpt#93000 "Electrocardiogram, routine ECG with at least 12 leads; with interpretation and report"
+* code.coding[+] = $loinc#8601-7 "EKG impression"
+* code.text = "12-lead EKG"
+* subject = Reference(VeronicaMars)
+* effectiveDateTime = "2026-09-11"
+* encounter = Reference(VeronicaMarsEncSMCToday)

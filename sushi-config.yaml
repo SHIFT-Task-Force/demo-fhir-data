@@ -216,11 +216,13 @@ groups:
     description: "Resources related to Veronica Mars"
     resources:
       - Patient/VeronicaMars
+      - Observation/VeronicaMarsImmigrationStatus
       - Condition/VeronicaMarsAtopicDermatitis
       - Condition/VeronicaMarsFoodInsecurity
       - Condition/VeronicaMarsHousingInstability
       - Condition/VeronicaMarsFinancialInsecurity
       - Condition/VeronicaMarsIPV
+      - Condition/VeronicaMarsLeftRadiusFracture
       - Condition/VeronicaMarsElevatedBP
       - Condition/VeronicaMarsCreatinine
       - Condition/VeronicaMarsProteinuria
@@ -235,9 +237,34 @@ groups:
       - Observation/VeronicaMarsEmploymentStatus
       - DiagnosticReport/VeronicaMarsBMP
       - DiagnosticReport/VeronicaMarsUA
+      - DiagnosticReport/VeronicaMarsCurrentBMP
+      - DiagnosticReport/VeronicaMarsCurrentUA
+      - Observation/VeronicaMarsEDBloodPressure
+      - Observation/VeronicaMarsEDHeartRate
+      - Observation/VeronicaMarsEDTemperature
+      - Observation/VeronicaMarsEDOxygenSaturation
+      - DiagnosticReport/VeronicaMarsLeftWristXray
+      - ServiceRequest/VeronicaMarsSocialWorkReferral
+      - ServiceRequest/VeronicaMarsCounselingReferral
+      - Observation/VeronicaMarsCurrentBloodPressure
+      - Observation/VeronicaMarsCurrentHeartRate
+      - Observation/VeronicaMarsCurrentTemperature
+      - Observation/VeronicaMarsCurrentOxygenSaturation
+      - DiagnosticReport/VeronicaMarsEKG
       - MedicationRequest/VeronicaMarsHydrocortisone
-      - RelatedPerson/LucasCage
+      - RelatedPerson/SteveRogers
       - Practitioner/VeronicaMarsDoctor
+      - Practitioner/JaneAddams
+      - Practitioner/DrRobbyRobinavitch
+      - Organization/BottomlessBowl
+      - Organization/FriendlyFunders
+      - Organization/MiCasaEsSuCasa
+      - Organization/CommonwealthMA
+      - Organization/StateFL
+      - RelatedPerson/SteveRogersSMCPortal
+      - RelatedPerson/SteveRogersOHSPortal
+      - RelatedPerson/SteveRogersFLClinicPortal
+      - Consent/VeronicaMarsConsent
       - Bundle/AllOfVeronicaMars
 
 
