@@ -287,7 +287,7 @@ Usage: #example
 * clinicalStatus = $condition-clinical#active
 * category[0] = $condition-category#problem-list-item
 * category[+] = $condition-category#encounter-diagnosis
-// not found, should it be  Z59.819? * code.coding[0] = $icd-10-cm#Z49.811 "Housing instability"
+* code.coding[0] = $icd-10-cm#Z59.819 "Housing instability, housed unspecified"
 * code.coding[+] = $sct#1156191002 "Housing instability (finding)"
 * code.text = "Housing instability"
 * subject = Reference(VeronicaMars)
