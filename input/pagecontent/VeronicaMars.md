@@ -47,11 +47,74 @@ Dr. Hibbert is aware that adverse childhood experiences (ACE's) can significantl
 
 The state of MA commonly collects this information for population health reporting, but Veronica reiterates that she does not feel comfortable sharing this information broadly, even in a de-identified manner.  Furthermore, she does not want Steve to ask questions about why she is discussing this history with Dr. Hibbert, so she asks that this information not be shared via the portal.
 
-### Consent
-
-See the [Consent](Consent-VeronicaMarsConsent.html)
-
 ### Data
 
-- [Veronica Mars](Patient-VeronicaMars.html)
+- [Veronica Mars patient](Patient-VeronicaMars.html)
+- Encounters and associated data
+  - SMC well-adult visit, 2026-08-28
+    - [Encounter](Encounter-VeronicaMarsEncSMC2wk.html)
+    - [Well adult exam](Condition-VeronicaMarsWellAdultExam.html)
+    - [Food insecurity](Condition-VeronicaMarsFoodInsecurity.html)
+    - [Housing instability](Condition-VeronicaMarsHousingInstability.html)
+    - [Financial insecurity](Condition-VeronicaMarsFinancialInsecurity.html)
+    - [Intimate partner violence](Condition-VeronicaMarsIPV.html)
+    - [Employment status](Observation-VeronicaMarsEmploymentStatus.html)
+    - [Counseling referral](ServiceRequest-VeronicaMarsCounselingReferral.html)
+  - OHS emergency department visit, 2026-09-06
+    - [Encounter](Encounter-VeronicaMarsEncOHSED.html)
+    - [Intimate partner violence diagnosis](Condition-VeronicaMarsIPVOHSEnc.html)
+    - [Left radius fracture](Condition-VeronicaMarsLeftRadiusFracture.html)
+    - [Basic metabolic panel](DiagnosticReport-VeronicaMarsBMP.html)
+    - [Urinalysis](DiagnosticReport-VeronicaMarsUA.html)
+    - [Blood pressure](Observation-VeronicaMarsEDBloodPressure.html)
+    - [Heart rate](Observation-VeronicaMarsEDHeartRate.html)
+    - [Temperature](Observation-VeronicaMarsEDTemperature.html)
+    - [Oxygen saturation](Observation-VeronicaMarsEDOxygenSaturation.html)
+    - [Left wrist X-ray](DiagnosticReport-VeronicaMarsLeftWristXray.html)
+    - [Social-work referral](ServiceRequest-VeronicaMarsSocialWorkReferral.html)
+  - SMC follow-up visit, 2026-09-11
+    - [Encounter](Encounter-VeronicaMarsEncSMCToday.html)
+    - [Intimate partner violence diagnosis](Condition-VeronicaMarsIPVSMCToday.html)
+    - [Elevated blood pressure](Condition-VeronicaMarsElevatedBP.html)
+    - [Borderline elevated creatinine](Condition-VeronicaMarsCreatinine.html)
+    - [Proteinuria](Condition-VeronicaMarsProteinuria.html)
+    - [Microscopic hematuria](Condition-VeronicaMarsHematuria.html)
+    - [Basic metabolic panel](DiagnosticReport-VeronicaMarsCurrentBMP.html)
+    - [Urinalysis](DiagnosticReport-VeronicaMarsCurrentUA.html)
+    - [Blood pressure](Observation-VeronicaMarsCurrentBloodPressure.html)
+    - [Heart rate](Observation-VeronicaMarsCurrentHeartRate.html)
+    - [Temperature](Observation-VeronicaMarsCurrentTemperature.html)
+    - [Oxygen saturation](Observation-VeronicaMarsCurrentOxygenSaturation.html)
+    - [12-lead EKG](DiagnosticReport-VeronicaMarsEKG.html)
+- No encounter
+  - [Atopic dermatitis](Condition-VeronicaMarsAtopicDermatitis.html)
+  - [History of child sexual abuse](Condition-VeronicaMarsCSAHx.html)
+  - [Immigration status](Observation-VeronicaMarsImmigrationStatus.html)
+  - [Hydrocortisone medication](MedicationRequest-VeronicaMarsHydrocortisone.html)
+- Consent and additional resources
+  - [Veronica Mars information-access Consent](Consent-VeronicaMarsConsent.html)
+  - [Veronica Mars bundle](Bundle-AllOfVeronicaMars.html)
+  - Practitioners and portal proxies
+    - [Veronica's physician](Practitioner-VeronicaMarsDoctor.html)
+    - [Dr. Hibbert](Practitioner-DrHibbert.html), SMC PCP
+    - [Lucy van Pelt](Practitioner-LucyvanPelt.html), SMC therapist
+    - [Jane Addams](Practitioner-JaneAddams.html), SMC social worker
+    - [Dr. Michael "Robby" Robinavitch](Practitioner-DrRobbyRobinavitch.html), OHS ED physician
+    - [Dr. Riviera](Practitioner-DrRiviera.html), FL Clinic PCP
+    - [Steve Rogers](RelatedPerson-SteveRogersSMCPortal.html), SMC portal proxy
+    - [Steve Rogers](RelatedPerson-SteveRogersOHSPortal.html), OHS portal proxy
+    - [Steve Rogers](RelatedPerson-SteveRogersFLClinicPortal.html), FL Clinic portal proxy
+  - Organizations
+    - [Mapple We Never Sleep app](Device-MappleFoodTrackerApp.html)
+    - [Bottomless Bowl Food Pantry](Organization-BottomlessBowl.html)
+    - [Friendly Funders Financial Resources](Organization-FriendlyFunders.html)
+    - [Mi Casa es Su Casa Emergency Shelter](Organization-MiCasaEsSuCasa.html)
+    - [Green](Organization-Green.html), payer
+    - [MA Third Party Lab](Organization-TPL.html)
+    - [Commonwealth of Massachusetts](Organization-CommonwealthMA.html)
+    - [State of Florida](Organization-StateFL.html)
 - [Veronica Mars bundle](Bundle-AllOfVeronicaMars.html)
+
+### Consent
+
+See the [Consent](Consent-VeronicaMarsConsent.html) for details on Veronica Mars's information-access rules.
